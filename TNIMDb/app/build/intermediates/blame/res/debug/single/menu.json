@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_detail.xml",
+        "source": "C:\\TNIMDb\\app\\src\\main\\res\\menu\\menu_detail.xml"
+    },
+    {
+        "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\TNIMDb\\app\\src\\main\\res\\menu\\main.xml"
+    }
+]
