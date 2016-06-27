@@ -92,7 +92,6 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(),"2" , Toast.LENGTH_SHORT).show();
         Toast.makeText(getApplicationContext(),"1" , Toast.LENGTH_SHORT).show();
     }
-
 }
 
 
