@@ -10,4 +10,6 @@ public final class BuildConfig {
   public static final String FLAVOR = "";
   public static final int VERSION_CODE = 1;
   public static final String VERSION_NAME = "1.0";
+  // Fields from build type: debug
+  public static final String MOVIE_DB_API_KEY = "27ec1451d670425cb869be3af0e63646";
 }

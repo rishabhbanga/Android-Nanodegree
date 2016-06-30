@@ -4,6 +4,10 @@
         <item>@string/pref_sort_by_popularity</item>
         <item>@string/pref_sort_by_highest_rated</item>
     </string-array>
+    <string-array name="pref_sort_by_options">
+        <item>@string/pref_sort_by_popularity_label</item>
+        <item>@string/pref_sort_by_highest_rated_label</item>
+    </string-array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
     <attr format="boolean" name="isLightTheme"/>
@@ -36,13 +40,16 @@
     <color name="button_material_light">#ffd6d7d7</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorPrimary">#009688</color>
-    <color name="colorPrimaryDark">#004d40</color>
+    <color name="colorPrimaryDark">#00695c</color>
     <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
+    <color name="favorite">#bf360c</color>
     <color name="foreground_material_dark">@android:color/white</color>
     <color name="foreground_material_light">@android:color/black</color>
+    <color name="grey">#cccccc</color>
+    <color name="grey_100">#F5F5F5</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="hint_foreground_material_dark">@color/bright_foreground_disabled_material_dark</color>
@@ -59,7 +66,7 @@
     <color name="material_grey_800">#ff424242</color>
     <color name="material_grey_850">#ff303030</color>
     <color name="material_grey_900">#ff212121</color>
-    <color name="mybackgroud">#d84315</color>
+    <color name="mybackground">#bf360c</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
     <color name="primary_dark_material_light">@color/material_grey_600</color>
     <color name="primary_material_dark">@color/material_grey_900</color>
@@ -212,13 +219,24 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
-    <string name="app_name">TNIMDb - Popular Movies I</string>
+    <string name="app_name">TNIMDb - Popular Movies II</string>
+    <string name="content_authority">rishabhbanga.nanodegree.tnimdb</string>
+    <string name="dialog_browser">Browser</string>
+    <string name="dialog_for_choosing">Please choose to play</string>
+    <string name="dialog_youtube">YouTube</string>
     <string name="mark">MARK AS FAVORITE</string>
-    <string name="pref_sort_by_highest_rated" translatable="false">Highest-rated</string>
+    <string name="message_already_saved">It already in your favorite list!</string>
+    <string name="message_not_ok">Please select a movie!</string>
+    <string name="message_ok">Movie Saved!</string>
+    <string name="movie_trailer">Trailers:</string>
+    <string name="pref_sort_by_highest_rated" translatable="false">vote_average.desc</string>
+    <string name="pref_sort_by_highest_rated_label" translatable="false">Highest Rated</string>
     <string name="pref_sort_by_key" translatable="false">sort_by</string>
     <string name="pref_sort_by_label">Sort By</string>
-    <string name="pref_sort_by_popularity" translatable="false">Popularity</string>
+    <string name="pref_sort_by_popularity" translatable="false">popularity.desc</string>
+    <string name="pref_sort_by_popularity_label" translatable="false">Popularity</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="sync_account_type">tnimdb.nanodegree.rishabhbanga</string>
     <string name="title_activity_detail">Movie Details</string>
     <string name="title_activity_settings">Settings</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

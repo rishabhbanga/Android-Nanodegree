@@ -8,7 +8,7 @@
     android:verticalSpacing="0dp"
     android:horizontalSpacing="0dp"
     android:stretchMode="columnWidth"
-    tools:context=".MainFragment"
+    tools:context=".app.MainFragment"
     android:id="@+id/movie_grid"
     android:scaleType="centerCrop"/>
 

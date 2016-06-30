@@ -20,12 +20,12 @@
         "source": "C:\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\notification_template_media.xml"
     },
     {
-        "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_detail.xml",
-        "source": "C:\\TNIMDb\\app\\src\\main\\res\\layout\\fragment_detail.xml"
-    },
-    {
         "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "C:\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_detail.xml",
+        "source": "C:\\TNIMDb\\app\\src\\main\\res\\layout\\fragment_detail.xml"
     },
     {
         "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
@@ -112,16 +112,16 @@
         "source": "C:\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
-        "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_main.xml",
-        "source": "C:\\TNIMDb\\app\\src\\main\\res\\layout\\fragment_main.xml"
-    },
-    {
         "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
         "source": "C:\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
         "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
         "source": "C:\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_main.xml",
+        "source": "C:\\TNIMDb\\app\\src\\main\\res\\layout\\fragment_main.xml"
     },
     {
         "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",

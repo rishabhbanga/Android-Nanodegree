@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TNIMDb - Popular Movies I</string>
+    <string name="app_name">TNIMDb - Popular Movies II</string>
 
     <string name="title_activity_detail">Movie Details</string>
     <string name= "title_activity_settings">Settings</string>
@@ -10,7 +10,22 @@
 
     <!-- Key name for sorting  -->
     <string name="pref_sort_by_key" translatable="false">sort_by</string>
-    <string name="pref_sort_by_popularity" translatable="false">Popularity</string>
-    <string name="pref_sort_by_highest_rated" translatable="false">Highest-rated</string>
+    <string name="pref_sort_by_popularity" translatable="false">popularity.desc</string>
+    <string name="pref_sort_by_highest_rated" translatable="false">vote_average.desc</string>
+
+    <string name="pref_sort_by_popularity_label" translatable="false">Popularity</string>
+    <string name="pref_sort_by_highest_rated_label" translatable="false">Highest Rated</string>
+
+    <string name="content_authority">rishabhbanga.nanodegree.tnimdb</string>
+    <string name="sync_account_type">tnimdb.nanodegree.rishabhbanga</string>
+
+    <string name="message_ok">Movie Saved!</string>
+    <string name="message_not_ok">Please select a movie!</string>
+    <string name="message_already_saved">It already in your favorite list!</string>
+    <string name="movie_trailer">Trailers:</string>
+
+    <string name="dialog_browser">Browser</string>
+    <string name="dialog_youtube">YouTube</string>
+    <string name="dialog_for_choosing">Please choose to play</string>
 
 </resources>
