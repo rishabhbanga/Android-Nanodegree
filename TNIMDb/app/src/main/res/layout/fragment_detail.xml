@@ -18,14 +18,14 @@
             android:id="@+id/movie_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/mybackground"
+            android:background="@color/detailcolor"
             android:fontFamily="sans-serif"
             android:textColor="@color/white"
-            android:paddingTop="32dp"
+            android:paddingTop="16dp"
             android:paddingLeft="18dp"
-            android:paddingBottom="32dp"
+            android:paddingBottom="16dp"
             android:layout_gravity="center_vertical"
-            android:textSize="36sp" />
+            android:textSize="32sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -82,7 +82,7 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="88dp"
                     android:layout_height="50dp"
-                    android:background="@color/favorite"
+                    android:background="@color/detailcolor"
                     android:text="@string/mark"
                     android:textColor="@color/white"
                     android:textSize="12sp"/>
