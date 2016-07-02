@@ -16,28 +16,28 @@
         "source": "C:\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
-        "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
-        "source": "C:\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\notification_template_media.xml"
+        "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_detail.xml",
+        "source": "C:\\TNIMDb\\app\\src\\main\\res\\layout\\fragment_detail.xml"
     },
     {
         "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "C:\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_search_view.xml"
     },
     {
-        "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_detail.xml",
-        "source": "C:\\TNIMDb\\app\\src\\main\\res\\layout\\fragment_detail.xml"
+        "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\notification_template_media.xml"
     },
     {
-        "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
-        "source": "C:\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_list_menu_item_radio.xml"
+        "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
         "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
         "source": "C:\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\notification_template_part_time.xml"
     },
     {
-        "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
-        "source": "C:\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_action_mode_bar.xml"
+        "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
         "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",

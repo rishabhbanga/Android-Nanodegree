@@ -12,9 +12,11 @@
     <string name="pref_sort_by_key" translatable="false">sort_by</string>
     <string name="pref_sort_by_popularity" translatable="false">popularity.desc</string>
     <string name="pref_sort_by_highest_rated" translatable="false">vote_average.desc</string>
+    <string name="pref_sort_by_favorite_rated" translatable="false">favorite</string>
 
     <string name="pref_sort_by_popularity_label" translatable="false">Popularity</string>
     <string name="pref_sort_by_highest_rated_label" translatable="false">Highest Rated</string>
+    <string name="pref_sort_by_favorite_rated_label" translatable="false">Favorites</string>
 
     <string name="content_authority">rishabhbanga.nanodegree.tnimdb</string>
     <string name="sync_account_type">tnimdb.nanodegree.rishabhbanga</string>

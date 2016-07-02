@@ -1,6 +1,7 @@
 package rishabhbanga.nanodegree.tnimdb.app;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
@@ -8,9 +9,13 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.LoaderManager;
+import android.support.v4.app.ShareCompat;
 import android.support.v4.content.CursorLoader;
 import android.support.v4.content.Loader;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -35,11 +40,13 @@ public class DetailFragment extends Fragment implements LoaderManager.LoaderCall
     private final String TAG = DetailFragment.class.getSimpleName();
     public static final String MOVIE_KEY = "movie_id";
     private Uri mUri;
+    String trailerKey;
 
     private MyMovie mMyMovie;
     private Button mPlayTrailerButton;
     private Button mSaveFavoriteButton;
     static final String DETAIL_URI = "URI";
+    public static final String YOUTUBE_INTENT_BASE_URI = "vnd.youtube://";
 
     private static final String[] MOVIE_COLUMNS = {
 
@@ -71,6 +78,11 @@ public class DetailFragment extends Fragment implements LoaderManager.LoaderCall
     public DetailFragment() {
     }
 
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
+    }
+
     @Override
     public void onSaveInstanceState(Bundle outState) {
         outState.putInt(MOVIE_KEY, mMovieId);
@@ -81,6 +93,37 @@ public class DetailFragment extends Fragment implements LoaderManager.LoaderCall
     public void onResume() {
         super.onResume();
         Bundle arguments = getArguments();
+    }
+
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        inflater.inflate(R.menu.menu_detail, menu);
+        // Retrieve the share menu item
+        MenuItem menuItem = menu.findItem(R.id.action_share);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        if (id == R.id.action_share) {
+            shareMovieTrailerUrl();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    // method shares the  youtube url to social media
+    private void shareMovieTrailerUrl() {
+        Intent shareIntent = ShareCompat.IntentBuilder.from(getActivity()).setType("text/plain")
+                .setText(Uri.parse("Check this out!!" + "\n" + YOUTUBE_INTENT_BASE_URI + trailerKey).toString())
+                .getIntent();
+        if (shareIntent.resolveActivity(getActivity().getPackageManager()) != null) {
+            startActivity(shareIntent);
+        }
     }
 
     @Override
@@ -100,7 +143,6 @@ public class DetailFragment extends Fragment implements LoaderManager.LoaderCall
 
         return inflater.inflate(R.layout.fragment_detail, container, false);
     }
-
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -214,8 +256,6 @@ public class DetailFragment extends Fragment implements LoaderManager.LoaderCall
                         mPlayTrailerButton.setOnClickListener(new View.OnClickListener(){
                             @Override
                             public void onClick(View v){
-                                //openBrowserToView(moiveId);
-                                //openYourTubeToView(moiveId);
                                 FragmentManager fm = getActivity()
                                         .getSupportFragmentManager();
                                 PlayVideoFragment dialog = PlayVideoFragment.newInstance(moiveId);

@@ -1597,6 +1597,7 @@ containing a value of this type.
         public static final int action_mode_bar_stub=0x7f0e003a;
         public static final int action_mode_close_button=0x7f0e0023;
         public static final int action_settings=0x7f0e0067;
+        public static final int action_share=0x7f0e0068;
         public static final int activity_chooser_view_content=0x7f0e0024;
         public static final int alertTitle=0x7f0e002e;
         public static final int always=0x7f0e001b;
@@ -1771,16 +1772,18 @@ containing a value of this type.
         public static final int message_not_ok=0x7f070019;
         public static final int message_ok=0x7f07001a;
         public static final int movie_trailer=0x7f07001b;
-        public static final int pref_sort_by_highest_rated=0x7f07001c;
-        public static final int pref_sort_by_highest_rated_label=0x7f07001d;
-        public static final int pref_sort_by_key=0x7f07001e;
-        public static final int pref_sort_by_label=0x7f07001f;
-        public static final int pref_sort_by_popularity=0x7f070020;
-        public static final int pref_sort_by_popularity_label=0x7f070021;
+        public static final int pref_sort_by_favorite_rated=0x7f07001c;
+        public static final int pref_sort_by_favorite_rated_label=0x7f07001d;
+        public static final int pref_sort_by_highest_rated=0x7f07001e;
+        public static final int pref_sort_by_highest_rated_label=0x7f07001f;
+        public static final int pref_sort_by_key=0x7f070020;
+        public static final int pref_sort_by_label=0x7f070021;
+        public static final int pref_sort_by_popularity=0x7f070022;
+        public static final int pref_sort_by_popularity_label=0x7f070023;
         public static final int status_bar_notification_info_overflow=0x7f070011;
-        public static final int sync_account_type=0x7f070022;
-        public static final int title_activity_detail=0x7f070023;
-        public static final int title_activity_settings=0x7f070024;
+        public static final int sync_account_type=0x7f070024;
+        public static final int title_activity_detail=0x7f070025;
+        public static final int title_activity_settings=0x7f070026;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f09007b;

@@ -2,6 +2,8 @@ package rishabhbanga.nanodegree.tnimdb.app;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.preference.PreferenceManager;
@@ -73,4 +75,11 @@ public class MyMovie{
         return prefs.getString(context.getString(R.string.pref_sort_by_key),
                 context.getString(R.string.pref_sort_by_popularity));
    }
+
+    public  static boolean isNetworkAvailable(Context context) {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null;
+    }
 }

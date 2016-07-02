@@ -3,10 +3,12 @@
     <string-array name="pref_sort_by_key">
         <item>@string/pref_sort_by_popularity</item>
         <item>@string/pref_sort_by_highest_rated</item>
+        <item>@string/pref_sort_by_favorite_rated</item>
     </string-array>
     <string-array name="pref_sort_by_options">
         <item>@string/pref_sort_by_popularity_label</item>
         <item>@string/pref_sort_by_highest_rated_label</item>
+        <item>@string/pref_sort_by_favorite_rated_label</item>
     </string-array>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -228,6 +230,8 @@
     <string name="message_not_ok">Please select a movie!</string>
     <string name="message_ok">Movie Saved!</string>
     <string name="movie_trailer">Trailers:</string>
+    <string name="pref_sort_by_favorite_rated" translatable="false">favorite</string>
+    <string name="pref_sort_by_favorite_rated_label" translatable="false">Favorites</string>
     <string name="pref_sort_by_highest_rated" translatable="false">vote_average.desc</string>
     <string name="pref_sort_by_highest_rated_label" translatable="false">Highest Rated</string>
     <string name="pref_sort_by_key" translatable="false">sort_by</string>
