@@ -43,7 +43,7 @@ public class PlayVideoFragment extends DialogFragment {
                 .setPositiveButton(R.string.dialog_browser,
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
-                                Toast.makeText(getContext(),"Browser -" + id, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getContext(),"Launching with Browser", Toast.LENGTH_SHORT).show();
                                 //Open with Browser
                                 try {
                                     openBrowserToView(getArguments().getInt(EXTRA_ID));
@@ -55,7 +55,7 @@ public class PlayVideoFragment extends DialogFragment {
                 .setNegativeButton(R.string.dialog_youtube,
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
-                                Toast.makeText(getContext(), "YouTube -" + id, Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getContext(), "Launching with YouTube", Toast.LENGTH_SHORT).show();
                                 // Open with YouTube
                                 openYouTubeToView(getArguments().getInt(EXTRA_ID));
                             }

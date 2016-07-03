@@ -4,34 +4,40 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="29933999644969"
+    timestamp="269799423616588"
     token="-5507034274540759136" >
 
     <task
         name="javac"
-        duration="321" />
+        duration="440" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="28" />
+        duration="45" />
     <task
         name="verifier"
-        duration="6" />
+        duration="15" />
 
     <artifact
-        location="C:\TNIMDb\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+        location="C:\TNIMDb\app\build\intermediates\res\resources-debug.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="C:\TNIMDb\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_4\classes.dex"
         type="DEX" />
 
-    <build timestamp="29335016247390" >
+    <build timestamp="269602753656071" >
         <artifact
             location="C:\TNIMDb\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="29933999644969" >
+    <build timestamp="269799423616588" >
         <artifact
-            location="C:\TNIMDb\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+            location="C:\TNIMDb\app\build\intermediates\res\resources-debug.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="C:\TNIMDb\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_4\classes.dex"
             type="DEX" />
     </build>
 

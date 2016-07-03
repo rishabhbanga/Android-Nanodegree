@@ -1,4 +1,6 @@
-CHANGED,C:\TNIMDb\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\rishabhbanga\nanodegree\tnimdb\app\DetailFragment$override.class
+CHANGED,C:\TNIMDb\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\rishabhbanga\nanodegree\tnimdb\R$style$override.class
+CHANGED,C:\TNIMDb\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\rishabhbanga\nanodegree\tnimdb\R$mipmap$override.class
 CHANGED,C:\TNIMDb\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
-CHANGED,C:\TNIMDb\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\rishabhbanga\nanodegree\tnimdb\app\DetailFragment$1$override.class
-CHANGED,C:\TNIMDb\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\rishabhbanga\nanodegree\tnimdb\app\DetailFragment$2$override.class
+CHANGED,C:\TNIMDb\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\rishabhbanga\nanodegree\tnimdb\R$xml$override.class
+CHANGED,C:\TNIMDb\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\rishabhbanga\nanodegree\tnimdb\R$string$override.class
+CHANGED,C:\TNIMDb\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\rishabhbanga\nanodegree\tnimdb\R$styleable$override.class

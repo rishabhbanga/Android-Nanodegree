@@ -229,6 +229,7 @@
     <string name="message_already_saved">It already in your favorite list!</string>
     <string name="message_not_ok">Please select a movie!</string>
     <string name="message_ok">Movie Saved!</string>
+    <string name="movie_comment">One of the most best movies to watch. Genre and cast well utilized into this great movie. Would love to see it again</string>
     <string name="movie_trailer">Trailers:</string>
     <string name="pref_sort_by_favorite_rated" translatable="false">favorite</string>
     <string name="pref_sort_by_favorite_rated_label" translatable="false">Favorites</string>
@@ -242,6 +243,7 @@
     <string name="sync_account_type">tnimdb.nanodegree.rishabhbanga</string>
     <string name="title_activity_detail">Movie Details</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="user_name">Rishabh Banga</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
