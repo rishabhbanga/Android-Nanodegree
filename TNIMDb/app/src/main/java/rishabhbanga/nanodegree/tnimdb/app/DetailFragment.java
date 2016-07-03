@@ -187,11 +187,11 @@ public class DetailFragment extends Fragment implements LoaderManager.LoaderCall
         if (data != null && data.moveToFirst()) {
 
             while (data.moveToNext()) {
-                final int moiveId = data.getInt(data.getColumnIndex(MovieEntry.COLUMN_MOVIE_ID));
+                final int movieId = data.getInt(data.getColumnIndex(MovieEntry.COLUMN_MOVIE_ID));
                 // 0:false, 1:true
                 int hasTrailer = data.getInt(data.getColumnIndex(MovieEntry.COLUMN_MOVIE_HAS_VIDEO));
 
-                if (mMovieId == moiveId) {
+                if (mMovieId == movieId) {
 
                     String movieTitle =
                             data.getString(data.getColumnIndex(MovieEntry.COLUMN_MOVIE_TITLE));
@@ -258,7 +258,7 @@ public class DetailFragment extends Fragment implements LoaderManager.LoaderCall
                             public void onClick(View v){
                                 FragmentManager fm = getActivity()
                                         .getSupportFragmentManager();
-                                PlayVideoFragment dialog = PlayVideoFragment.newInstance(moiveId);
+                                PlayVideoFragment dialog = PlayVideoFragment.newInstance(movieId);
                                 dialog.show(fm,TAG);
                             }
                         });

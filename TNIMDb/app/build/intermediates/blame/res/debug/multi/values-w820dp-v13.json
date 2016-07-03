@@ -11,13 +11,63 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "C:\\TNIMDb\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "file": "C:\\TNIMDb\\app\\src\\main\\res\\values-w820dp\\dimens.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 113,
+                    "endColumn": 50,
+                    "endOffset": 159
+                },
+                "from": {
+                    "file": "C:\\TNIMDb\\app\\src\\main\\res\\values-w820dp\\strings.xml",
                     "position": {
-                        "startLine": 1,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 16,
-                        "endColumn": 57,
+                        "startOffset": 23,
+                        "endColumn": 50,
                         "endOffset": 69
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 164,
+                    "endColumn": 69,
+                    "endOffset": 229
+                },
+                "from": {
+                    "file": "C:\\TNIMDb\\app\\src\\main\\res\\values-w820dp\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 127,
+                        "endColumn": 69,
+                        "endOffset": 192
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 234,
+                    "endColumn": 50,
+                    "endOffset": 280
+                },
+                "from": {
+                    "file": "C:\\TNIMDb\\app\\src\\main\\res\\values-w820dp\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 75,
+                        "endColumn": 50,
+                        "endOffset": 121
                     }
                 }
             }

@@ -53,9 +53,8 @@ public class MainFragment extends Fragment implements LoaderManager.LoaderCallba
     }
 
     public interface Callback {
-        /**
-         * Callback for when an item has been selected.
-         */
+
+        //Callback for when an item has been selected.
         public void onItemSelected(Uri movieUri);
     }
 

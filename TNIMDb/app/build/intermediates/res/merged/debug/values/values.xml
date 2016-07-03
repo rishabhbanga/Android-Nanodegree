@@ -76,6 +76,7 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
+    <color name="ripple">#ff6f00</color>
     <color name="ripple_material_dark">#42ffffff</color>
     <color name="ripple_material_light">#1f000000</color>
     <color name="secondary_text_default_material_dark">#b3ffffff</color>
@@ -230,6 +231,8 @@
     <string name="message_not_ok">Please select a movie!</string>
     <string name="message_ok">Movie Saved!</string>
     <string name="movie_comment">One of the most best movies to watch. Genre and cast well utilized into this great movie. Would love to see it again</string>
+    <string name="movie_review">Reviews:</string>
+    <string name="movie_summary">Plot Summary:</string>
     <string name="movie_trailer">Trailers:</string>
     <string name="pref_sort_by_favorite_rated" translatable="false">favorite</string>
     <string name="pref_sort_by_favorite_rated_label" translatable="false">Favorites</string>
@@ -248,7 +251,7 @@
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
