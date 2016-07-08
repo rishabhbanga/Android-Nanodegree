@@ -1,2 +1,0 @@
-CHANGED,C:\TNIMDb\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
-CHANGED,C:\TNIMDb\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\rishabhbanga\nanodegree\tnimdb\app\MainActivity$override.class
