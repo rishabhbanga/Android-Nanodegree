@@ -14,6 +14,9 @@ This Repository contains all the Mobile applications created as part of Android 
 [1]: ../master/art/nanodegree-logo.png
 [2]: https://github.com/rishabhbanga/Android-Nanodegree/tree/master/TNIMDb
 
+
+## License
+
 Copyright 2016 Rishabh Banga
 
 Licensed under the Apache License, Version 2.0 (the "License");
