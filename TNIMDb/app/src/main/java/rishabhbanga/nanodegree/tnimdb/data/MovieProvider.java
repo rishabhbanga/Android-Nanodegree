@@ -8,6 +8,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
 import android.support.annotation.Nullable;
+import android.util.Log;
 
 import rishabhbanga.nanodegree.tnimdb.data.MovieContract.MovieEntry;
 import rishabhbanga.nanodegree.tnimdb.data.MovieContract.MovieCommentEntry;
@@ -16,8 +17,7 @@ import rishabhbanga.nanodegree.tnimdb.data.MovieContract.MovieCommentEntry;
  * Created by erishba on 6/18/2016.
  */
 
-public class MovieProvider extends ContentProvider
-{
+public class MovieProvider extends ContentProvider {
 
     public static final int MOVIES = 101;
     public static final int MOVIES_BY_MOVIE_ID = 102;
@@ -54,6 +54,7 @@ public class MovieProvider extends ContentProvider
 
     }
 
+    //movie.movie_id=?
     private static final String movieByMoviesId = MovieEntry.COLUMN_MOVIE_ID + " =?";
 
     public static final String updateMovieById = MovieEntry.COLUMN_MOVIE_ID + " =?";
@@ -72,12 +73,14 @@ public class MovieProvider extends ContentProvider
                 break;
             case MOVIES_BY_MOVIE_ID:
                 cursor = getMovieId(uri, projection, selection, selectionArgs, sortOrder);
+
                 break;
             case MOVIES_WITH_COMMENT:
                 cursor = getMoviesDetailWithComment(uri, projection, selection, selectionArgs, sortOrder);
                 break;
             case MOVIES_COMMENT_BY_MOVIE_ID:
                 cursor = sqLiteDatabase.query(MovieCommentEntry.TABLE_NAME, null, commentByMovieId, selectionArgs, null, null, null);
+                Log.e(TAG, "cursor size" + cursor.getCount());
                 break;
         }
         return cursor;
@@ -152,6 +155,7 @@ public class MovieProvider extends ContentProvider
         switch (uriMatcher.match(uri)) {
             case MOVIES:
                 rowsDeleted = sqLiteDatabase.delete(MovieEntry.TABLE_NAME, selection, selectionArgs);
+                Log.e(TAG, "delted id" + rowsDeleted);
                 break;
             case COMMENTS:
                 rowsDeleted = sqLiteDatabase.delete(MovieCommentEntry.TABLE_NAME, selection, selectionArgs);
@@ -250,6 +254,8 @@ public class MovieProvider extends ContentProvider
         uriMatcher.addURI(authority, MovieContract.MOVIE_COMMENTS_PATH + "/#", MOVIES_COMMENT_BY_MOVIE_ID);
         uriMatcher.addURI(authority, MovieContract.MOVIE_COMMENTS_PATH, COMMENTS);
 
+
         return uriMatcher;
     }
 }
+

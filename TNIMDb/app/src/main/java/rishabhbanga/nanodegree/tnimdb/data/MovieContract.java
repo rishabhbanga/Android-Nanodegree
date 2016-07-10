@@ -8,67 +8,61 @@ import android.provider.BaseColumns;
 /**
  * Created by erishba on 6/16/2016.
  */
+
 public class MovieContract {
 
-    public static final String CONTENT_AUTHORITY = "rishabhbanga.nanodegree.tnimdb";
+    //
+    public static final String CONTENT_AUTHORITY = "com.example.popularmovies";
 
-        public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
+    //
+    public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
 
-    public static final String MOVIE_PATH = "movie";
+
+    public static final String MOVIE_PATH = "movies";
     public static final String MOVIE_COMMENTS_PATH = "comments";
 
-    //Inner class that defines the contents of the Movie table
+    /* Inner class that defines the table contents of the movies table */
     public static final class MovieEntry implements BaseColumns {
 
-        public static final String TABLE_NAME = "movie";
 
-        public static final Uri CONTENT_URI =
-                BASE_CONTENT_URI.buildUpon().appendPath(MOVIE_PATH).build();
+        //movies table name
+        public static final String TABLE_NAME = "movies";
+
+        public static final Uri CONTENT_URI = BASE_CONTENT_URI.buildUpon().appendPath(MOVIE_PATH).build();
+
 
         public static final String CONTENT_TYPE =
                 ContentResolver.CURSOR_DIR_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + MOVIE_PATH;
-
         public static final String CONTENT_ITEM_TYPE =
                 ContentResolver.CURSOR_ITEM_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + MOVIE_PATH;
 
+
+        //column for storing the movie id provided by api
         public static final String COLUMN_MOVIE_ID = "movie_id";
-        public static final String COLUMN_MOVIE_TITLE = "movie_title";
-        public static final String COLUMN_MOVIE_POPULARITY = "movie_pop";
-        public static final String COLUMN_MOVIE_VOTE = "movie_vote";
-        public static final String COLUMN_MOVIE_RELEASE_DATE = "movie_rel_date";
-        public static final String COLUMN_MOVIE_DESC = "movie_desc";
-        public static final String COLUMN_MOVIE_POSTER_PATH = "movie_ppath";
-        public static final String COLUMN_MOVIE_BACKDROP_PATH = "movie_dpath";
-        public static final String COLUMN_MOVIE_HAS_VIDEO = "movie_video";
-        public static final String COLUMN_SORT = "sort_by";
 
-        public static Uri buildMovieUri(long id) {
-            return ContentUris.withAppendedId(CONTENT_URI, id);
-        }
-        public static Uri buildMovieIdUri(int movieId) {
-            return CONTENT_URI.buildUpon()
-                    .appendQueryParameter(COLUMN_MOVIE_ID, String.valueOf(movieId)).build();
-        }
+        //column for storing the title of the movie
+        public static final String COLUMN_MOVIE_TITLE = "title";
 
-        public static Uri buildMovieListSortedByPreferenceUri(String sort) {
-            return CONTENT_URI.buildUpon()
-                    .appendQueryParameter(COLUMN_SORT, sort).build();
+        // column for storing the release date of movie
+        public static final String COLUMN_MOVIE_RELEASE_DATE = "release_date";
+
+        //column for storing the movie rating
+        public static final String COLUMN_MOVIE_RATING = "movie_rating";
+
+        // column for storing the movie synopsis
+        public static final String COLUMN_MOVIE_OVERVIEW = "movie_overview";
+
+        public static final String COLUMN_MOVIE_POSTER_PATH="poster_path";
+
+        public static Uri buildMovieUri(long movieId) {
+            return ContentUris.withAppendedId(CONTENT_URI, movieId);
         }
 
-        public static int getMovieIdFromUri(Uri uri) {
-
-            String movieId = uri.getQueryParameter(COLUMN_MOVIE_ID);
-            if (movieId != null && movieId.length() > 0)
-                return Integer.parseInt(movieId);
-            else
-                return 0;
+        public static Long getMovieIdFromUri(Uri uri) {
+            return Long.parseLong(uri.getPathSegments().get(1));
         }
-
-        public static String getSortFromUri(Uri uri) {
-            return uri.getQueryParameter(COLUMN_SORT);
-        }
-
     }
+
 
     /* Inner class that defines the table contents of the movies comments table */
     public static final class MovieCommentEntry implements BaseColumns {
@@ -99,6 +93,6 @@ public class MovieContract {
             return uri.getPathSegments().get(1);
         }
 
-
     }
 }
+

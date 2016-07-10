@@ -1,25 +1,118 @@
 [
     {
-        "outputFile": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\res\\merged\\debug\\values-v21\\values-v21.xml",
+        "outputFile": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\values-v21\\values-v21.xml",
         "map": [
             {
                 "to": {
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endLine": 7,
-                    "endColumn": 12,
-                    "endOffset": 351
+                    "endColumn": 90,
+                    "endOffset": 141
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 19,
-                        "endLine": 7,
-                        "endColumn": 12,
-                        "endOffset": 320
+                        "startOffset": 55,
+                        "endColumn": 90,
+                        "endOffset": 141
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 146,
+                    "endColumn": 102,
+                    "endOffset": 244
+                },
+                "from": {
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 146,
+                        "endColumn": 102,
+                        "endOffset": 244
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 249,
+                    "endColumn": 102,
+                    "endOffset": 347
+                },
+                "from": {
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 249,
+                        "endColumn": 102,
+                        "endOffset": 347
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 352,
+                    "endColumn": 104,
+                    "endOffset": 452
+                },
+                "from": {
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 352,
+                        "endColumn": 104,
+                        "endOffset": 452
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 457,
+                    "endColumn": 106,
+                    "endOffset": 559
+                },
+                "from": {
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 457,
+                        "endColumn": 106,
+                        "endOffset": 559
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 564,
+                    "endColumn": 108,
+                    "endOffset": 668
+                },
+                "from": {
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 564,
+                        "endColumn": 108,
+                        "endOffset": 668
                     }
                 }
             },
@@ -27,18 +120,18 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 356,
-                    "endColumn": 90,
-                    "endOffset": 442
+                    "startOffset": 673,
+                    "endColumn": 108,
+                    "endOffset": 777
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 286,
-                        "endColumn": 90,
-                        "endOffset": 372
+                        "startOffset": 673,
+                        "endColumn": 108,
+                        "endOffset": 777
                     }
                 }
             },
@@ -46,18 +139,18 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 447,
-                    "endColumn": 102,
-                    "endOffset": 545
+                    "startOffset": 782,
+                    "endColumn": 108,
+                    "endOffset": 886
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 377,
-                        "endColumn": 102,
-                        "endOffset": 475
+                        "startOffset": 782,
+                        "endColumn": 108,
+                        "endOffset": 886
                     }
                 }
             },
@@ -65,18 +158,18 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 550,
-                    "endColumn": 102,
-                    "endOffset": 648
+                    "startOffset": 891,
+                    "endColumn": 108,
+                    "endOffset": 995
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 480,
-                        "endColumn": 102,
-                        "endOffset": 578
+                        "startOffset": 891,
+                        "endColumn": 108,
+                        "endOffset": 995
                     }
                 }
             },
@@ -84,18 +177,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 653,
-                    "endColumn": 104,
-                    "endOffset": 753
+                    "startOffset": 1000,
+                    "endColumn": 108,
+                    "endOffset": 1104
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 583,
-                        "endColumn": 104,
-                        "endOffset": 683
+                        "startOffset": 1000,
+                        "endColumn": 108,
+                        "endOffset": 1104
                     }
                 }
             },
@@ -103,18 +196,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 758,
+                    "startOffset": 1109,
                     "endColumn": 106,
-                    "endOffset": 860
+                    "endOffset": 1211
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 688,
+                        "startOffset": 1109,
                         "endColumn": 106,
-                        "endOffset": 790
+                        "endOffset": 1211
                     }
                 }
             },
@@ -122,18 +215,18 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 865,
-                    "endColumn": 108,
-                    "endOffset": 969
+                    "startOffset": 1216,
+                    "endColumn": 102,
+                    "endOffset": 1314
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 795,
-                        "endColumn": 108,
-                        "endOffset": 899
+                        "startOffset": 1216,
+                        "endColumn": 102,
+                        "endOffset": 1314
                     }
                 }
             },
@@ -141,18 +234,18 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 974,
-                    "endColumn": 108,
-                    "endOffset": 1078
+                    "startOffset": 1319,
+                    "endColumn": 118,
+                    "endOffset": 1433
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 904,
-                        "endColumn": 108,
-                        "endOffset": 1008
+                        "startOffset": 1319,
+                        "endColumn": 118,
+                        "endOffset": 1433
                     }
                 }
             },
@@ -160,37 +253,20 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 1083,
-                    "endColumn": 108,
-                    "endOffset": 1187
+                    "startOffset": 1438,
+                    "endLine": 16,
+                    "endColumn": 12,
+                    "endOffset": 1588
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 11,
+                        "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1013,
-                        "endColumn": 108,
-                        "endOffset": 1117
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 16,
-                    "startColumn": 4,
-                    "startOffset": 1192,
-                    "endColumn": 108,
-                    "endOffset": 1296
-                },
-                "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 1122,
-                        "endColumn": 108,
-                        "endOffset": 1226
+                        "startOffset": 1438,
+                        "endLine": 16,
+                        "endColumn": 12,
+                        "endOffset": 1588
                     }
                 }
             },
@@ -198,37 +274,20 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1301,
-                    "endColumn": 108,
-                    "endOffset": 1405
+                    "startOffset": 1593,
+                    "endLine": 18,
+                    "endColumn": 12,
+                    "endOffset": 1743
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 1231,
-                        "endColumn": 108,
-                        "endOffset": 1335
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 18,
-                    "startColumn": 4,
-                    "startOffset": 1410,
-                    "endColumn": 106,
-                    "endOffset": 1512
-                },
-                "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 14,
-                        "startColumn": 4,
-                        "startOffset": 1340,
-                        "endColumn": 106,
-                        "endOffset": 1442
+                        "startOffset": 1593,
+                        "endLine": 18,
+                        "endColumn": 12,
+                        "endOffset": 1743
                     }
                 }
             },
@@ -236,18 +295,18 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1517,
-                    "endColumn": 102,
-                    "endOffset": 1615
+                    "startOffset": 1748,
+                    "endColumn": 104,
+                    "endOffset": 1848
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 15,
+                        "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 1447,
-                        "endColumn": 102,
-                        "endOffset": 1545
+                        "startOffset": 1748,
+                        "endColumn": 104,
+                        "endOffset": 1848
                     }
                 }
             },
@@ -255,18 +314,18 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1620,
-                    "endColumn": 118,
-                    "endOffset": 1734
+                    "startOffset": 1853,
+                    "endColumn": 120,
+                    "endOffset": 1969
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 16,
+                        "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 1550,
-                        "endColumn": 118,
-                        "endOffset": 1664
+                        "startOffset": 1853,
+                        "endColumn": 120,
+                        "endOffset": 1969
                     }
                 }
             },
@@ -274,60 +333,60 @@
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1739,
-                    "endLine": 22,
-                    "endColumn": 12,
-                    "endOffset": 1889
+                    "startOffset": 1974,
+                    "endColumn": 100,
+                    "endOffset": 2070
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 1895,
-                        "endLine": 20,
-                        "endColumn": 12,
-                        "endOffset": 2045
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 23,
-                    "startColumn": 4,
-                    "startOffset": 1894,
-                    "endLine": 24,
-                    "endColumn": 12,
-                    "endOffset": 2044
-                },
-                "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
-                        "startOffset": 2050,
-                        "endLine": 22,
-                        "endColumn": 12,
-                        "endOffset": 2200
+                        "startOffset": 1974,
+                        "endColumn": 100,
+                        "endOffset": 2070
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 25,
+                    "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 2049,
-                    "endColumn": 104,
-                    "endOffset": 2149
+                    "startOffset": 2075,
+                    "endLine": 23,
+                    "endColumn": 12,
+                    "endOffset": 2217
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 25,
+                        "startLine": 22,
                         "startColumn": 4,
-                        "startOffset": 2436,
-                        "endColumn": 104,
-                        "endOffset": 2536
+                        "startOffset": 2075,
+                        "endLine": 23,
+                        "endColumn": 12,
+                        "endOffset": 2217
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 2222,
+                    "endLine": 25,
+                    "endColumn": 12,
+                    "endOffset": 2358
+                },
+                "from": {
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 2222,
+                        "endLine": 25,
+                        "endColumn": 12,
+                        "endOffset": 2358
                     }
                 }
             },
@@ -335,18 +394,18 @@
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 2154,
-                    "endColumn": 120,
-                    "endOffset": 2270
+                    "startOffset": 2363,
+                    "endColumn": 102,
+                    "endOffset": 2461
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
-                        "startOffset": 2541,
-                        "endColumn": 120,
-                        "endOffset": 2657
+                        "startOffset": 2363,
+                        "endColumn": 102,
+                        "endOffset": 2461
                     }
                 }
             },
@@ -354,18 +413,18 @@
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 2275,
-                    "endColumn": 100,
-                    "endOffset": 2371
+                    "startOffset": 2466,
+                    "endColumn": 118,
+                    "endOffset": 2580
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
-                        "startOffset": 2662,
-                        "endColumn": 100,
-                        "endOffset": 2758
+                        "startOffset": 2466,
+                        "endColumn": 118,
+                        "endOffset": 2580
                     }
                 }
             },
@@ -373,20 +432,37 @@
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 2376,
-                    "endLine": 29,
-                    "endColumn": 12,
-                    "endOffset": 2518
+                    "startOffset": 2585,
+                    "endColumn": 106,
+                    "endOffset": 2687
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 30,
+                        "startLine": 28,
                         "startColumn": 4,
-                        "startOffset": 2989,
-                        "endLine": 31,
-                        "endColumn": 12,
-                        "endOffset": 3131
+                        "startOffset": 2585,
+                        "endColumn": 106,
+                        "endOffset": 2687
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 2692,
+                    "endColumn": 102,
+                    "endOffset": 2790
+                },
+                "from": {
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 2692,
+                        "endColumn": 102,
+                        "endOffset": 2790
                     }
                 }
             },
@@ -394,20 +470,20 @@
                 "to": {
                     "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 2523,
+                    "startOffset": 2795,
                     "endLine": 31,
                     "endColumn": 12,
-                    "endOffset": 2659
+                    "endOffset": 2945
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 32,
+                        "startLine": 30,
                         "startColumn": 4,
-                        "startOffset": 3136,
-                        "endLine": 33,
+                        "startOffset": 2795,
+                        "endLine": 31,
                         "endColumn": 12,
-                        "endOffset": 3272
+                        "endOffset": 2945
                     }
                 }
             },
@@ -415,37 +491,20 @@
                 "to": {
                     "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 2664,
-                    "endColumn": 102,
-                    "endOffset": 2762
+                    "startOffset": 2950,
+                    "endLine": 33,
+                    "endColumn": 12,
+                    "endOffset": 3116
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 36,
+                        "startLine": 32,
                         "startColumn": 4,
-                        "startOffset": 3508,
-                        "endColumn": 102,
-                        "endOffset": 3606
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 33,
-                    "startColumn": 4,
-                    "startOffset": 2767,
-                    "endColumn": 118,
-                    "endOffset": 2881
-                },
-                "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 37,
-                        "startColumn": 4,
-                        "startOffset": 3611,
-                        "endColumn": 118,
-                        "endOffset": 3725
+                        "startOffset": 2950,
+                        "endLine": 33,
+                        "endColumn": 12,
+                        "endOffset": 3116
                     }
                 }
             },
@@ -453,37 +512,20 @@
                 "to": {
                     "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 2886,
-                    "endColumn": 106,
-                    "endOffset": 2988
+                    "startOffset": 3121,
+                    "endLine": 35,
+                    "endColumn": 12,
+                    "endOffset": 3265
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 38,
+                        "startLine": 34,
                         "startColumn": 4,
-                        "startOffset": 3730,
-                        "endColumn": 106,
-                        "endOffset": 3832
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 35,
-                    "startColumn": 4,
-                    "startOffset": 2993,
-                    "endColumn": 102,
-                    "endOffset": 3091
-                },
-                "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 39,
-                        "startColumn": 4,
-                        "startOffset": 3837,
-                        "endColumn": 102,
-                        "endOffset": 3935
+                        "startOffset": 3121,
+                        "endLine": 35,
+                        "endColumn": 12,
+                        "endOffset": 3265
                     }
                 }
             },
@@ -491,20 +533,20 @@
                 "to": {
                     "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 3096,
+                    "startOffset": 3270,
                     "endLine": 37,
                     "endColumn": 12,
-                    "endOffset": 3238
+                    "endOffset": 3430
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 42,
+                        "startLine": 36,
                         "startColumn": 4,
-                        "startOffset": 4166,
-                        "endLine": 43,
+                        "startOffset": 3270,
+                        "endLine": 37,
                         "endColumn": 12,
-                        "endOffset": 4308
+                        "endOffset": 3430
                     }
                 }
             },
@@ -512,20 +554,20 @@
                 "to": {
                     "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 3243,
+                    "startOffset": 3435,
                     "endLine": 39,
                     "endColumn": 12,
-                    "endOffset": 3393
+                    "endOffset": 3587
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 44,
+                        "startLine": 38,
                         "startColumn": 4,
-                        "startOffset": 4313,
-                        "endLine": 45,
+                        "startOffset": 3435,
+                        "endLine": 39,
                         "endColumn": 12,
-                        "endOffset": 4463
+                        "endOffset": 3587
                     }
                 }
             },
@@ -533,20 +575,20 @@
                 "to": {
                     "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 3398,
+                    "startOffset": 3592,
                     "endLine": 41,
                     "endColumn": 12,
-                    "endOffset": 3564
+                    "endOffset": 3738
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 46,
+                        "startLine": 40,
                         "startColumn": 4,
-                        "startOffset": 4468,
-                        "endLine": 47,
+                        "startOffset": 3592,
+                        "endLine": 41,
                         "endColumn": 12,
-                        "endOffset": 4634
+                        "endOffset": 3738
                     }
                 }
             },
@@ -554,62 +596,39 @@
                 "to": {
                     "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 3569,
-                    "endLine": 43,
-                    "endColumn": 12,
-                    "endOffset": 3713
+                    "startOffset": 3743,
+                    "endColumn": 118,
+                    "endOffset": 3857
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 48,
+                        "startLine": 42,
                         "startColumn": 4,
-                        "startOffset": 4639,
-                        "endLine": 49,
-                        "endColumn": 12,
-                        "endOffset": 4783
+                        "startOffset": 3743,
+                        "endColumn": 118,
+                        "endOffset": 3857
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 44,
+                    "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 3718,
-                    "endLine": 45,
-                    "endColumn": 12,
-                    "endOffset": 3878
-                },
-                "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 50,
-                        "startColumn": 4,
-                        "startOffset": 4788,
-                        "endLine": 51,
-                        "endColumn": 12,
-                        "endOffset": 4948
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 46,
-                    "startColumn": 4,
-                    "startOffset": 3883,
+                    "startOffset": 3862,
                     "endLine": 47,
                     "endColumn": 12,
-                    "endOffset": 4035
+                    "endOffset": 4229
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 52,
+                        "startLine": 43,
                         "startColumn": 4,
-                        "startOffset": 4953,
-                        "endLine": 53,
+                        "startOffset": 3862,
+                        "endLine": 47,
                         "endColumn": 12,
-                        "endOffset": 5105
+                        "endOffset": 4229
                     }
                 }
             },
@@ -617,20 +636,20 @@
                 "to": {
                     "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 4040,
+                    "startOffset": 4234,
                     "endLine": 49,
                     "endColumn": 12,
-                    "endOffset": 4186
+                    "endOffset": 4378
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 54,
+                        "startLine": 48,
                         "startColumn": 4,
-                        "startOffset": 5110,
-                        "endLine": 55,
+                        "startOffset": 4234,
+                        "endLine": 49,
                         "endColumn": 12,
-                        "endOffset": 5256
+                        "endOffset": 4378
                     }
                 }
             },
@@ -638,39 +657,39 @@
                 "to": {
                     "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 4191,
-                    "endColumn": 118,
-                    "endOffset": 4305
+                    "startOffset": 4383,
+                    "endLine": 51,
+                    "endColumn": 12,
+                    "endOffset": 4527
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 58,
+                        "startLine": 50,
                         "startColumn": 4,
-                        "startOffset": 5492,
-                        "endColumn": 118,
-                        "endOffset": 5606
+                        "startOffset": 4383,
+                        "endLine": 51,
+                        "endColumn": 12,
+                        "endOffset": 4527
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 51,
+                    "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 4310,
-                    "endLine": 52,
-                    "endColumn": 12,
-                    "endOffset": 4454
+                    "startOffset": 4532,
+                    "endColumn": 111,
+                    "endOffset": 4639
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 61,
+                        "startLine": 52,
                         "startColumn": 4,
-                        "startOffset": 5837,
-                        "endLine": 62,
-                        "endColumn": 12,
-                        "endOffset": 5981
+                        "startOffset": 4532,
+                        "endColumn": 111,
+                        "endOffset": 4639
                     }
                 }
             },
@@ -678,39 +697,39 @@
                 "to": {
                     "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 4459,
-                    "endLine": 54,
-                    "endColumn": 12,
-                    "endOffset": 4603
+                    "startOffset": 4644,
+                    "endColumn": 146,
+                    "endOffset": 4786
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 63,
+                        "startLine": 53,
                         "startColumn": 4,
-                        "startOffset": 5986,
-                        "endLine": 64,
-                        "endColumn": 12,
-                        "endOffset": 6130
+                        "startOffset": 4644,
+                        "endColumn": 146,
+                        "endOffset": 4786
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 55,
+                    "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 4608,
-                    "endColumn": 111,
-                    "endOffset": 4715
+                    "startOffset": 4791,
+                    "endLine": 55,
+                    "endColumn": 12,
+                    "endOffset": 4939
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 67,
+                        "startLine": 54,
                         "startColumn": 4,
-                        "startOffset": 6366,
-                        "endColumn": 111,
-                        "endOffset": 6473
+                        "startOffset": 4791,
+                        "endLine": 55,
+                        "endColumn": 12,
+                        "endOffset": 4939
                     }
                 }
             },
@@ -718,39 +737,39 @@
                 "to": {
                     "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 4720,
-                    "endColumn": 146,
-                    "endOffset": 4862
+                    "startOffset": 4944,
+                    "endLine": 57,
+                    "endColumn": 12,
+                    "endOffset": 5086
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 70,
+                        "startLine": 56,
                         "startColumn": 4,
-                        "startOffset": 6704,
-                        "endColumn": 146,
-                        "endOffset": 6846
+                        "startOffset": 4944,
+                        "endLine": 57,
+                        "endColumn": 12,
+                        "endOffset": 5086
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 57,
+                    "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 4867,
-                    "endLine": 58,
-                    "endColumn": 12,
-                    "endOffset": 5015
+                    "startOffset": 5091,
+                    "endColumn": 74,
+                    "endOffset": 5161
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 71,
+                        "startLine": 58,
                         "startColumn": 4,
-                        "startOffset": 6851,
-                        "endLine": 72,
-                        "endColumn": 12,
-                        "endOffset": 6999
+                        "startOffset": 5091,
+                        "endColumn": 74,
+                        "endOffset": 5161
                     }
                 }
             },
@@ -758,20 +777,37 @@
                 "to": {
                     "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 5020,
-                    "endLine": 60,
-                    "endColumn": 12,
-                    "endOffset": 5162
+                    "startOffset": 5166,
+                    "endColumn": 88,
+                    "endOffset": 5250
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 73,
+                        "startLine": 59,
                         "startColumn": 4,
-                        "startOffset": 7004,
-                        "endLine": 74,
-                        "endColumn": 12,
-                        "endOffset": 7146
+                        "startOffset": 5166,
+                        "endColumn": 88,
+                        "endOffset": 5250
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 60,
+                    "startColumn": 4,
+                    "startOffset": 5255,
+                    "endColumn": 86,
+                    "endOffset": 5337
+                },
+                "from": {
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 60,
+                        "startColumn": 4,
+                        "startOffset": 5255,
+                        "endColumn": 86,
+                        "endOffset": 5337
                     }
                 }
             },
@@ -779,18 +815,18 @@
                 "to": {
                     "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 5167,
-                    "endColumn": 74,
-                    "endOffset": 5237
+                    "startOffset": 5342,
+                    "endColumn": 100,
+                    "endOffset": 5438
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 77,
+                        "startLine": 61,
                         "startColumn": 4,
-                        "startOffset": 7377,
-                        "endColumn": 74,
-                        "endOffset": 7447
+                        "startOffset": 5342,
+                        "endColumn": 100,
+                        "endOffset": 5438
                     }
                 }
             },
@@ -798,18 +834,18 @@
                 "to": {
                     "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 5242,
-                    "endColumn": 88,
-                    "endOffset": 5326
+                    "startOffset": 5443,
+                    "endColumn": 102,
+                    "endOffset": 5541
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 78,
+                        "startLine": 62,
                         "startColumn": 4,
-                        "startOffset": 7452,
-                        "endColumn": 88,
-                        "endOffset": 7536
+                        "startOffset": 5443,
+                        "endColumn": 102,
+                        "endOffset": 5541
                     }
                 }
             },
@@ -817,100 +853,146 @@
                 "to": {
                     "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 5331,
-                    "endColumn": 86,
-                    "endOffset": 5413
-                },
-                "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 79,
-                        "startColumn": 4,
-                        "startOffset": 7541,
-                        "endColumn": 86,
-                        "endOffset": 7623
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 64,
-                    "startColumn": 4,
-                    "startOffset": 5418,
-                    "endColumn": 100,
-                    "endOffset": 5514
-                },
-                "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 80,
-                        "startColumn": 4,
-                        "startOffset": 7628,
-                        "endColumn": 100,
-                        "endOffset": 7724
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 65,
-                    "startColumn": 4,
-                    "startOffset": 5519,
-                    "endLine": 112,
+                    "startOffset": 5546,
+                    "endLine": 106,
                     "endColumn": 12,
-                    "endOffset": 8920
+                    "endOffset": 8609
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 81,
+                        "startLine": 63,
                         "startColumn": 4,
-                        "startOffset": 7729,
-                        "endLine": 128,
+                        "startOffset": 5546,
+                        "endLine": 106,
                         "endColumn": 12,
-                        "endOffset": 11130
+                        "endOffset": 8609
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 113,
+                    "startLine": 107,
                     "startColumn": 4,
-                    "startOffset": 8925,
-                    "endLine": 115,
+                    "startOffset": 8614,
+                    "endLine": 109,
                     "endColumn": 12,
-                    "endOffset": 9106
+                    "endOffset": 8795
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 129,
+                        "startLine": 107,
                         "startColumn": 4,
-                        "startOffset": 11135,
-                        "endLine": 131,
+                        "startOffset": 8614,
+                        "endLine": 109,
                         "endColumn": 12,
-                        "endOffset": 11316
+                        "endOffset": 8795
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 116,
+                    "startLine": 110,
                     "startColumn": 4,
-                    "startOffset": 9111,
+                    "startOffset": 8800,
+                    "endLine": 153,
+                    "endColumn": 12,
+                    "endOffset": 11875
+                },
+                "from": {
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 110,
+                        "startColumn": 4,
+                        "startOffset": 8800,
+                        "endLine": 153,
+                        "endColumn": 12,
+                        "endOffset": 11875
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 154,
+                    "startColumn": 4,
+                    "startOffset": 11880,
+                    "endLine": 156,
+                    "endColumn": 12,
+                    "endOffset": 12073
+                },
+                "from": {
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 154,
+                        "startColumn": 4,
+                        "startOffset": 11880,
+                        "endLine": 156,
+                        "endColumn": 12,
+                        "endOffset": 12073
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 157,
+                    "startColumn": 4,
+                    "startOffset": 12078,
+                    "endLine": 159,
+                    "endColumn": 12,
+                    "endOffset": 12273
+                },
+                "from": {
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 157,
+                        "startColumn": 4,
+                        "startOffset": 12078,
+                        "endLine": 159,
+                        "endColumn": 12,
+                        "endOffset": 12273
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 160,
+                    "startColumn": 4,
+                    "startOffset": 12278,
+                    "endLine": 161,
+                    "endColumn": 12,
+                    "endOffset": 12396
+                },
+                "from": {
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 160,
+                        "startColumn": 4,
+                        "startOffset": 12278,
+                        "endLine": 161,
+                        "endColumn": 12,
+                        "endOffset": 12396
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 162,
+                    "startColumn": 4,
+                    "startOffset": 12401,
                     "endLine": 163,
                     "endColumn": 12,
-                    "endOffset": 12524
+                    "endOffset": 12519
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 132,
+                        "startLine": 162,
                         "startColumn": 4,
-                        "startOffset": 11321,
-                        "endLine": 179,
+                        "startOffset": 12401,
+                        "endLine": 163,
                         "endColumn": 12,
-                        "endOffset": 14734
+                        "endOffset": 12519
                     }
                 }
             },
@@ -918,41 +1000,41 @@
                 "to": {
                     "startLine": 164,
                     "startColumn": 4,
-                    "startOffset": 12529,
-                    "endLine": 166,
+                    "startOffset": 12524,
+                    "endLine": 165,
                     "endColumn": 12,
-                    "endOffset": 12722
+                    "endOffset": 12632
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 180,
+                        "startLine": 164,
                         "startColumn": 4,
-                        "startOffset": 14739,
-                        "endLine": 182,
+                        "startOffset": 12524,
+                        "endLine": 165,
                         "endColumn": 12,
-                        "endOffset": 14932
+                        "endOffset": 12632
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 167,
+                    "startLine": 166,
                     "startColumn": 4,
-                    "startOffset": 12727,
+                    "startOffset": 12637,
                     "endLine": 168,
                     "endColumn": 12,
-                    "endOffset": 12845
+                    "endOffset": 12815
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 185,
+                        "startLine": 166,
                         "startColumn": 4,
-                        "startOffset": 15163,
-                        "endLine": 186,
+                        "startOffset": 12637,
+                        "endLine": 168,
                         "endColumn": 12,
-                        "endOffset": 15281
+                        "endOffset": 12815
                     }
                 }
             },
@@ -960,20 +1042,20 @@
                 "to": {
                     "startLine": 169,
                     "startColumn": 4,
-                    "startOffset": 12850,
+                    "startOffset": 12820,
                     "endLine": 170,
                     "endColumn": 12,
-                    "endOffset": 12968
+                    "endOffset": 12946
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 187,
+                        "startLine": 169,
                         "startColumn": 4,
-                        "startOffset": 15286,
-                        "endLine": 188,
+                        "startOffset": 12820,
+                        "endLine": 170,
                         "endColumn": 12,
-                        "endOffset": 15404
+                        "endOffset": 12946
                     }
                 }
             },
@@ -981,41 +1063,58 @@
                 "to": {
                     "startLine": 171,
                     "startColumn": 4,
-                    "startOffset": 12973,
-                    "endLine": 172,
+                    "startOffset": 12951,
+                    "endLine": 173,
                     "endColumn": 12,
-                    "endOffset": 13081
+                    "endOffset": 13147
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 189,
+                        "startLine": 171,
                         "startColumn": 4,
-                        "startOffset": 15409,
-                        "endLine": 190,
+                        "startOffset": 12951,
+                        "endLine": 173,
                         "endColumn": 12,
-                        "endOffset": 15517
+                        "endOffset": 13147
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 173,
+                    "startLine": 174,
                     "startColumn": 4,
-                    "startOffset": 13086,
-                    "endLine": 175,
-                    "endColumn": 12,
-                    "endOffset": 13264
+                    "startOffset": 13152,
+                    "endColumn": 88,
+                    "endOffset": 13236
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 191,
+                        "startLine": 174,
                         "startColumn": 4,
-                        "startOffset": 15522,
-                        "endLine": 193,
-                        "endColumn": 12,
-                        "endOffset": 15700
+                        "startOffset": 13152,
+                        "endColumn": 88,
+                        "endOffset": 13236
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 175,
+                    "startColumn": 4,
+                    "startOffset": 13241,
+                    "endColumn": 110,
+                    "endOffset": 13347
+                },
+                "from": {
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 175,
+                        "startColumn": 4,
+                        "startOffset": 13241,
+                        "endColumn": 110,
+                        "endOffset": 13347
                     }
                 }
             },
@@ -1023,39 +1122,20 @@
                 "to": {
                     "startLine": 176,
                     "startColumn": 4,
-                    "startOffset": 13269,
-                    "endLine": 177,
+                    "startOffset": 13352,
+                    "endLine": 178,
                     "endColumn": 12,
-                    "endOffset": 13395
+                    "endOffset": 13580
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 194,
+                        "startLine": 176,
                         "startColumn": 4,
-                        "startOffset": 15705,
-                        "endLine": 195,
+                        "startOffset": 13352,
+                        "endLine": 178,
                         "endColumn": 12,
-                        "endOffset": 15831
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 178,
-                    "startColumn": 4,
-                    "startOffset": 13400,
-                    "endColumn": 116,
-                    "endOffset": 13512
-                },
-                "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 196,
-                        "startColumn": 4,
-                        "startOffset": 15836,
-                        "endColumn": 116,
-                        "endOffset": 15948
+                        "endOffset": 13580
                     }
                 }
             },
@@ -1063,18 +1143,18 @@
                 "to": {
                     "startLine": 179,
                     "startColumn": 4,
-                    "startOffset": 13517,
-                    "endColumn": 88,
-                    "endOffset": 13601
+                    "startOffset": 13585,
+                    "endColumn": 100,
+                    "endOffset": 13681
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 197,
+                        "startLine": 179,
                         "startColumn": 4,
-                        "startOffset": 15953,
-                        "endColumn": 88,
-                        "endOffset": 16037
+                        "startOffset": 13585,
+                        "endColumn": 100,
+                        "endOffset": 13681
                     }
                 }
             },
@@ -1082,18 +1162,18 @@
                 "to": {
                     "startLine": 180,
                     "startColumn": 4,
-                    "startOffset": 13606,
-                    "endColumn": 110,
-                    "endOffset": 13712
+                    "startOffset": 13686,
+                    "endColumn": 94,
+                    "endOffset": 13776
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 198,
+                        "startLine": 180,
                         "startColumn": 4,
-                        "startOffset": 16042,
-                        "endColumn": 110,
-                        "endOffset": 16148
+                        "startOffset": 13686,
+                        "endColumn": 94,
+                        "endOffset": 13776
                     }
                 }
             },
@@ -1101,18 +1181,18 @@
                 "to": {
                     "startLine": 181,
                     "startColumn": 4,
-                    "startOffset": 13717,
-                    "endColumn": 126,
-                    "endOffset": 13839
+                    "startOffset": 13781,
+                    "endColumn": 122,
+                    "endOffset": 13899
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 199,
+                        "startLine": 181,
                         "startColumn": 4,
-                        "startOffset": 16153,
-                        "endColumn": 126,
-                        "endOffset": 16275
+                        "startOffset": 13781,
+                        "endColumn": 122,
+                        "endOffset": 13899
                     }
                 }
             },
@@ -1120,18 +1200,18 @@
                 "to": {
                     "startLine": 182,
                     "startColumn": 4,
-                    "startOffset": 13844,
-                    "endColumn": 100,
-                    "endOffset": 13940
+                    "startOffset": 13904,
+                    "endColumn": 128,
+                    "endOffset": 14028
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 200,
+                        "startLine": 182,
                         "startColumn": 4,
-                        "startOffset": 16280,
-                        "endColumn": 100,
-                        "endOffset": 16376
+                        "startOffset": 13904,
+                        "endColumn": 128,
+                        "endOffset": 14028
                     }
                 }
             },
@@ -1139,18 +1219,18 @@
                 "to": {
                     "startLine": 183,
                     "startColumn": 4,
-                    "startOffset": 13945,
-                    "endColumn": 94,
-                    "endOffset": 14035
+                    "startOffset": 14033,
+                    "endColumn": 116,
+                    "endOffset": 14145
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 201,
+                        "startLine": 183,
                         "startColumn": 4,
-                        "startOffset": 16381,
-                        "endColumn": 94,
-                        "endOffset": 16471
+                        "startOffset": 14033,
+                        "endColumn": 116,
+                        "endOffset": 14145
                     }
                 }
             },
@@ -1158,56 +1238,20 @@
                 "to": {
                     "startLine": 184,
                     "startColumn": 4,
-                    "startOffset": 14040,
-                    "endColumn": 122,
-                    "endOffset": 14158
+                    "startOffset": 14150,
+                    "endLine": 186,
+                    "endColumn": 12,
+                    "endOffset": 14322
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 202,
+                        "startLine": 184,
                         "startColumn": 4,
-                        "startOffset": 16476,
-                        "endColumn": 122,
-                        "endOffset": 16594
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 185,
-                    "startColumn": 4,
-                    "startOffset": 14163,
-                    "endColumn": 128,
-                    "endOffset": 14287
-                },
-                "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 203,
-                        "startColumn": 4,
-                        "startOffset": 16599,
-                        "endColumn": 128,
-                        "endOffset": 16723
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 186,
-                    "startColumn": 4,
-                    "startOffset": 14292,
-                    "endColumn": 116,
-                    "endOffset": 14404
-                },
-                "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 204,
-                        "startColumn": 4,
-                        "startOffset": 16728,
-                        "endColumn": 116,
-                        "endOffset": 16840
+                        "startOffset": 14150,
+                        "endLine": 186,
+                        "endColumn": 12,
+                        "endOffset": 14322
                     }
                 }
             },
@@ -1215,18 +1259,18 @@
                 "to": {
                     "startLine": 187,
                     "startColumn": 4,
-                    "startOffset": 14409,
-                    "endColumn": 92,
-                    "endOffset": 14497
+                    "startOffset": 14327,
+                    "endColumn": 98,
+                    "endOffset": 14421
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 205,
+                        "startLine": 187,
                         "startColumn": 4,
-                        "startOffset": 16845,
-                        "endColumn": 92,
-                        "endOffset": 16933
+                        "startOffset": 14327,
+                        "endColumn": 98,
+                        "endOffset": 14421
                     }
                 }
             },
@@ -1234,20 +1278,20 @@
                 "to": {
                     "startLine": 188,
                     "startColumn": 4,
-                    "startOffset": 14502,
+                    "startOffset": 14426,
                     "endLine": 189,
                     "endColumn": 12,
-                    "endOffset": 14632
+                    "endOffset": 14556
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 206,
+                        "startLine": 188,
                         "startColumn": 4,
-                        "startOffset": 16938,
-                        "endLine": 207,
+                        "startOffset": 14426,
+                        "endLine": 189,
                         "endColumn": 12,
-                        "endOffset": 17068
+                        "endOffset": 14556
                     }
                 }
             },
@@ -1255,20 +1299,20 @@
                 "to": {
                     "startLine": 190,
                     "startColumn": 4,
-                    "startOffset": 14637,
+                    "startOffset": 14561,
                     "endLine": 191,
                     "endColumn": 12,
-                    "endOffset": 14775
+                    "endOffset": 14699
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 208,
+                        "startLine": 190,
                         "startColumn": 4,
-                        "startOffset": 17073,
-                        "endLine": 209,
+                        "startOffset": 14561,
+                        "endLine": 191,
                         "endColumn": 12,
-                        "endOffset": 17211
+                        "endOffset": 14699
                     }
                 }
             },
@@ -1276,20 +1320,20 @@
                 "to": {
                     "startLine": 192,
                     "startColumn": 4,
-                    "startOffset": 14780,
+                    "startOffset": 14704,
                     "endLine": 193,
                     "endColumn": 12,
-                    "endOffset": 14910
+                    "endOffset": 14834
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 210,
+                        "startLine": 192,
                         "startColumn": 4,
-                        "startOffset": 17216,
-                        "endLine": 211,
+                        "startOffset": 14704,
+                        "endLine": 193,
                         "endColumn": 12,
-                        "endOffset": 17346
+                        "endOffset": 14834
                     }
                 }
             },
@@ -1297,20 +1341,20 @@
                 "to": {
                     "startLine": 194,
                     "startColumn": 4,
-                    "startOffset": 14915,
+                    "startOffset": 14839,
                     "endLine": 195,
                     "endColumn": 12,
-                    "endOffset": 15029
+                    "endOffset": 14953
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 212,
+                        "startLine": 194,
                         "startColumn": 4,
-                        "startOffset": 17351,
-                        "endLine": 213,
+                        "startOffset": 14839,
+                        "endLine": 195,
                         "endColumn": 12,
-                        "endOffset": 17465
+                        "endOffset": 14953
                     }
                 }
             },
@@ -1318,20 +1362,20 @@
                 "to": {
                     "startLine": 196,
                     "startColumn": 4,
-                    "startOffset": 15034,
+                    "startOffset": 14958,
                     "endLine": 199,
                     "endColumn": 12,
-                    "endOffset": 15230
+                    "endOffset": 15154
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 214,
+                        "startLine": 196,
                         "startColumn": 4,
-                        "startOffset": 17470,
-                        "endLine": 217,
+                        "startOffset": 14958,
+                        "endLine": 199,
                         "endColumn": 12,
-                        "endOffset": 17666
+                        "endOffset": 15154
                     }
                 }
             },
@@ -1339,20 +1383,20 @@
                 "to": {
                     "startLine": 200,
                     "startColumn": 4,
-                    "startOffset": 15235,
+                    "startOffset": 15159,
                     "endLine": 201,
                     "endColumn": 12,
-                    "endOffset": 15349
+                    "endOffset": 15273
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 218,
+                        "startLine": 200,
                         "startColumn": 4,
-                        "startOffset": 17671,
-                        "endLine": 219,
+                        "startOffset": 15159,
+                        "endLine": 201,
                         "endColumn": 12,
-                        "endOffset": 17785
+                        "endOffset": 15273
                     }
                 }
             },
@@ -1360,18 +1404,18 @@
                 "to": {
                     "startLine": 202,
                     "startColumn": 4,
-                    "startOffset": 15354,
+                    "startOffset": 15278,
                     "endColumn": 92,
-                    "endOffset": 15442
+                    "endOffset": 15366
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 220,
+                        "startLine": 202,
                         "startColumn": 4,
-                        "startOffset": 17790,
+                        "startOffset": 15278,
                         "endColumn": 92,
-                        "endOffset": 17878
+                        "endOffset": 15366
                     }
                 }
             },
@@ -1379,18 +1423,18 @@
                 "to": {
                     "startLine": 203,
                     "startColumn": 4,
-                    "startOffset": 15447,
+                    "startOffset": 15371,
                     "endColumn": 110,
-                    "endOffset": 15553
+                    "endOffset": 15477
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 221,
+                        "startLine": 203,
                         "startColumn": 4,
-                        "startOffset": 17883,
+                        "startOffset": 15371,
                         "endColumn": 110,
-                        "endOffset": 17989
+                        "endOffset": 15477
                     }
                 }
             },
@@ -1398,18 +1442,18 @@
                 "to": {
                     "startLine": 204,
                     "startColumn": 4,
-                    "startOffset": 15558,
+                    "startOffset": 15482,
                     "endColumn": 55,
-                    "endOffset": 15609
+                    "endOffset": 15533
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 222,
+                        "startLine": 204,
                         "startColumn": 4,
-                        "startOffset": 17994,
+                        "startOffset": 15482,
                         "endColumn": 55,
-                        "endOffset": 18045
+                        "endOffset": 15533
                     }
                 }
             },
@@ -1417,20 +1461,20 @@
                 "to": {
                     "startLine": 205,
                     "startColumn": 4,
-                    "startOffset": 15614,
+                    "startOffset": 15538,
                     "endLine": 206,
                     "endColumn": 12,
-                    "endOffset": 15716
+                    "endOffset": 15640
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 223,
+                        "startLine": 205,
                         "startColumn": 4,
-                        "startOffset": 18050,
-                        "endLine": 224,
+                        "startOffset": 15538,
+                        "endLine": 206,
                         "endColumn": 12,
-                        "endOffset": 18152
+                        "endOffset": 15640
                     }
                 }
             },
@@ -1438,20 +1482,20 @@
                 "to": {
                     "startLine": 207,
                     "startColumn": 4,
-                    "startOffset": 15721,
+                    "startOffset": 15645,
                     "endLine": 210,
                     "endColumn": 12,
-                    "endOffset": 15911
+                    "endOffset": 15835
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 225,
+                        "startLine": 207,
                         "startColumn": 4,
-                        "startOffset": 18157,
-                        "endLine": 228,
+                        "startOffset": 15645,
+                        "endLine": 210,
                         "endColumn": 12,
-                        "endOffset": 18347
+                        "endOffset": 15835
                     }
                 }
             },
@@ -1459,20 +1503,20 @@
                 "to": {
                     "startLine": 211,
                     "startColumn": 4,
-                    "startOffset": 15916,
+                    "startOffset": 15840,
                     "endLine": 212,
                     "endColumn": 12,
-                    "endOffset": 16022
+                    "endOffset": 15946
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 229,
+                        "startLine": 211,
                         "startColumn": 4,
-                        "startOffset": 18352,
-                        "endLine": 230,
+                        "startOffset": 15840,
+                        "endLine": 212,
                         "endColumn": 12,
-                        "endOffset": 18458
+                        "endOffset": 15946
                     }
                 }
             },
@@ -1480,20 +1524,20 @@
                 "to": {
                     "startLine": 213,
                     "startColumn": 4,
-                    "startOffset": 16027,
+                    "startOffset": 15951,
                     "endLine": 214,
                     "endColumn": 12,
-                    "endOffset": 16155
+                    "endOffset": 16079
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 231,
+                        "startLine": 213,
                         "startColumn": 4,
-                        "startOffset": 18463,
-                        "endLine": 232,
+                        "startOffset": 15951,
+                        "endLine": 214,
                         "endColumn": 12,
-                        "endOffset": 18591
+                        "endOffset": 16079
                     }
                 }
             },
@@ -1501,18 +1545,18 @@
                 "to": {
                     "startLine": 215,
                     "startColumn": 4,
-                    "startOffset": 16160,
+                    "startOffset": 16084,
                     "endColumn": 94,
-                    "endOffset": 16250
+                    "endOffset": 16174
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 233,
+                        "startLine": 215,
                         "startColumn": 4,
-                        "startOffset": 18596,
+                        "startOffset": 16084,
                         "endColumn": 94,
-                        "endOffset": 18686
+                        "endOffset": 16174
                     }
                 }
             },
@@ -1520,18 +1564,18 @@
                 "to": {
                     "startLine": 216,
                     "startColumn": 4,
-                    "startOffset": 16255,
+                    "startOffset": 16179,
                     "endColumn": 90,
-                    "endOffset": 16341
+                    "endOffset": 16265
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 234,
+                        "startLine": 216,
                         "startColumn": 4,
-                        "startOffset": 18691,
+                        "startOffset": 16179,
                         "endColumn": 90,
-                        "endOffset": 18777
+                        "endOffset": 16265
                     }
                 }
             },
@@ -1539,18 +1583,18 @@
                 "to": {
                     "startLine": 217,
                     "startColumn": 4,
-                    "startOffset": 16346,
-                    "endColumn": 112,
-                    "endOffset": 16454
+                    "startOffset": 16270,
+                    "endColumn": 90,
+                    "endOffset": 16356
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 235,
+                        "startLine": 217,
                         "startColumn": 4,
-                        "startOffset": 18782,
-                        "endColumn": 112,
-                        "endOffset": 18890
+                        "startOffset": 16270,
+                        "endColumn": 90,
+                        "endOffset": 16356
                     }
                 }
             },
@@ -1558,18 +1602,18 @@
                 "to": {
                     "startLine": 218,
                     "startColumn": 4,
-                    "startOffset": 16459,
+                    "startOffset": 16361,
                     "endColumn": 116,
-                    "endOffset": 16571
+                    "endOffset": 16473
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 236,
+                        "startLine": 218,
                         "startColumn": 4,
-                        "startOffset": 18895,
+                        "startOffset": 16361,
                         "endColumn": 116,
-                        "endOffset": 19007
+                        "endOffset": 16473
                     }
                 }
             },
@@ -1577,20 +1621,20 @@
                 "to": {
                     "startLine": 219,
                     "startColumn": 4,
-                    "startOffset": 16576,
+                    "startOffset": 16478,
                     "endLine": 220,
                     "endColumn": 12,
-                    "endOffset": 16710
+                    "endOffset": 16612
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 237,
+                        "startLine": 219,
                         "startColumn": 4,
-                        "startOffset": 19012,
-                        "endLine": 238,
+                        "startOffset": 16478,
+                        "endLine": 220,
                         "endColumn": 12,
-                        "endOffset": 19146
+                        "endOffset": 16612
                     }
                 }
             },
@@ -1598,100 +1642,100 @@
                 "to": {
                     "startLine": 221,
                     "startColumn": 4,
-                    "startOffset": 16715,
-                    "endLine": 227,
+                    "startOffset": 16617,
+                    "endLine": 230,
                     "endColumn": 12,
-                    "endOffset": 17063
+                    "endOffset": 17125
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 221,
+                        "startColumn": 4,
+                        "startOffset": 16617,
+                        "endLine": 230,
+                        "endColumn": 12,
+                        "endOffset": 17125
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 231,
+                    "startColumn": 4,
+                    "startOffset": 17130,
+                    "endLine": 240,
+                    "endColumn": 12,
+                    "endOffset": 17650
+                },
+                "from": {
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
+                    "position": {
+                        "startLine": 231,
+                        "startColumn": 4,
+                        "startOffset": 17130,
+                        "endLine": 240,
+                        "endColumn": 12,
+                        "endOffset": 17650
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 241,
+                    "startColumn": 4,
+                    "startOffset": 17655,
+                    "endLine": 250,
+                    "endColumn": 12,
+                    "endOffset": 18330
+                },
+                "from": {
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
                         "startLine": 241,
                         "startColumn": 4,
-                        "startOffset": 19377,
-                        "endLine": 247,
+                        "startOffset": 17655,
+                        "endLine": 250,
                         "endColumn": 12,
-                        "endOffset": 19725
+                        "endOffset": 18330
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 228,
+                    "startLine": 251,
                     "startColumn": 4,
-                    "startOffset": 17068,
-                    "endLine": 234,
-                    "endColumn": 12,
-                    "endOffset": 17428
-                },
-                "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 248,
-                        "startColumn": 4,
-                        "startOffset": 19730,
-                        "endLine": 254,
-                        "endColumn": 12,
-                        "endOffset": 20090
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 235,
-                    "startColumn": 4,
-                    "startOffset": 17433,
-                    "endLine": 244,
-                    "endColumn": 12,
-                    "endOffset": 18108
-                },
-                "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
-                    "position": {
-                        "startLine": 255,
-                        "startColumn": 4,
-                        "startOffset": 20095,
-                        "endLine": 264,
-                        "endColumn": 12,
-                        "endOffset": 20770
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 245,
-                    "startColumn": 4,
-                    "startOffset": 18113,
+                    "startOffset": 18335,
                     "endColumn": 56,
-                    "endOffset": 18165
+                    "endOffset": 18387
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 265,
+                        "startLine": 251,
                         "startColumn": 4,
-                        "startOffset": 20775,
+                        "startOffset": 18335,
                         "endColumn": 56,
-                        "endOffset": 20827
+                        "endOffset": 18387
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 246,
+                    "startLine": 252,
                     "startColumn": 4,
-                    "startOffset": 18170,
+                    "startOffset": 18392,
                     "endColumn": 57,
-                    "endOffset": 18223
+                    "endOffset": 18445
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\values-v21\\values-v21.xml",
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
                     "position": {
-                        "startLine": 266,
+                        "startLine": 252,
                         "startColumn": 4,
-                        "startOffset": 20832,
+                        "startOffset": 18392,
                         "endColumn": 57,
-                        "endOffset": 20885
+                        "endOffset": 18445
                     }
                 }
             }
