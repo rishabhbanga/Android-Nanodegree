@@ -1,20 +1,13 @@
 package rishabhbanga.nanodegree.tnimdb.app;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.preference.PreferenceManager;
-
-import rishabhbanga.nanodegree.tnimdb.R;
 
 /**
  * Created by erishba on 5/17/2016.
  */
 
-public class MyMovie{
+public class MyMovie implements Parcelable{
 
     private int id;
     private String title;
@@ -26,9 +19,11 @@ public class MyMovie{
     private String backdropPath;
     private boolean video;
 
-    public static final String BaseUrl = "https://image.tmdb.org/t/p/w500";
-    public static final String BaseMovieUrl = "http://api.themoviedb.org/3/movie";
-    public static final String BaseDiscoverUrl = "http://api.themoviedb.org/3/discover/movie?";
+    private final String baseUrl = "https://image.tmdb.org/t/p/w500";
+
+    public MyMovie(){
+
+    }
 
     public MyMovie(int id, String title, double popularity, double vote_avg,
                    String releaseDate, String description,
@@ -45,6 +40,20 @@ public class MyMovie{
         this.video = video;
     }
 
+    public String getPath() {
+
+        return baseUrl+posterPath;
+    }
+
+    public String getIconPath() {
+
+        if (backdropPath == null){
+            return baseUrl+posterPath;
+        }else {
+            return baseUrl + backdropPath;
+        }
+    }
+
     public int getId() {
         return id;
     }
@@ -52,6 +61,68 @@ public class MyMovie{
     public void setId(int id) {
         this.id = id;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public double getVote_avg() {
+        return vote_avg;
+    }
+
+    public String getReleaseDate() {
+        return releaseDate;
+    }
+
+    public void setReleaseDate(String releaseDate) {
+        this.releaseDate = releaseDate;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public MyMovie(Parcel parcel){
+        id = parcel.readInt();
+        title = parcel.readString();
+        popularity = parcel.readDouble();
+        vote_avg = parcel.readDouble();
+        releaseDate = parcel.readString();
+        description = parcel.readString();
+        posterPath = parcel.readString();
+        backdropPath = parcel.readString();
+        video = parcel.readByte() != 0;
+
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+
+        parcel.writeInt(id);
+        parcel.writeString(title);
+        parcel.writeDouble(popularity);
+        parcel.writeDouble(vote_avg);
+        parcel.writeString(releaseDate);
+        parcel.writeString(description);
+        parcel.writeString(posterPath);
+        parcel.writeString(backdropPath);
+        parcel.writeByte(((byte) (video ? 1 : 0)));
+
+    }
+    public static final Parcelable.Creator<MyMovie> CREATOR = new Parcelable.Creator<MyMovie>() {
+        public MyMovie createFromParcel(Parcel parcel) {
+            return new MyMovie(parcel);
+        }
+
+        public MyMovie[] newArray(int i) {
+            return new MyMovie[i];
+        }
+    };
 
     public static String getYear(String releaseDate){
         String year;
@@ -68,18 +139,5 @@ public class MyMovie{
     // As a placeholder
     public static String getDuration(){
         return "120min";
-    }
-
-    public static String getPreferredSortBy(Context context) {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        return prefs.getString(context.getString(R.string.pref_sort_by_key),
-                context.getString(R.string.pref_sort_by_popularity));
-   }
-
-    public  static boolean isNetworkAvailable(Context context) {
-        ConnectivityManager connectivityManager
-                = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-        return activeNetworkInfo != null;
     }
 }

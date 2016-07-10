@@ -1,165 +1,271 @@
 package rishabhbanga.nanodegree.tnimdb.app;
 
+import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
+import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
-import android.os.Bundle;
+import android.os.AsyncTask;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.LoaderManager;
-import android.support.v4.app.ShareCompat;
-import android.support.v4.content.CursorLoader;
-import android.support.v4.content.Loader;
+import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+
 import android.widget.GridView;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.ArrayList;
+
+import rishabhbanga.nanodegree.tnimdb.BuildConfig;
 import rishabhbanga.nanodegree.tnimdb.R;
-import rishabhbanga.nanodegree.tnimdb.data.MovieContract;
-import rishabhbanga.nanodegree.tnimdb.data.MovieContract.MovieEntry;
-import rishabhbanga.nanodegree.tnimdb.sync.MovieSyncAdapter;
+
 
 /**
  * Created by erishba on 5/17/2016.
  */
 
-public class MainFragment extends Fragment implements LoaderManager.LoaderCallbacks<Cursor>{
+public class MainFragment extends Fragment {
 
-    private static final int MOVIE_LOADER = 0;
-    private String mSort;
-
+    private ArrayList<MyMovie> MovieList;
     private MovieAdapter mAdapter;
-    private static final String TAG = MainFragment.class.getSimpleName();
-    private int mPosition = GridView.INVALID_POSITION;
-    private static final String SELECTED_KEY = "selected_position";
-    private GridView gridView;
-
-    private static final String[] MOVIE_COLUMNS = {
-            MovieEntry.TABLE_NAME + "." + MovieEntry._ID,
-            MovieEntry.COLUMN_MOVIE_ID,
-            MovieEntry.COLUMN_MOVIE_POSTER_PATH,
-        };
-
-    // These indices are tied to MOVIE_COLUMNS.  If FORECAST_COLUMNS changes, these must change
-
-    public static final int COL_MOVIE_ID = 1;
-    public static final int COL_MOVIE_POSTER_PATH = 2;
+    private String SortBy = "popularity.desc";
+    private final String keyValue = BuildConfig.MOVIE_DB_API_KEY;
 
     public MainFragment() {
     }
 
-    public interface Callback {
-
-        //Callback for when an item has been selected.
-        public void onItemSelected(Uri movieUri);
-    }
-
     @Override
     public void onSaveInstanceState(Bundle outState){
-        if (mPosition != GridView.INVALID_POSITION) {
-            outState.putInt(SELECTED_KEY, mPosition);
-        }
+        outState.putParcelableArrayList("MyMovies", MovieList);
         super.onSaveInstanceState(outState);
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setHasOptionsMenu(true);}
+        getActivity().setTitle(R.string.app_name);
+        if(savedInstanceState == null || !savedInstanceState.containsKey("MyMovies")){
+            MovieList = new ArrayList<>();
+        }else {
+            MovieList = savedInstanceState.getParcelableArrayList("MyMovies");
+        }
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        mAdapter = new MovieAdapter(getActivity(), null, 0);
+        mAdapter = new MovieAdapter(getActivity(), MovieList);
 
-        View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+        final View rootView = inflater.inflate(R.layout.fragment_main, container, false);
 
-        gridView = (GridView) rootView.findViewById(R.id.movie_grid);
+
+        GridView gridView = (GridView) rootView.findViewById(R.id.movie_grid);
         gridView.setAdapter(mAdapter);
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Cursor cursor = mAdapter.getCursor();
-                if (cursor != null && cursor.moveToPosition(position)) {
-                    ((Callback) getActivity())
-                            .onItemSelected(MovieContract.MovieEntry.buildMovieIdUri(
-                                    cursor.getInt(COL_MOVIE_ID)
-                            ));
-                }
-                mPosition = position;
+                MyMovie myMovie = mAdapter.getItem(position);
+                Intent intent = new Intent(getActivity(), DetailActivity.class)
+                        .putExtra(Intent.EXTRA_TEXT, myMovie);
+                startActivity(intent);
             }
         });
 
-         if (savedInstanceState != null && savedInstanceState.containsKey(SELECTED_KEY)){
-            mPosition = savedInstanceState.getInt(SELECTED_KEY);
-        }
-
-            return rootView;
+        return rootView;
     }
 
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        getLoaderManager().initLoader(MOVIE_LOADER, null, this);
-        super.onActivityCreated(savedInstanceState);
+    private boolean isNetworkAvailable(){
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) getContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+
     }
 
     private void updateMovie() {
-        MovieSyncAdapter.syncImmediately(getContext());
+
+        FetchMoviesTask uTask = new FetchMoviesTask();
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        String sort_by = prefs.getString(
+                getString(R.string.pref_sort_by_key),
+                getString(R.string.pref_sort_by_popularity));
+        if (sort_by.equals("Popularity")){
+            SortBy = "popularity.desc";
+
+        }else if (sort_by.equals("Highest-rated")){
+            SortBy = "vote_average.desc";
+        }
+        if (isNetworkAvailable()){
+            uTask.execute();
+        }else {
+        }
+
     }
 
     @Override
     public void onStart() {
         super.onStart();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        if (mSort != null && !mSort.equals(MyMovie.getPreferredSortBy(getActivity()))) {
-            getLoaderManager().restartLoader(MOVIE_LOADER, null, this);
-        }
-    }
-
-    // since the sort pref is read when the loader is created, restarting things are needed
-    void onSortPreferenceChanged() {
         updateMovie();
-        getLoaderManager().restartLoader(MOVIE_LOADER, null, this);
     }
 
-    @Override
-    public Loader<Cursor> onCreateLoader(int id, Bundle args) {
 
-        // Now create and return a CursorLoader that will take care of creating a Cursor for the data being displayed.
-        mSort = MyMovie.getPreferredSortBy(getActivity());
-        Uri movieSortedByUri = MovieEntry.buildMovieListSortedByPreferenceUri(mSort);
-        return new CursorLoader(
-                getActivity(),
-                //MovieEntry.CONTENT_URI,
-                movieSortedByUri,
-                MOVIE_COLUMNS,
-                null,
-                null,
-                null
-        ); //sortOrder
-    }
+    public class FetchMoviesTask extends AsyncTask<MyMovie, Void, ArrayList<MyMovie>> {
 
-    @Override
-    public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
-        mAdapter.swapCursor(data);  //Swap cursor in forecast Adapter with new loaded one,i.e. data
+        private final String TAG = FetchMoviesTask.class.getSimpleName();
 
-        if (mPosition != GridView.INVALID_POSITION){
-            gridView.setSelection(mPosition);
+        //populate movie data to an array list from json source.
+        private ArrayList<MyMovie> getMovieDataFromJson(String moviesJsonStr)
+                throws JSONException {
+
+            // These are the names of the JSON objects that need to be extracted.
+            final String MV_RESULTS = "results";
+            final String MV_ID = "id";
+            final String MV_TITLE = "title";
+            final String MV_OVERVIEW = "overview";
+            final String MV_BACKDROP_PATH = "backdrop_path";
+            final String MV_POSTER_PATH = "poster_path";
+            final String MV_RELEASE_DATE = "release_date";
+            final String MV_POPULARITY = "popularity";
+            final String MV_VOTE_AVG = "vote_average";
+            final String MV_VIDEO = "video";
+
+            JSONObject moviesJson = new JSONObject(moviesJsonStr);
+            JSONArray moviesArray = moviesJson.getJSONArray(MV_RESULTS);
+
+
+            MovieList = new ArrayList<>();
+            for (int i = 0; i < moviesArray.length(); i++) {
+
+                // Get the JSON object reference
+                JSONObject moviesPopulated = moviesArray.getJSONObject(i);
+
+                int id = moviesPopulated.getInt(MV_ID);
+                String title = moviesPopulated.getString(MV_TITLE);
+                double popularity = moviesPopulated.getDouble(MV_POPULARITY);
+                double vote_avg = moviesPopulated.getDouble(MV_VOTE_AVG);
+                String releaseDate = moviesPopulated.getString(MV_RELEASE_DATE);
+                String description = moviesPopulated.getString(MV_OVERVIEW);
+                String posterPath = moviesPopulated.getString(MV_POSTER_PATH);
+                String backdropPath = moviesPopulated.getString(MV_BACKDROP_PATH);
+                boolean video = moviesPopulated.getBoolean(MV_VIDEO);
+
+                //create a MyMovie object each time and put to an array list
+                MyMovie m = new MyMovie(id, title, popularity, vote_avg, releaseDate, description,
+                        posterPath, backdropPath, video);
+                MovieList.add(m);
+            }
+
+            for (MyMovie s : MovieList) {
+            }
+
+            return MovieList;
+
         }
-   }
 
-    @Override
-    public void onLoaderReset(Loader<Cursor> loader) {
-        mAdapter.swapCursor(null); //Release any resource that might be being used
+
+        @Override
+        protected ArrayList<MyMovie> doInBackground(MyMovie... params) {
+
+            HttpURLConnection urlConnection = null;
+            BufferedReader reader = null;
+
+            // Will contain the raw JSON response as a string.
+            String moviesJsonStr = null;
+
+            String format = "json";
+
+            try {
+
+                final String BASE_URL =
+                        "http://api.themoviedb.org/3/discover/movie?";
+                final String SORT_BY = "sort_by";
+                final String API_KEY = "api_key";
+
+
+                Uri builtUri = Uri.parse(BASE_URL).buildUpon()
+                        .appendQueryParameter(SORT_BY, SortBy)
+                        .appendQueryParameter(API_KEY, keyValue)
+                        .build();
+
+                URL url = new URL(builtUri.toString());
+
+                urlConnection = (HttpURLConnection) url.openConnection();
+                urlConnection.setRequestMethod("GET");
+                urlConnection.connect();
+
+                // Read the input stream into a String
+                InputStream inputStream = urlConnection.getInputStream();
+                StringBuffer buffer = new StringBuffer();
+                if (inputStream == null) {
+                    // Nothing to do.
+                    return null;
+                }
+                reader = new BufferedReader(new InputStreamReader(inputStream));
+
+                String line;
+                while ((line = reader.readLine()) != null) {
+                    // Since it's JSON, adding a newline isn't necessary (it won't affect parsing)
+                    // But it does make debugging a *lot* easier if you print out the completed
+                    // buffer for debugging.
+                    buffer.append(line + "\n");
+                }
+
+                if (buffer.length() == 0) {
+                    return null;
+                }
+
+
+                moviesJsonStr = buffer.toString();
+
+            } catch (IOException e) {
+                return null;
+            } finally {
+                if (urlConnection != null) {
+                    urlConnection.disconnect();
+                }
+                if (reader != null) {
+                    try {
+                        reader.close();
+                    } catch (final IOException e) {
+                    }
+                }
+            }
+
+            try {
+                return getMovieDataFromJson(moviesJsonStr);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(ArrayList<MyMovie> result) {
+
+            if (result != null) {
+                mAdapter.clear();
+                for (MyMovie m : result) {
+                    mAdapter.add(m);
+
+                }
+            }
+        }
     }
+
 }

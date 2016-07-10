@@ -1,5 +1,6 @@
 package rishabhbanga.nanodegree.tnimdb.app;
 
+
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.Preference;
@@ -26,6 +27,7 @@ public class SettingsFragment extends PreferenceFragment{
                 }
             };
 
+
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -37,6 +39,7 @@ public class SettingsFragment extends PreferenceFragment{
         findPreference(getString(R.string.pref_sort_by_key))
                 .setSummary(PreferenceManager.getDefaultSharedPreferences(getActivity())
                 .getString(getString(R.string.pref_sort_by_key),getString(R.string.pref_sort_by_popularity)));
+
     }
 
     @Override
@@ -52,4 +55,5 @@ public class SettingsFragment extends PreferenceFragment{
         getPreferenceScreen().getSharedPreferences()
                 .unregisterOnSharedPreferenceChangeListener(mListener);
     }
+
 }

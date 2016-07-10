@@ -4,40 +4,30 @@
     api-level="23"
     density="xxhdpi"
     format="7"
-    timestamp="302231463392151"
-    token="-5507034274540759136" >
+    timestamp="217973604021970"
+    token="1396445638774781055" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="289" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="195" />
     <task
         name="verifier"
-        duration="0" />
+        duration="76" />
 
     <artifact
-        location="C:\TNIMDb\app\build\intermediates\res\resources-debug.ap_"
-        type="RESOURCES" />
+        location="C:\Moi\My_Precious\Nanodegree\TNIMDb - Popular Movies I\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="301875372534031" >
+    <build timestamp="217973604021970" >
         <artifact
-            location="C:\TNIMDb\app\build\outputs\apk\app-debug.apk"
+            location="C:\Moi\My_Precious\Nanodegree\TNIMDb - Popular Movies I\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build timestamp="302074215035497" >
-        <artifact
-            location="C:\TNIMDb\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="302231463392151" >
-        <artifact
-            location="C:\TNIMDb\app\build\intermediates\res\resources-debug.ap_"
-            type="RESOURCES" />
     </build>
 
 </instant-run>

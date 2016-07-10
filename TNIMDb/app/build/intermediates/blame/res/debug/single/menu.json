@@ -1,10 +1,10 @@
 [
     {
-        "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_detail.xml",
-        "source": "C:\\TNIMDb\\app\\src\\main\\res\\menu\\menu_detail.xml"
+        "merged": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
+        "source": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\src\\main\\res\\menu\\main.xml"
     },
     {
-        "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\menu\\main.xml",
-        "source": "C:\\TNIMDb\\app\\src\\main\\res\\menu\\main.xml"
+        "merged": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_detail.xml",
+        "source": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\src\\main\\res\\menu\\menu_detail.xml"
     }
 ]

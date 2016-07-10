@@ -22,7 +22,6 @@ public final class R {
     }
     public static final class array {
         public static final int pref_sort_by_key=0x7f0c0000;
-        public static final int pref_sort_by_options=0x7f0c0001;
     }
     public static final class attr {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -1577,12 +1576,11 @@ containing a value of this type.
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f02003c;
         public static final int abc_textfield_search_material=0x7f02003d;
         public static final int ic_male_user=0x7f02003e;
-        public static final int notification_template_icon_bg=0x7f020041;
+        public static final int notification_template_icon_bg=0x7f020040;
         public static final int play_trailer=0x7f02003f;
-        public static final int ripple_fav=0x7f020040;
     }
     public static final class id {
-        public static final int action0=0x7f0e005e;
+        public static final int action0=0x7f0e005d;
         public static final int action_bar=0x7f0e003e;
         public static final int action_bar_activity_content=0x7f0e0000;
         public static final int action_bar_container=0x7f0e003d;
@@ -1591,27 +1589,27 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f0e0022;
         public static final int action_bar_title=0x7f0e0021;
         public static final int action_context_bar=0x7f0e003f;
-        public static final int action_divider=0x7f0e0062;
+        public static final int action_divider=0x7f0e0061;
         public static final int action_menu_divider=0x7f0e0002;
         public static final int action_menu_presenter=0x7f0e0003;
         public static final int action_mode_bar=0x7f0e003b;
         public static final int action_mode_bar_stub=0x7f0e003a;
         public static final int action_mode_close_button=0x7f0e0023;
-        public static final int action_settings=0x7f0e006b;
-        public static final int action_share=0x7f0e006c;
+        public static final int action_settings=0x7f0e006a;
+        public static final int action_share=0x7f0e006b;
         public static final int activity_chooser_view_content=0x7f0e0024;
         public static final int alertTitle=0x7f0e002e;
         public static final int always=0x7f0e001b;
         public static final int beginning=0x7f0e0018;
-        public static final int btn_favorite=0x7f0e0054;
+        public static final int btn_favorite=0x7f0e0053;
         public static final int buttonPanel=0x7f0e0034;
-        public static final int cancel_action=0x7f0e005f;
+        public static final int cancel_action=0x7f0e005e;
         public static final int checkbox=0x7f0e0036;
-        public static final int chronometer=0x7f0e0065;
+        public static final int chronometer=0x7f0e0064;
         public static final int collapseActionView=0x7f0e001c;
-        public static final int comment=0x7f0e005b;
-        public static final int commenter_name=0x7f0e005a;
-        public static final int commenter_photo=0x7f0e0059;
+        public static final int comment=0x7f0e005a;
+        public static final int commenter_name=0x7f0e0059;
+        public static final int commenter_photo=0x7f0e0058;
         public static final int contentPanel=0x7f0e002f;
         public static final int custom=0x7f0e0033;
         public static final int customPanel=0x7f0e0032;
@@ -1620,39 +1618,38 @@ containing a value of this type.
         public static final int disableHome=0x7f0e000c;
         public static final int edit_query=0x7f0e0040;
         public static final int end=0x7f0e0019;
-        public static final int end_padder=0x7f0e006a;
+        public static final int end_padder=0x7f0e0069;
         public static final int expand_activities_button=0x7f0e0025;
         public static final int expanded_menu=0x7f0e0035;
-        public static final int fragment=0x7f0e004e;
-        public static final int fragment_detail=0x7f0e004d;
+        public static final int fragment=0x7f0e004d;
         public static final int home=0x7f0e0004;
         public static final int homeAsUp=0x7f0e000d;
         public static final int icon=0x7f0e0029;
         public static final int ifRoom=0x7f0e001d;
         public static final int image=0x7f0e0026;
-        public static final int info=0x7f0e0069;
-        public static final int line1=0x7f0e0063;
-        public static final int line3=0x7f0e0067;
+        public static final int info=0x7f0e0068;
+        public static final int line1=0x7f0e0062;
+        public static final int line3=0x7f0e0066;
         public static final int listMode=0x7f0e0009;
         public static final int list_item=0x7f0e0028;
-        public static final int media_actions=0x7f0e0061;
+        public static final int media_actions=0x7f0e0060;
         public static final int middle=0x7f0e001a;
-        public static final int movie_duration=0x7f0e0052;
-        public static final int movie_grid=0x7f0e005c;
-        public static final int movie_image=0x7f0e005d;
-        public static final int movie_imgIcon=0x7f0e0050;
-        public static final int movie_overview=0x7f0e0056;
-        public static final int movie_release_year=0x7f0e0051;
-        public static final int movie_summary=0x7f0e0055;
-        public static final int movie_title=0x7f0e004f;
-        public static final int movie_trailer=0x7f0e0057;
-        public static final int movie_vote=0x7f0e0053;
+        public static final int movie_duration=0x7f0e0051;
+        public static final int movie_grid=0x7f0e005b;
+        public static final int movie_image=0x7f0e005c;
+        public static final int movie_imgIcon=0x7f0e004f;
+        public static final int movie_overview=0x7f0e0055;
+        public static final int movie_release_year=0x7f0e0050;
+        public static final int movie_summary=0x7f0e0054;
+        public static final int movie_title=0x7f0e004e;
+        public static final int movie_trailer=0x7f0e0056;
+        public static final int movie_vote=0x7f0e0052;
         public static final int multiply=0x7f0e0013;
         public static final int never=0x7f0e001e;
         public static final int none=0x7f0e000e;
         public static final int normal=0x7f0e000a;
         public static final int parentPanel=0x7f0e002b;
-        public static final int play_trailer=0x7f0e0058;
+        public static final int play_trailer=0x7f0e0057;
         public static final int progress_circular=0x7f0e0005;
         public static final int progress_horizontal=0x7f0e0006;
         public static final int radio=0x7f0e0038;
@@ -1677,13 +1674,13 @@ containing a value of this type.
         public static final int src_atop=0x7f0e0015;
         public static final int src_in=0x7f0e0016;
         public static final int src_over=0x7f0e0017;
-        public static final int status_bar_latest_event_content=0x7f0e0060;
+        public static final int status_bar_latest_event_content=0x7f0e005f;
         public static final int submit_area=0x7f0e0049;
         public static final int tabMode=0x7f0e000b;
-        public static final int text=0x7f0e0068;
-        public static final int text2=0x7f0e0066;
+        public static final int text=0x7f0e0067;
+        public static final int text2=0x7f0e0065;
         public static final int textSpacerNoButtons=0x7f0e0031;
-        public static final int time=0x7f0e0064;
+        public static final int time=0x7f0e0063;
         public static final int title=0x7f0e002a;
         public static final int title_template=0x7f0e002d;
         public static final int topPanel=0x7f0e002c;
@@ -1767,32 +1764,24 @@ containing a value of this type.
         public static final int abc_shareactionprovider_share_with=0x7f07000e;
         public static final int abc_shareactionprovider_share_with_application=0x7f07000f;
         public static final int abc_toolbar_collapse_description=0x7f070010;
-        public static final int app_name=0x7f070015;
-        public static final int content_authority=0x7f070016;
-        public static final int dialog_browser=0x7f070012;
-        public static final int dialog_for_choosing=0x7f070013;
-        public static final int dialog_youtube=0x7f070014;
-        public static final int mark=0x7f070017;
-        public static final int message_already_saved=0x7f070018;
-        public static final int message_not_ok=0x7f070019;
-        public static final int message_ok=0x7f07001a;
-        public static final int movie_comment=0x7f07001b;
-        public static final int movie_review=0x7f07001c;
-        public static final int movie_summary=0x7f07001d;
-        public static final int movie_trailer=0x7f07001e;
-        public static final int pref_sort_by_favorite_rated=0x7f07001f;
-        public static final int pref_sort_by_favorite_rated_label=0x7f070020;
-        public static final int pref_sort_by_highest_rated=0x7f070021;
-        public static final int pref_sort_by_highest_rated_label=0x7f070022;
-        public static final int pref_sort_by_key=0x7f070023;
-        public static final int pref_sort_by_label=0x7f070024;
-        public static final int pref_sort_by_popularity=0x7f070025;
-        public static final int pref_sort_by_popularity_label=0x7f070026;
+        public static final int app_name=0x7f070012;
+        public static final int dialog_browser=0x7f070013;
+        public static final int dialog_for_choosing=0x7f070014;
+        public static final int dialog_youtube=0x7f070015;
+        public static final int mark=0x7f070016;
+        public static final int movie_comment=0x7f070017;
+        public static final int movie_review=0x7f070018;
+        public static final int movie_summary=0x7f070019;
+        public static final int movie_trailer=0x7f07001a;
+        public static final int pref_sort_by_favorite=0x7f07001b;
+        public static final int pref_sort_by_highest_rated=0x7f07001c;
+        public static final int pref_sort_by_key=0x7f07001d;
+        public static final int pref_sort_by_label=0x7f07001e;
+        public static final int pref_sort_by_popularity=0x7f07001f;
         public static final int status_bar_notification_info_overflow=0x7f070011;
-        public static final int sync_account_type=0x7f070027;
-        public static final int title_activity_detail=0x7f070028;
-        public static final int title_activity_settings=0x7f070029;
-        public static final int user_name=0x7f07002a;
+        public static final int title_activity_detail=0x7f070020;
+        public static final int title_activity_settings=0x7f070021;
+        public static final int user_name=0x7f070022;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f09007b;
@@ -2101,9 +2090,7 @@ containing a value of this type.
         public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f09012f;
     }
     public static final class xml {
-        public static final int authenticator=0x7f060000;
-        public static final int pref_general=0x7f060001;
-        public static final int syncadapter=0x7f060002;
+        public static final int pref_general=0x7f060000;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.

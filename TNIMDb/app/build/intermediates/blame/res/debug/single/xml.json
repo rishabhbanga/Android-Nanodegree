@@ -1,14 +1,6 @@
 [
     {
-        "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\xml\\syncadapter.xml",
-        "source": "C:\\TNIMDb\\app\\src\\main\\res\\xml\\syncadapter.xml"
-    },
-    {
-        "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\xml\\authenticator.xml",
-        "source": "C:\\TNIMDb\\app\\src\\main\\res\\xml\\authenticator.xml"
-    },
-    {
-        "merged": "C:\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\xml\\pref_general.xml",
-        "source": "C:\\TNIMDb\\app\\src\\main\\res\\xml\\pref_general.xml"
+        "merged": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\build\\intermediates\\res\\merged\\debug\\xml\\pref_general.xml",
+        "source": "C:\\Moi\\My_Precious\\Nanodegree\\TNIMDb - Popular Movies I\\app\\src\\main\\res\\xml\\pref_general.xml"
     }
 ]

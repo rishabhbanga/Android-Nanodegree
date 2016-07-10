@@ -1,14 +1,15 @@
 package rishabhbanga.nanodegree.tnimdb.app;
 
-import android.content.Context;
-import android.database.Cursor;
+import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CursorAdapter;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
+
+import java.util.List;
 
 import rishabhbanga.nanodegree.tnimdb.R;
 
@@ -16,24 +17,26 @@ import rishabhbanga.nanodegree.tnimdb.R;
  * Created by erishba on 5/17/2016.
  */
 
-public class MovieAdapter extends CursorAdapter {
+public class MovieAdapter extends ArrayAdapter<MyMovie> {
 
-    public MovieAdapter(Context context, Cursor c, int flags) {
-        super(context, c, flags);
+    public MovieAdapter(Activity context, List<MyMovie> movieList) {
+        super(context, 0, movieList);
+
     }
 
     @Override
-    public View newView(Context context, Cursor cursor, ViewGroup parent) {
-        return LayoutInflater.from(context).inflate(R.layout.movie_item, parent, false);
+    public View getView(int position, View convertView, ViewGroup parent) {
+         MyMovie m = getItem(position);
+
+        if (convertView == null) {
+
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.movie_item, parent, false);
+        }
+
+        ImageView iconView = (ImageView)convertView.findViewById(R.id.movie_image);
+        Picasso.with(getContext()).load(m.getPath()).into(iconView);
+
+        return convertView;
     }
 
-    @Override
-    public void bindView(View view, Context context, Cursor cursor) {
-
-        // Read weather icon ID from cursor
-        String icons = cursor.getString(MainFragment.COL_MOVIE_POSTER_PATH);
-
-        ImageView iconView = (ImageView)view.findViewById(R.id.movie_image);
-        Picasso.with(context).load(MyMovie.BaseUrl + icons).into(iconView);
-       }
 }

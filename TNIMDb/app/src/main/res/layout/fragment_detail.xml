@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="rishabhbanga.nanodegree.tnimdb.app.DetailFragment">
+    tools:context=".app.DetailFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,18 +14,18 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/movie_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/detailcolor"
-            android:fontFamily="sans-serif"
-            android:textColor="@color/white"
-            android:paddingTop="16dp"
-            android:paddingLeft="18dp"
-            android:paddingBottom="16dp"
-            android:layout_gravity="center_vertical"
-            android:textSize="32sp" />
+            <TextView
+                android:id="@+id/movie_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/detailcolor"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/white"
+                android:paddingTop="16dp"
+                android:paddingLeft="18dp"
+                android:paddingBottom="16dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="32sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -91,7 +91,7 @@
                     style="?android:attr/buttonStyleSmall"
                     android:layout_width="88dp"
                     android:layout_height="50dp"
-                    android:background="@drawable/ripple_fav"
+                    android:background="@color/detailcolor"
                     android:text="@string/mark"
                     android:textColor="@color/white"
                     android:textSize="12sp"/>
@@ -181,25 +181,25 @@
                     android:layout_marginLeft="@dimen/activity_horizontal_margin"
                     android:src="@drawable/ic_male_user" />
 
-                    <TextView
-                        android:id="@+id/commenter_name"
-                        style="@style/TextAppearance.AppCompat.Body1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:paddingTop="4dp"
-                        android:text="@string/user_name"
-                        android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/commenter_name"
+                    style="@style/TextAppearance.AppCompat.Body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:paddingTop="4dp"
+                    android:text="@string/user_name"
+                    android:textSize="16sp"/>
 
-                    <TextView
-                        android:id="@+id/comment"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:maxLength="200"
-                        android:paddingTop="4dp"
-                        android:textSize="15sp"
-                        android:text="@string/movie_comment" />
+                <TextView
+                    android:id="@+id/comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:maxLength="200"
+                    android:paddingTop="4dp"
+                    android:textSize="15sp"
+                    android:text="@string/movie_comment" />
 
             </LinearLayout>
         </LinearLayout>
