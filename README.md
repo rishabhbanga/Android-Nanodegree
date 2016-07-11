@@ -2,13 +2,13 @@
 
 This Repository contains all the Mobile applications created as part of Android Developer Nanodegree Program by Google. 
 
-## P0 - Portfolio App
+## Project P0 - Portfolio App
 [![Portfolio App][1]][2]
 [1]: ../master/art/nanodegree-logo.png
 [2]: https://github.com/rishabhbanga/Android-Nanodegree/tree/master/PortfolioApp
 
 
-## P1 and P2 - TNIMDb
+## Projects P1 and P2 - TNIMDb
 [![TNIMDb][1]][2]
 
 [1]: ../master/art/nanodegree-logo.png
