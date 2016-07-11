@@ -9,6 +9,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ShareCompat;
 import android.support.v4.content.ContextCompat;
 import android.view.Gravity;
@@ -22,20 +23,35 @@ import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import retrofit2.Retrofit;
+import retrofit.Callback;
+import retrofit.Response;
+import retrofit.Retrofit;
 import rishabhbanga.nanodegree.tnimdb.BuildConfig;
 import rishabhbanga.nanodegree.tnimdb.R;
 import rishabhbanga.nanodegree.tnimdb.base.BaseFragment;
+import rishabhbanga.nanodegree.tnimdb.bus.Event;
+import rishabhbanga.nanodegree.tnimdb.bus.PopularMoviesEvent;
 import rishabhbanga.nanodegree.tnimdb.data.MovieContract;
+import rishabhbanga.nanodegree.tnimdb.data.MovieContract.MovieEntry;
+import rishabhbanga.nanodegree.tnimdb.data.MovieContract.MovieCommentEntry;
+import rishabhbanga.nanodegree.tnimdb.retrofit.RetrofitManager;
+import rishabhbanga.nanodegree.tnimdb.retrofit.model.CommentsInfo;
+import rishabhbanga.nanodegree.tnimdb.retrofit.model.Movie;
+import rishabhbanga.nanodegree.tnimdb.retrofit.model.MovieComment;
+import rishabhbanga.nanodegree.tnimdb.retrofit.model.Trailer;
+import rishabhbanga.nanodegree.tnimdb.retrofit.model.TrailerInfo;
 
 /**
- * Created by erishba on 5/18/2016.
+ * Created by erishba on 7/11/2016.
  */
-
 public class MovieDetailFragment extends BaseFragment {
     private Boolean favourite = false;
 
@@ -77,7 +93,7 @@ public class MovieDetailFragment extends BaseFragment {
     RetrofitManager retrofitManager = null;
 
     List<MovieComment> comments;
-    List<MovieTrailer> trailers;
+    List<Trailer> trailers;
 
 
     private Movie mMovie;
@@ -105,7 +121,7 @@ public class MovieDetailFragment extends BaseFragment {
         super.onCreate(savedInstanceState);
 
         if (getArguments() != null) {
-            mMovie = getArguments().getParcelable(Constants.MOVIE_OBJECT);
+            mMovie = getArguments().getParcelable(MovieAdapter.MOVIE_OBJECT);
         }
 
     }
@@ -116,7 +132,7 @@ public class MovieDetailFragment extends BaseFragment {
      */
     private void setData() {
 
-        Picasso.with(activity).load(Utility.getImageUri(mMovie.posterPath))
+        Picasso.with(activity).load(MovieAdapter.getImageUri(mMovie.posterPath))
                 .into(moviePoster);
         movieTitle.setText(mMovie.title);
         ratingBar.setRating(mMovie.voteAverage);
@@ -124,7 +140,7 @@ public class MovieDetailFragment extends BaseFragment {
         releasingDate.setText(mMovie.releaseDate);
 
         ContentResolver contentResolver = getActivity().getContentResolver();
-        Cursor movieCursor = contentResolver.query(MovieContract.MovieEntry.buildMovieUri(mMovie.id), null, null, null, null, null);
+        Cursor movieCursor = contentResolver.query(MovieEntry.buildMovieUri(mMovie.id), null, null, null, null, null);
 
         if (movieCursor.getCount() > 0) {
             floatingActionButton.setImageDrawable(ContextCompat.getDrawable(getActivity(), R.drawable.ic_fav));
@@ -134,9 +150,9 @@ public class MovieDetailFragment extends BaseFragment {
         String movieId = Integer.toString(mMovie.id);
 
 
-        String categories = Utility.getMovieCategories(getActivity());
+        String categories = MovieAdapter.getMovieCategories(getActivity());
         if (categories.equals(getString(R.string.favourite_categories_value))) {
-            Cursor cursor = getActivity().getContentResolver().query(MovieContract.MovieCommentEntry.buildCommentUri(mMovie.id), null, null, new String[]{movieId}, null);
+            Cursor cursor = getActivity().getContentResolver().query(MovieCommentEntry.buildCommentUri(mMovie.id), null, null, new String[]{movieId}, null);
             MovieComment movieComment;
             if (cursor.getCount() > 0) {
                 comments = new ArrayList<>();
@@ -161,7 +177,7 @@ public class MovieDetailFragment extends BaseFragment {
      */
     @OnClick({R.id.iv_play_movie})
     public void onClick() {
-        if (Utility.isNetworkAvailable(getActivity())) {
+        if (MovieAdapter.isNetworkAvailable(getActivity())) {
             playTrailer(trailerKey);
         }
     }
@@ -200,15 +216,15 @@ public class MovieDetailFragment extends BaseFragment {
                     cv.put(MovieContract.MovieCommentEntry.COLUMN_MOVIE_ID, mMovie.id);
                     cv.put(MovieContract.MovieCommentEntry.COLUMN_AUTHOR_NAME, movieComment.author);
                     cv.put(MovieContract.MovieCommentEntry.COLUMN_MOVIE_COMMENT, movieComment.content);
-                    activity.getContentResolver().insert(MovieContract.MovieCommentEntry.CONTENT_URI, cv);
+                    activity.getContentResolver().insert(MovieCommentEntry.CONTENT_URI, cv);
                 }
 
             }
             favourite = true;
         } else {
             floatingActionButton.setImageDrawable(ContextCompat.getDrawable(getActivity(), R.drawable.ic_unfav));
-            int id = getActivity().getContentResolver().delete(MovieContract.MovieEntry.buildMovieUri(mMovie.id), null, null);
-            EventBus.post(new PopularMoviesEvent.MovieUnFavourite());
+            int id = getActivity().getContentResolver().delete(MovieEntry.buildMovieUri(mMovie.id), null, null);
+            Event.post(new PopularMoviesEvent.MovieUnFavourite());
             favourite = false;
         }
 
@@ -234,9 +250,9 @@ public class MovieDetailFragment extends BaseFragment {
      * get comments of movie having specific id from web
      */
     private void getCommentsFromWeb() {
-        Callback<MovieComments> callback = new Callback<MovieComments>() {
+        Callback<CommentsInfo> callback = new Callback<CommentsInfo>() {
             @Override
-            public void onResponse(Response<MovieComments> response, Retrofit retrofit) {
+            public void onResponse(Response<CommentsInfo> response, Retrofit retrofit) {
                 if (response.isSuccess()) {
                     comments = response.body().movieCommentList;
                     if (response.body().movieCommentList.size() > 0) {
@@ -266,7 +282,7 @@ public class MovieDetailFragment extends BaseFragment {
         LayoutInflater layoutInflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         for (MovieComment comment : response) {
 
-            View view = layoutInflater.inflate(R.layout.layout_movie_comments, llComments, false);
+            View view = layoutInflater.inflate(R.layout.movie_comments, llComments, false);
             TextView tvCommenterName = ButterKnife.findById(view, R.id.tv_commenter_name);
             TextView tvComment = ButterKnife.findById(view, R.id.tv_comment);
 
@@ -338,9 +354,9 @@ public class MovieDetailFragment extends BaseFragment {
      */
     private void getTrailerKeyFromWeb() {
         if (trailers == null) {
-            retrofit.Callback<MovieTrailerInfo> movieTrailerInfoCallback = new retrofit.Callback<MovieTrailerInfo>() {
+            retrofit.Callback<TrailerInfo> movieTrailerInfoCallback = new retrofit.Callback<TrailerInfo>() {
                 @Override
-                public void onResponse(Response<MovieTrailerInfo> response, Retrofit retrofit) {
+                public void onResponse(Response<TrailerInfo> response, Retrofit retrofit) {
                     if (response.isSuccess() && response.body().movieTrailers.size() > 0) {
                         trailers = new ArrayList<>();
                         trailerKey = response.body().movieTrailers.get(0).key;
@@ -364,12 +380,12 @@ public class MovieDetailFragment extends BaseFragment {
      *
      * @param trailers
      */
-    private void showMovieTrailer(List<MovieTrailer> trailers) {
+    private void showMovieTrailer(List<Trailer> trailers) {
         tvTrailerTitle.setVisibility(View.VISIBLE);
         LayoutInflater layoutInflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         for (int i = 0; i < trailers.size(); i++) {
 
-            View view = layoutInflater.inflate(R.layout.layout_movie_trailers, llComments, false);
+            View view = layoutInflater.inflate(R.layout.movie_trailer, llComments, false);
 
             LinearLayout llTrailerWrapper = ButterKnife.findById(view, R.id.ll_trailer_wrapper);
 
@@ -377,14 +393,14 @@ public class MovieDetailFragment extends BaseFragment {
             layoutParams.rightMargin = 10;
             ImageView ivPlayIcon = new ImageView(getActivity());
             ivPlayIcon.setTag(trailers.get(i));
-            ivPlayIcon.setImageDrawable(ContextCompat.getDrawable(getActivity(), R.drawable.btn_play));
+            ivPlayIcon.setImageDrawable(ContextCompat.getDrawable(getActivity(), R.drawable.ic_play_button));
             ivPlayIcon.setLayoutParams(layoutParams);
 
             //launches the youtube application with trailer
             ivPlayIcon.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    MovieTrailer movieTrailer = (MovieTrailer) v.getTag();
+                    Trailer movieTrailer = (Trailer) v.getTag();
                     playTrailer(movieTrailer.key);
                 }
             });

@@ -2,11 +2,14 @@ package rishabhbanga.nanodegree.tnimdb.settings;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.ListPreference;
-import android.preference.Preference;
-import android.preference.PreferenceManager;
+import android.support.v7.preference.ListPreference;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceFragmentCompat;
+import android.support.v7.preference.PreferenceManager;
 
 import rishabhbanga.nanodegree.tnimdb.R;
+import rishabhbanga.nanodegree.tnimdb.bus.Event;
+import rishabhbanga.nanodegree.tnimdb.bus.PopularMoviesEvent;
 
 /**
  * Created by erishba on 5/19/2016.
@@ -23,7 +26,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
         addPreferencesFromResource(R.xml.preferences);
 
         //register event bus.
-        EventBus.register(this);
+        Event.register(this);
 
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
         onSharedPreferenceChanged(sharedPreferences, getString(R.string.movies_categories_key));
@@ -47,7 +50,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
             if (prefIndex >= 0) {
                 preference.setSummary(listPreference.getEntries()[prefIndex]);
                 //post the event of movie categories changed
-                EventBus.post(new PopularMoviesEvent.PreferenceChangeEvent());
+                Event.post(new PopularMoviesEvent.PreferenceChangeEvent());
             }
         } else {
             preference.setSummary(sharedPreferences.getString(key, ""));
@@ -68,6 +71,6 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
     public void onDestroy() {
         super.onDestroy();
         //unregister event bus.
-        EventBus.unregister(this);
+        Event.unregister(this);
     }
 }

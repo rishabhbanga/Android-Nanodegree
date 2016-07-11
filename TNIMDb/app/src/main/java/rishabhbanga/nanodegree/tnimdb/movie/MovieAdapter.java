@@ -5,6 +5,7 @@ import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.preference.PreferenceManager;
+import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,9 +17,10 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import butterknife.Bind;
 import butterknife.ButterKnife;
 import rishabhbanga.nanodegree.tnimdb.R;
-import rishabhbanga.nanodegree.tnimdb.model.Movie;
+import rishabhbanga.nanodegree.tnimdb.retrofit.model.Movie;
 
 /**
  * Created by erishba on 5/17/2016.

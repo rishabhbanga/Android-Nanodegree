@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "rishabhbanga.nanodegree.tnimdb"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
@@ -17,7 +17,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         buildTypes.each {
-            it.buildConfigField 'String', 'MOVIE_API_KEY', '"27ec1451d670425cb869be3af0e63646"'
+            it.buildConfigField 'String', 'MOVIE_API_KEY', 'Paste Key Here'
         }
     }
 }
@@ -26,7 +26,15 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.0.0'
-    compile 'com.jakewharton:butterknife:8.1.0'
-    compile 'com.squareup.retrofit2:retrofit:2.1.0'
-    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:recyclerview-v7:24.0.0'
+    compile 'com.android.support:design:24.0.0'
+    compile 'com.android.support:palette-v7:24.0.0' //To import and implement Palette
+    compile 'com.android.support:cardview-v7:24.0.0' //To import and implement CardView
+    compile 'com.android.support:preference-v7:24.0.0' //To import and implement v7 Preferences
+    compile 'com.jakewharton:butterknife:7.0.1' //For view injection
+    compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'//For fetching data from the web and simplifying networking code
+    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    compile 'com.squareup.okhttp:okhttp:2.2.0'
+    compile 'com.squareup.picasso:picasso:2.5.2' //For caching and dowloading the image from the web
+    compile 'com.squareup:otto:1.3.8' //To decouple different parts of the application
 }

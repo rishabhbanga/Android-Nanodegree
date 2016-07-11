@@ -6,16 +6,24 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
+import com.squareup.otto.Subscribe;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import retrofit2.Retrofit;
+import butterknife.Bind;
+import retrofit.Callback;
+import retrofit.Response;
+import retrofit.Retrofit;
 import rishabhbanga.nanodegree.tnimdb.BuildConfig;
 import rishabhbanga.nanodegree.tnimdb.R;
 import rishabhbanga.nanodegree.tnimdb.base.BaseFragment;
-import rishabhbanga.nanodegree.tnimdb.base.RetrofitManager;
+import rishabhbanga.nanodegree.tnimdb.bus.Event;
+import rishabhbanga.nanodegree.tnimdb.bus.PopularMoviesEvent;
+import rishabhbanga.nanodegree.tnimdb.retrofit.RetrofitManager;
 import rishabhbanga.nanodegree.tnimdb.data.MovieContract;
-import rishabhbanga.nanodegree.tnimdb.model.Movie;
+import rishabhbanga.nanodegree.tnimdb.retrofit.model.Movie;
+import rishabhbanga.nanodegree.tnimdb.retrofit.model.MovieInfo;
 
 /**
  * Created by erishba on 5/17/2016.
@@ -50,7 +58,7 @@ public class MovieFragment extends BaseFragment {
         retrofitManager = RetrofitManager.getInstance();
 
         //register the event bus for listening the movie categories change event
-        EventBus.register(this);
+        Event.register(this);
 
         movieArrayList = new ArrayList<>();
 
@@ -59,7 +67,7 @@ public class MovieFragment extends BaseFragment {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                EventBus.post(new PopularMoviesEvent.MoviePosterSelectionEvent(movieArrayList.get(position)));
+                Event.post(new PopularMoviesEvent.MoviePosterSelectionEvent(movieArrayList.get(position)));
             }
         });
 
@@ -93,9 +101,9 @@ public class MovieFragment extends BaseFragment {
      * @param moviesCategories movie categories{popular, top_rated}
      */
     private void fetchMoviesFromWeb(int pageNumber, String moviesCategories) {
-        Callback<MoviesInfo> moviesInfoCallback = new Callback<MoviesInfo>() {
+        Callback<MovieInfo> moviesInfoCallback = new Callback<MovieInfo>() {
             @Override
-            public void onResponse(Response<MoviesInfo> response, Retrofit retrofit) {
+            public void onResponse(Response<MovieInfo> response, Retrofit retrofit) {
                 if (response.isSuccess()) {
                     movieArrayList.addAll(response.body().movieList);
                     if (count == 0) {
@@ -139,7 +147,7 @@ public class MovieFragment extends BaseFragment {
      * else fetches from the web
      */
     private void fetchData() {
-        String categories = Utility.getMovieCategories(getActivity());
+        String categories = MovieAdapter.getMovieCategories(getActivity());
         if (categories.equals(getString(R.string.favourite_categories_value))) {
             Cursor cursor = getActivity().getContentResolver().query(MovieContract.MovieEntry.CONTENT_URI, null, null, null, null);
 

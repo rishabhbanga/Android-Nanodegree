@@ -10,8 +10,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
+import com.squareup.otto.Subscribe;
+import butterknife.Bind;
+
 import rishabhbanga.nanodegree.tnimdb.R;
 import rishabhbanga.nanodegree.tnimdb.base.BaseActivity;
+import rishabhbanga.nanodegree.tnimdb.bus.PopularMoviesEvent;
 import rishabhbanga.nanodegree.tnimdb.data.MovieDbHelper;
 import rishabhbanga.nanodegree.tnimdb.settings.SettingsActivity;
 

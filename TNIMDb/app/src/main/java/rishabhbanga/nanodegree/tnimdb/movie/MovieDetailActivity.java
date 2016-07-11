@@ -10,9 +10,12 @@ import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ShareCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.Toolbar;
+import android.support.v7.graphics.Palette;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -23,22 +26,35 @@ import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.common.api.GoogleApiClient;
 import com.squareup.picasso.Picasso;
-import com.squareup.picasso.Callback;
 
 import java.util.ArrayList;
+import java.util.List;
 
+import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import retrofit2.Retrofit;
+import retrofit.Callback;
+import retrofit.Response;
+import retrofit.Retrofit;
 import rishabhbanga.nanodegree.tnimdb.BuildConfig;
 import rishabhbanga.nanodegree.tnimdb.R;
 import rishabhbanga.nanodegree.tnimdb.base.BaseActivity;
+import rishabhbanga.nanodegree.tnimdb.bus.Event;
+import rishabhbanga.nanodegree.tnimdb.bus.PopularMoviesEvent;
 import rishabhbanga.nanodegree.tnimdb.data.MovieContract;
-import rishabhbanga.nanodegree.tnimdb.movie.MovieAdapter;
+import rishabhbanga.nanodegree.tnimdb.retrofit.RetrofitManager;
+import rishabhbanga.nanodegree.tnimdb.retrofit.model.CommentsInfo;
+import rishabhbanga.nanodegree.tnimdb.retrofit.model.Movie;
+import rishabhbanga.nanodegree.tnimdb.retrofit.model.MovieComment;
+import rishabhbanga.nanodegree.tnimdb.retrofit.model.Trailer;
+import rishabhbanga.nanodegree.tnimdb.retrofit.model.TrailerInfo;
 
 /**
- * Created by erishba on 5/18/2016.
+ * Created by erishba on 7/11/2016.
  */
 
 public class MovieDetailActivity extends BaseActivity {
@@ -87,12 +103,16 @@ public class MovieDetailActivity extends BaseActivity {
     RetrofitManager retrofitManager = null;
 
     List<MovieComment> comments;
-    List<MovieTrailer> trailers;
+    List<Trailer> trailers;
 
     ColorStateList colorList;
 
     String trailerKey;
-
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    private GoogleApiClient client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,6 +142,9 @@ public class MovieDetailActivity extends BaseActivity {
 
         getPalette();
 
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
     private void getPalette() {
@@ -189,7 +212,7 @@ public class MovieDetailActivity extends BaseActivity {
 
     @Override
     protected int getLayout() {
-        return R.layout.activity_moviedetail;
+        return R.layout.activity_movie_detail;
     }
 
     @Override
@@ -216,8 +239,8 @@ public class MovieDetailActivity extends BaseActivity {
     }
 
     private void applyPalette(Palette palette) {
-        int primaryDark = ContextCompat.getColor(this, R.color.primary_dark);
-        int primary = ContextCompat.getColor(this, R.color.primary);
+        int primaryDark = ContextCompat.getColor(this, R.color.colorPrimaryDark);
+        int primary = ContextCompat.getColor(this, R.color.colorPrimary);
         collapsingToolbarLayout.setContentScrimColor(palette.getMutedColor(primary));
         collapsingToolbarLayout.setStatusBarScrimColor(palette.getDarkMutedColor(primaryDark));
         updateBackground(floatingActionButton, palette);
@@ -225,7 +248,7 @@ public class MovieDetailActivity extends BaseActivity {
 
     private void updateBackground(FloatingActionButton fab, Palette palette) {
         int lightVibrantColor = palette.getLightVibrantColor(ContextCompat.getColor(this, android.R.color.white));
-        int vibrantColor = palette.getVibrantColor(ContextCompat.getColor(this, R.color.accent));
+        int vibrantColor = palette.getVibrantColor(ContextCompat.getColor(this, R.color.colorAccent));
 
         fab.setRippleColor(lightVibrantColor);
         colorList = ColorStateList.valueOf(vibrantColor);
@@ -275,7 +298,7 @@ public class MovieDetailActivity extends BaseActivity {
         } else {
             floatingActionButton.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_unfav));
             int id = getContentResolver().delete(MovieContract.MovieEntry.buildMovieUri(movie.id), null, null);
-            EventBus.post(new PopularMoviesEvent.MovieUnFavourite());
+            Event.post(new PopularMoviesEvent.MovieUnFavourite());
             favourite = false;
         }
 
@@ -298,9 +321,9 @@ public class MovieDetailActivity extends BaseActivity {
      */
     private void getDataFromWeb() {
 
-        retrofit.Callback<MovieComments> callback = new retrofit.Callback<MovieComments>() {
+        Callback<CommentsInfo> callback = new Callback<CommentsInfo>() {
             @Override
-            public void onResponse(Response<MovieComments> response, Retrofit retrofit) {
+            public void onResponse(Response<CommentsInfo> response, Retrofit retrofit) {
                 if (response.isSuccess()) {
                     comments = response.body().movieCommentList;
                     if (response.body().movieCommentList.size() > 0) {
@@ -330,7 +353,7 @@ public class MovieDetailActivity extends BaseActivity {
         LayoutInflater layoutInflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
         for (MovieComment comment : response) {
 
-            View view = layoutInflater.inflate(R.layout.layout_movie_comments, llComments, false);
+            View view = layoutInflater.inflate(R.layout.movie_comments, llComments, false);
             TextView tvCommenterName = ButterKnife.findById(view, R.id.tv_commenter_name);
             TextView tvComment = ButterKnife.findById(view, R.id.tv_comment);
 
@@ -360,9 +383,9 @@ public class MovieDetailActivity extends BaseActivity {
      * fetch the movies trailer key from the web
      */
     private void getTrailerKeyFromWeb() {
-        retrofit.Callback<MovieTrailerInfo> movieTrailerInfoCallback = new retrofit.Callback<MovieTrailerInfo>() {
+        Callback<TrailerInfo> movieTrailerInfoCallback = new Callback<TrailerInfo>() {
             @Override
-            public void onResponse(Response<MovieTrailerInfo> response, Retrofit retrofit) {
+            public void onResponse(Response<TrailerInfo> response, Retrofit retrofit) {
                 if (response.isSuccess() && response.body().movieTrailers.size() > 0) {
                     trailerKey = response.body().movieTrailers.get(0).key;
                     showMovieTrailer(response.body().movieTrailers);
@@ -382,12 +405,12 @@ public class MovieDetailActivity extends BaseActivity {
      *
      * @param trailers
      */
-    private void showMovieTrailer(List<MovieTrailer> trailers) {
+    private void showMovieTrailer(List<Trailer> trailers) {
         tvTrailerTitle.setVisibility(View.VISIBLE);
         LayoutInflater layoutInflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
         for (int i = 0; i < trailers.size(); i++) {
 
-            View view = layoutInflater.inflate(R.layout.layout_movie_trailers, llComments, false);
+            View view = layoutInflater.inflate(R.layout.movie_trailer, llComments, false);
             LinearLayout llTrailerWrapper = ButterKnife.findById(view, R.id.ll_trailer_wrapper);
 
 
@@ -396,13 +419,13 @@ public class MovieDetailActivity extends BaseActivity {
             layoutParams.rightMargin = 22;
             ImageView ivPlayIcon = new ImageView(this);
             ivPlayIcon.setTag(trailers.get(i));
-            ivPlayIcon.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.btn_play));
+            ivPlayIcon.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_play_button));
             ivPlayIcon.setLayoutParams(layoutParams);
 
             ivPlayIcon.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    MovieTrailer movieTrailer = (MovieTrailer) v.getTag();
+                    Trailer movieTrailer = (Trailer) v.getTag();
                     playTrailer(movieTrailer.key);
                 }
             });
@@ -423,4 +446,5 @@ public class MovieDetailActivity extends BaseActivity {
             llTrailers.addView(llTrailerWrapper);
         }
     }
+
 }
