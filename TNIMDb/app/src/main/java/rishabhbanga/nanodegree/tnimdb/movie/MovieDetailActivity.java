@@ -26,7 +26,6 @@ import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.squareup.picasso.Picasso;
@@ -149,7 +148,7 @@ public class MovieDetailActivity extends BaseActivity {
 
     private void getPalette() {
 
-        Picasso.with(this).load(MovieAdapter.getImageUri(movie.posterPath)).into(moviePoster, new Callback() {
+        Picasso.with(this).load(MovieAdapter.getImageUri(movie.posterPath)).into(moviePoster, new com.squareup.picasso.Callback() {
             @Override
             public void onSuccess() {
                 Bitmap bitmap = ((BitmapDrawable) moviePoster.getDrawable()).getBitmap();

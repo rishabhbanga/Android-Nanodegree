@@ -17,7 +17,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         buildTypes.each {
-            it.buildConfigField 'String', 'MOVIE_API_KEY', 'Paste Key Here'
+            it.buildConfigField 'String', 'MOVIE_API_KEY', '"27ec1451d670425cb869be3af0e63646"'
         }
     }
 }
@@ -37,4 +37,6 @@ dependencies {
     compile 'com.squareup.okhttp:okhttp:2.2.0'
     compile 'com.squareup.picasso:picasso:2.5.2' //For caching and dowloading the image from the web
     compile 'com.squareup:otto:1.3.8' //To decouple different parts of the application
+    compile 'com.joooonho:selectableroundedimageview:1.0.1'
+    compile 'com.google.android.gms:play-services-appindexing:9.2.1'
 }

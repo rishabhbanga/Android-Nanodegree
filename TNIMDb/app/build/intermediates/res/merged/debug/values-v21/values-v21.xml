@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance.Material"/>
     <style name="Base.TextAppearance.AppCompat.Body1" parent="android:TextAppearance.Material.Body1"/>
     <style name="Base.TextAppearance.AppCompat.Body2" parent="android:TextAppearance.Material.Body2"/>
@@ -219,6 +230,21 @@
     <style name="Base.Widget.AppCompat.TextView.SpinnerItem" parent="android:Widget.Material.TextView.SpinnerItem"/>
     <style name="Base.Widget.AppCompat.Toolbar.Button.Navigation" parent="android:Widget.Material.Toolbar.Button.Navigation">
     </style>
+    <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/custom_rating_bar</item>
+        <item name="android:minHeight">16dp</item>
+        <item name="android:maxHeight">16dp</item>
+    </style>
+    <style name="FabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/activity_horizontal_margin</item>
+        <item name="android:src">@drawable/ic_unfav</item>
+        <item name="borderWidth">0dp</item>
+        <item name="elevation">6dp</item>
+        <item name="pressedTranslationZ">12dp</item>
+        <item name="rippleColor">@android:color/white</item>
+    </style>
     <style name="Platform.AppCompat" parent="android:Theme.Material">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
@@ -251,6 +277,9 @@
     </style>
     <style name="Platform.ThemeOverlay.AppCompat.Dark"/>
     <style name="Platform.ThemeOverlay.AppCompat.Light"/>
+    <style name="StatusBarTransparent" parent="Theme.AppCompat">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
     <style name="Widget.Design.AppBarLayout" parent="Base.Widget.Design.AppBarLayout">
         <item name="android:stateListAnimator">@anim/design_appbar_state_list_animator</item>
     </style>

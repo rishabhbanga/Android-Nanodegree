@@ -30,7 +30,7 @@ public class MovieAdapter extends BaseAdapter {
 
     List<Movie> movieArrayList;
     LayoutInflater inflater;
-    private final String IMAGE_POSTER_BASE_URL = "http://image.tmdb.org/t/p/w500";
+    private static String IMAGE_POSTER_BASE_URL = "http://image.tmdb.org/t/p/w500";
     private Context mContext;
 
     public static final String MOVIE_BASE_URL = "http://api.themoviedb.org/";
@@ -74,7 +74,7 @@ public class MovieAdapter extends BaseAdapter {
         }
 
         holder.tvMovieTitle.setText(movie.title);
-        Picasso.with(mContext).load(getImageUri(movie.posterPath)).placeholder(R.drawable.abc).into(holder.imgPoster);
+        Picasso.with(mContext).load(getImageUri(movie.posterPath)).into(holder.imgPoster);
 
         return convertView;
     }
