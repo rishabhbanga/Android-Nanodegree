@@ -20,11 +20,13 @@ You must provide your own API key in order to build the app. When you get it, ju
     app/build.gradle
     ```
     
-## Libraries Used (Update)
+## Libraries Used
 
 1. ButterKnife (v8.1.0) for view injection
 2. Piccaso (v2.5.2) for caching and dowloading the image from the web
 3. Retrofit (v2.1.0) for fetching data from the web and simplifying networking code
+4. Retrofit Converter Gson (v2.0.0-beta2)
+5. Otto (v1.3.8) To decouple different parts of the application
 
 ## Android Developer Nanodegree
 [![Udacity][1]][2]
