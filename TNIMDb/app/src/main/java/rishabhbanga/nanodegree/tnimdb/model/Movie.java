@@ -3,7 +3,11 @@ package rishabhbanga.nanodegree.tnimdb.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
+
+import rishabhbanga.nanodegree.tnimdb.retrofit.RetrofitManager;
 
 /**
  * Created by erishba on 7/10/2016.

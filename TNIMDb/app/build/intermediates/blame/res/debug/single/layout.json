@@ -132,12 +132,12 @@
         "source": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_action_menu_layout.xml"
     },
     {
-        "merged": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
-        "source": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0\\res\\layout\\design_navigation_item_header.xml"
-    },
-    {
         "merged": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
         "source": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0\\res\\layout\\design_navigation_item_header.xml"
     },
     {
         "merged": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\preference_list_fragment.xml",
@@ -238,6 +238,10 @@
     {
         "merged": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
         "source": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
         "merged": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\res\\merged\\debug\\layout\\preference_information.xml",

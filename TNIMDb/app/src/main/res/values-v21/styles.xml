@@ -1,6 +1,5 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-
     <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar">
         <item name="android:progressDrawable">@drawable/custom_rating_bar</item>
         <item name="android:minHeight">16dp</item>
@@ -17,10 +16,5 @@
         <item name="pressedTranslationZ">12dp</item>
         <item name="rippleColor">@android:color/white</item>
     </style>
-
-    <style name="StatusBarTransparent" parent="Theme.AppCompat">
-        <item name="android:statusBarColor">@android:color/transparent</item>
-    </style>
-
 
 </resources>

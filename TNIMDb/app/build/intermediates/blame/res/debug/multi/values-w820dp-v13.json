@@ -11,7 +11,14 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\src\\main\\res\\values-w820dp\\dimens.xml"
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 291,
+                        "endColumn": 57,
+                        "endOffset": 344
+                    }
                 }
             },
             {
@@ -28,10 +35,10 @@
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 57,
+                        "startOffset": 54,
                         "endLine": 10,
                         "endColumn": 12,
-                        "endOffset": 502
+                        "endOffset": 492
                     }
                 }
             }

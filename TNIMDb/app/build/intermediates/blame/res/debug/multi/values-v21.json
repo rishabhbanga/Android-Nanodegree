@@ -7,29 +7,41 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endLine": 12,
+                    "endLine": 11,
                     "endColumn": 12,
-                    "endOffset": 684
+                    "endOffset": 606
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\src\\main\\res\\values-v21\\themes.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 57,
-                        "endLine": 13,
+                        "startOffset": 54,
+                        "endLine": 12,
                         "endColumn": 12,
-                        "endOffset": 696
+                        "endOffset": 605
                     }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 611,
+                    "endColumn": 90,
+                    "endOffset": 697
+                },
+                "from": {
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 689,
-                    "endColumn": 90,
-                    "endOffset": 775
+                    "startOffset": 702,
+                    "endColumn": 102,
+                    "endOffset": 800
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -39,9 +51,9 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 780,
+                    "startOffset": 805,
                     "endColumn": 102,
-                    "endOffset": 878
+                    "endOffset": 903
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -51,9 +63,9 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 883,
-                    "endColumn": 102,
-                    "endOffset": 981
+                    "startOffset": 908,
+                    "endColumn": 104,
+                    "endOffset": 1008
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -63,9 +75,9 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 986,
-                    "endColumn": 104,
-                    "endOffset": 1086
+                    "startOffset": 1013,
+                    "endColumn": 106,
+                    "endOffset": 1115
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -75,9 +87,9 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1091,
-                    "endColumn": 106,
-                    "endOffset": 1193
+                    "startOffset": 1120,
+                    "endColumn": 108,
+                    "endOffset": 1224
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -87,9 +99,9 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1198,
+                    "startOffset": 1229,
                     "endColumn": 108,
-                    "endOffset": 1302
+                    "endOffset": 1333
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -99,9 +111,9 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1307,
+                    "startOffset": 1338,
                     "endColumn": 108,
-                    "endOffset": 1411
+                    "endOffset": 1442
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -111,9 +123,9 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1416,
+                    "startOffset": 1447,
                     "endColumn": 108,
-                    "endOffset": 1520
+                    "endOffset": 1551
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -123,9 +135,9 @@
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1525,
+                    "startOffset": 1556,
                     "endColumn": 108,
-                    "endOffset": 1629
+                    "endOffset": 1660
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -135,9 +147,9 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 1634,
-                    "endColumn": 108,
-                    "endOffset": 1738
+                    "startOffset": 1665,
+                    "endColumn": 106,
+                    "endOffset": 1767
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -147,9 +159,9 @@
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1743,
-                    "endColumn": 106,
-                    "endOffset": 1845
+                    "startOffset": 1772,
+                    "endColumn": 102,
+                    "endOffset": 1870
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -159,9 +171,9 @@
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 1850,
-                    "endColumn": 102,
-                    "endOffset": 1948
+                    "startOffset": 1875,
+                    "endColumn": 118,
+                    "endOffset": 1989
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -171,9 +183,10 @@
                 "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 1953,
-                    "endColumn": 118,
-                    "endOffset": 2067
+                    "startOffset": 1994,
+                    "endLine": 26,
+                    "endColumn": 12,
+                    "endOffset": 2144
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -181,12 +194,12 @@
             },
             {
                 "to": {
-                    "startLine": 26,
+                    "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 2072,
-                    "endLine": 27,
+                    "startOffset": 2149,
+                    "endLine": 28,
                     "endColumn": 12,
-                    "endOffset": 2222
+                    "endOffset": 2299
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -194,12 +207,11 @@
             },
             {
                 "to": {
-                    "startLine": 28,
+                    "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 2227,
-                    "endLine": 29,
-                    "endColumn": 12,
-                    "endOffset": 2377
+                    "startOffset": 2304,
+                    "endColumn": 104,
+                    "endOffset": 2404
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -209,9 +221,9 @@
                 "to": {
                     "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 2382,
-                    "endColumn": 104,
-                    "endOffset": 2482
+                    "startOffset": 2409,
+                    "endColumn": 120,
+                    "endOffset": 2525
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -221,9 +233,9 @@
                 "to": {
                     "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 2487,
-                    "endColumn": 120,
-                    "endOffset": 2603
+                    "startOffset": 2530,
+                    "endColumn": 100,
+                    "endOffset": 2626
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -233,9 +245,10 @@
                 "to": {
                     "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 2608,
-                    "endColumn": 100,
-                    "endOffset": 2704
+                    "startOffset": 2631,
+                    "endLine": 33,
+                    "endColumn": 12,
+                    "endOffset": 2773
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -243,12 +256,12 @@
             },
             {
                 "to": {
-                    "startLine": 33,
+                    "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 2709,
-                    "endLine": 34,
+                    "startOffset": 2778,
+                    "endLine": 35,
                     "endColumn": 12,
-                    "endOffset": 2851
+                    "endOffset": 2914
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -256,12 +269,11 @@
             },
             {
                 "to": {
-                    "startLine": 35,
+                    "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 2856,
-                    "endLine": 36,
-                    "endColumn": 12,
-                    "endOffset": 2992
+                    "startOffset": 2919,
+                    "endColumn": 102,
+                    "endOffset": 3017
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -271,9 +283,9 @@
                 "to": {
                     "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 2997,
-                    "endColumn": 102,
-                    "endOffset": 3095
+                    "startOffset": 3022,
+                    "endColumn": 118,
+                    "endOffset": 3136
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -283,9 +295,9 @@
                 "to": {
                     "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 3100,
-                    "endColumn": 118,
-                    "endOffset": 3214
+                    "startOffset": 3141,
+                    "endColumn": 106,
+                    "endOffset": 3243
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -295,9 +307,9 @@
                 "to": {
                     "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 3219,
-                    "endColumn": 106,
-                    "endOffset": 3321
+                    "startOffset": 3248,
+                    "endColumn": 102,
+                    "endOffset": 3346
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -307,9 +319,10 @@
                 "to": {
                     "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 3326,
-                    "endColumn": 102,
-                    "endOffset": 3424
+                    "startOffset": 3351,
+                    "endLine": 41,
+                    "endColumn": 12,
+                    "endOffset": 3501
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -317,12 +330,12 @@
             },
             {
                 "to": {
-                    "startLine": 41,
+                    "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 3429,
-                    "endLine": 42,
+                    "startOffset": 3506,
+                    "endLine": 43,
                     "endColumn": 12,
-                    "endOffset": 3579
+                    "endOffset": 3672
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -330,12 +343,12 @@
             },
             {
                 "to": {
-                    "startLine": 43,
+                    "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 3584,
-                    "endLine": 44,
+                    "startOffset": 3677,
+                    "endLine": 45,
                     "endColumn": 12,
-                    "endOffset": 3750
+                    "endOffset": 3821
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -343,12 +356,12 @@
             },
             {
                 "to": {
-                    "startLine": 45,
+                    "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 3755,
-                    "endLine": 46,
+                    "startOffset": 3826,
+                    "endLine": 47,
                     "endColumn": 12,
-                    "endOffset": 3899
+                    "endOffset": 3986
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -356,12 +369,12 @@
             },
             {
                 "to": {
-                    "startLine": 47,
+                    "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 3904,
-                    "endLine": 48,
+                    "startOffset": 3991,
+                    "endLine": 49,
                     "endColumn": 12,
-                    "endOffset": 4064
+                    "endOffset": 4143
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -369,12 +382,12 @@
             },
             {
                 "to": {
-                    "startLine": 49,
+                    "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 4069,
-                    "endLine": 50,
+                    "startOffset": 4148,
+                    "endLine": 51,
                     "endColumn": 12,
-                    "endOffset": 4221
+                    "endOffset": 4294
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -382,12 +395,11 @@
             },
             {
                 "to": {
-                    "startLine": 51,
+                    "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 4226,
-                    "endLine": 52,
-                    "endColumn": 12,
-                    "endOffset": 4372
+                    "startOffset": 4299,
+                    "endColumn": 118,
+                    "endOffset": 4413
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -397,9 +409,10 @@
                 "to": {
                     "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 4377,
-                    "endColumn": 118,
-                    "endOffset": 4491
+                    "startOffset": 4418,
+                    "endLine": 57,
+                    "endColumn": 12,
+                    "endOffset": 4785
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -407,12 +420,12 @@
             },
             {
                 "to": {
-                    "startLine": 54,
+                    "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 4496,
-                    "endLine": 58,
+                    "startOffset": 4790,
+                    "endLine": 59,
                     "endColumn": 12,
-                    "endOffset": 4863
+                    "endOffset": 4934
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -420,12 +433,12 @@
             },
             {
                 "to": {
-                    "startLine": 59,
+                    "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 4868,
-                    "endLine": 60,
+                    "startOffset": 4939,
+                    "endLine": 61,
                     "endColumn": 12,
-                    "endOffset": 5012
+                    "endOffset": 5083
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -433,12 +446,11 @@
             },
             {
                 "to": {
-                    "startLine": 61,
+                    "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 5017,
-                    "endLine": 62,
-                    "endColumn": 12,
-                    "endOffset": 5161
+                    "startOffset": 5088,
+                    "endColumn": 111,
+                    "endOffset": 5195
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -448,9 +460,9 @@
                 "to": {
                     "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 5166,
-                    "endColumn": 111,
-                    "endOffset": 5273
+                    "startOffset": 5200,
+                    "endColumn": 146,
+                    "endOffset": 5342
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -460,9 +472,10 @@
                 "to": {
                     "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 5278,
-                    "endColumn": 146,
-                    "endOffset": 5420
+                    "startOffset": 5347,
+                    "endLine": 65,
+                    "endColumn": 12,
+                    "endOffset": 5495
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -470,12 +483,12 @@
             },
             {
                 "to": {
-                    "startLine": 65,
+                    "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 5425,
-                    "endLine": 66,
+                    "startOffset": 5500,
+                    "endLine": 67,
                     "endColumn": 12,
-                    "endOffset": 5573
+                    "endOffset": 5642
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -483,12 +496,11 @@
             },
             {
                 "to": {
-                    "startLine": 67,
+                    "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 5578,
-                    "endLine": 68,
-                    "endColumn": 12,
-                    "endOffset": 5720
+                    "startOffset": 5647,
+                    "endColumn": 74,
+                    "endOffset": 5717
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -498,9 +510,9 @@
                 "to": {
                     "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 5725,
-                    "endColumn": 74,
-                    "endOffset": 5795
+                    "startOffset": 5722,
+                    "endColumn": 88,
+                    "endOffset": 5806
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -510,9 +522,9 @@
                 "to": {
                     "startLine": 70,
                     "startColumn": 4,
-                    "startOffset": 5800,
-                    "endColumn": 88,
-                    "endOffset": 5884
+                    "startOffset": 5811,
+                    "endColumn": 86,
+                    "endOffset": 5893
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -522,9 +534,9 @@
                 "to": {
                     "startLine": 71,
                     "startColumn": 4,
-                    "startOffset": 5889,
-                    "endColumn": 86,
-                    "endOffset": 5971
+                    "startOffset": 5898,
+                    "endColumn": 100,
+                    "endOffset": 5994
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -534,9 +546,9 @@
                 "to": {
                     "startLine": 72,
                     "startColumn": 4,
-                    "startOffset": 5976,
-                    "endColumn": 100,
-                    "endOffset": 6072
+                    "startOffset": 5999,
+                    "endColumn": 102,
+                    "endOffset": 6097
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -546,9 +558,10 @@
                 "to": {
                     "startLine": 73,
                     "startColumn": 4,
-                    "startOffset": 6077,
-                    "endColumn": 102,
-                    "endOffset": 6175
+                    "startOffset": 6102,
+                    "endLine": 116,
+                    "endColumn": 12,
+                    "endOffset": 9165
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -556,12 +569,12 @@
             },
             {
                 "to": {
-                    "startLine": 74,
+                    "startLine": 117,
                     "startColumn": 4,
-                    "startOffset": 6180,
-                    "endLine": 117,
+                    "startOffset": 9170,
+                    "endLine": 119,
                     "endColumn": 12,
-                    "endOffset": 9243
+                    "endOffset": 9351
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -569,12 +582,12 @@
             },
             {
                 "to": {
-                    "startLine": 118,
+                    "startLine": 120,
                     "startColumn": 4,
-                    "startOffset": 9248,
-                    "endLine": 120,
+                    "startOffset": 9356,
+                    "endLine": 163,
                     "endColumn": 12,
-                    "endOffset": 9429
+                    "endOffset": 12431
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -582,12 +595,12 @@
             },
             {
                 "to": {
-                    "startLine": 121,
+                    "startLine": 164,
                     "startColumn": 4,
-                    "startOffset": 9434,
-                    "endLine": 164,
+                    "startOffset": 12436,
+                    "endLine": 166,
                     "endColumn": 12,
-                    "endOffset": 12509
+                    "endOffset": 12629
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -595,12 +608,12 @@
             },
             {
                 "to": {
-                    "startLine": 165,
+                    "startLine": 167,
                     "startColumn": 4,
-                    "startOffset": 12514,
-                    "endLine": 167,
+                    "startOffset": 12634,
+                    "endLine": 169,
                     "endColumn": 12,
-                    "endOffset": 12707
+                    "endOffset": 12829
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -608,12 +621,12 @@
             },
             {
                 "to": {
-                    "startLine": 168,
+                    "startLine": 170,
                     "startColumn": 4,
-                    "startOffset": 12712,
-                    "endLine": 170,
+                    "startOffset": 12834,
+                    "endLine": 171,
                     "endColumn": 12,
-                    "endOffset": 12907
+                    "endOffset": 12952
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -621,12 +634,12 @@
             },
             {
                 "to": {
-                    "startLine": 171,
+                    "startLine": 172,
                     "startColumn": 4,
-                    "startOffset": 12912,
-                    "endLine": 172,
+                    "startOffset": 12957,
+                    "endLine": 173,
                     "endColumn": 12,
-                    "endOffset": 13030
+                    "endOffset": 13075
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -634,12 +647,12 @@
             },
             {
                 "to": {
-                    "startLine": 173,
+                    "startLine": 174,
                     "startColumn": 4,
-                    "startOffset": 13035,
-                    "endLine": 174,
+                    "startOffset": 13080,
+                    "endLine": 175,
                     "endColumn": 12,
-                    "endOffset": 13153
+                    "endOffset": 13188
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -647,12 +660,12 @@
             },
             {
                 "to": {
-                    "startLine": 175,
+                    "startLine": 176,
                     "startColumn": 4,
-                    "startOffset": 13158,
-                    "endLine": 176,
+                    "startOffset": 13193,
+                    "endLine": 178,
                     "endColumn": 12,
-                    "endOffset": 13266
+                    "endOffset": 13371
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -660,12 +673,12 @@
             },
             {
                 "to": {
-                    "startLine": 177,
+                    "startLine": 179,
                     "startColumn": 4,
-                    "startOffset": 13271,
-                    "endLine": 179,
+                    "startOffset": 13376,
+                    "endLine": 180,
                     "endColumn": 12,
-                    "endOffset": 13449
+                    "endOffset": 13502
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -673,12 +686,12 @@
             },
             {
                 "to": {
-                    "startLine": 180,
+                    "startLine": 181,
                     "startColumn": 4,
-                    "startOffset": 13454,
-                    "endLine": 181,
+                    "startOffset": 13507,
+                    "endLine": 183,
                     "endColumn": 12,
-                    "endOffset": 13580
+                    "endOffset": 13703
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -686,12 +699,11 @@
             },
             {
                 "to": {
-                    "startLine": 182,
+                    "startLine": 184,
                     "startColumn": 4,
-                    "startOffset": 13585,
-                    "endLine": 184,
-                    "endColumn": 12,
-                    "endOffset": 13781
+                    "startOffset": 13708,
+                    "endColumn": 88,
+                    "endOffset": 13792
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -701,9 +713,9 @@
                 "to": {
                     "startLine": 185,
                     "startColumn": 4,
-                    "startOffset": 13786,
-                    "endColumn": 88,
-                    "endOffset": 13870
+                    "startOffset": 13797,
+                    "endColumn": 110,
+                    "endOffset": 13903
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -713,9 +725,10 @@
                 "to": {
                     "startLine": 186,
                     "startColumn": 4,
-                    "startOffset": 13875,
-                    "endColumn": 110,
-                    "endOffset": 13981
+                    "startOffset": 13908,
+                    "endLine": 188,
+                    "endColumn": 12,
+                    "endOffset": 14136
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -723,12 +736,11 @@
             },
             {
                 "to": {
-                    "startLine": 187,
+                    "startLine": 189,
                     "startColumn": 4,
-                    "startOffset": 13986,
-                    "endLine": 189,
-                    "endColumn": 12,
-                    "endOffset": 14214
+                    "startOffset": 14141,
+                    "endColumn": 100,
+                    "endOffset": 14237
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -738,9 +750,9 @@
                 "to": {
                     "startLine": 190,
                     "startColumn": 4,
-                    "startOffset": 14219,
-                    "endColumn": 100,
-                    "endOffset": 14315
+                    "startOffset": 14242,
+                    "endColumn": 94,
+                    "endOffset": 14332
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -750,9 +762,9 @@
                 "to": {
                     "startLine": 191,
                     "startColumn": 4,
-                    "startOffset": 14320,
-                    "endColumn": 94,
-                    "endOffset": 14410
+                    "startOffset": 14337,
+                    "endColumn": 122,
+                    "endOffset": 14455
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -762,9 +774,9 @@
                 "to": {
                     "startLine": 192,
                     "startColumn": 4,
-                    "startOffset": 14415,
-                    "endColumn": 122,
-                    "endOffset": 14533
+                    "startOffset": 14460,
+                    "endColumn": 128,
+                    "endOffset": 14584
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -774,9 +786,9 @@
                 "to": {
                     "startLine": 193,
                     "startColumn": 4,
-                    "startOffset": 14538,
-                    "endColumn": 128,
-                    "endOffset": 14662
+                    "startOffset": 14589,
+                    "endColumn": 116,
+                    "endOffset": 14701
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -786,9 +798,10 @@
                 "to": {
                     "startLine": 194,
                     "startColumn": 4,
-                    "startOffset": 14667,
-                    "endColumn": 116,
-                    "endOffset": 14779
+                    "startOffset": 14706,
+                    "endLine": 196,
+                    "endColumn": 12,
+                    "endOffset": 14878
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -796,12 +809,11 @@
             },
             {
                 "to": {
-                    "startLine": 195,
+                    "startLine": 197,
                     "startColumn": 4,
-                    "startOffset": 14784,
-                    "endLine": 197,
-                    "endColumn": 12,
-                    "endOffset": 14956
+                    "startOffset": 14883,
+                    "endColumn": 98,
+                    "endOffset": 14977
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -811,9 +823,10 @@
                 "to": {
                     "startLine": 198,
                     "startColumn": 4,
-                    "startOffset": 14961,
-                    "endColumn": 98,
-                    "endOffset": 15055
+                    "startOffset": 14982,
+                    "endLine": 199,
+                    "endColumn": 12,
+                    "endOffset": 15112
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -821,12 +834,12 @@
             },
             {
                 "to": {
-                    "startLine": 199,
+                    "startLine": 200,
                     "startColumn": 4,
-                    "startOffset": 15060,
-                    "endLine": 200,
+                    "startOffset": 15117,
+                    "endLine": 201,
                     "endColumn": 12,
-                    "endOffset": 15190
+                    "endOffset": 15255
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -834,12 +847,12 @@
             },
             {
                 "to": {
-                    "startLine": 201,
+                    "startLine": 202,
                     "startColumn": 4,
-                    "startOffset": 15195,
-                    "endLine": 202,
+                    "startOffset": 15260,
+                    "endLine": 203,
                     "endColumn": 12,
-                    "endOffset": 15333
+                    "endOffset": 15390
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -847,12 +860,12 @@
             },
             {
                 "to": {
-                    "startLine": 203,
+                    "startLine": 204,
                     "startColumn": 4,
-                    "startOffset": 15338,
-                    "endLine": 204,
+                    "startOffset": 15395,
+                    "endLine": 205,
                     "endColumn": 12,
-                    "endOffset": 15468
+                    "endOffset": 15509
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -860,12 +873,12 @@
             },
             {
                 "to": {
-                    "startLine": 205,
+                    "startLine": 206,
                     "startColumn": 4,
-                    "startOffset": 15473,
-                    "endLine": 206,
+                    "startOffset": 15514,
+                    "endLine": 209,
                     "endColumn": 12,
-                    "endOffset": 15587
+                    "endOffset": 15710
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -873,12 +886,12 @@
             },
             {
                 "to": {
-                    "startLine": 207,
+                    "startLine": 210,
                     "startColumn": 4,
-                    "startOffset": 15592,
-                    "endLine": 210,
+                    "startOffset": 15715,
+                    "endLine": 211,
                     "endColumn": 12,
-                    "endOffset": 15788
+                    "endOffset": 15829
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -886,12 +899,11 @@
             },
             {
                 "to": {
-                    "startLine": 211,
+                    "startLine": 212,
                     "startColumn": 4,
-                    "startOffset": 15793,
-                    "endLine": 212,
-                    "endColumn": 12,
-                    "endOffset": 15907
+                    "startOffset": 15834,
+                    "endColumn": 92,
+                    "endOffset": 15922
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -901,9 +913,9 @@
                 "to": {
                     "startLine": 213,
                     "startColumn": 4,
-                    "startOffset": 15912,
-                    "endColumn": 92,
-                    "endOffset": 16000
+                    "startOffset": 15927,
+                    "endColumn": 110,
+                    "endOffset": 16033
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -913,9 +925,9 @@
                 "to": {
                     "startLine": 214,
                     "startColumn": 4,
-                    "startOffset": 16005,
-                    "endColumn": 110,
-                    "endOffset": 16111
+                    "startOffset": 16038,
+                    "endColumn": 55,
+                    "endOffset": 16089
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -925,9 +937,10 @@
                 "to": {
                     "startLine": 215,
                     "startColumn": 4,
-                    "startOffset": 16116,
-                    "endColumn": 55,
-                    "endOffset": 16167
+                    "startOffset": 16094,
+                    "endLine": 216,
+                    "endColumn": 12,
+                    "endOffset": 16196
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -935,12 +948,12 @@
             },
             {
                 "to": {
-                    "startLine": 216,
+                    "startLine": 217,
                     "startColumn": 4,
-                    "startOffset": 16172,
-                    "endLine": 217,
+                    "startOffset": 16201,
+                    "endLine": 220,
                     "endColumn": 12,
-                    "endOffset": 16274
+                    "endOffset": 16391
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -948,12 +961,12 @@
             },
             {
                 "to": {
-                    "startLine": 218,
+                    "startLine": 221,
                     "startColumn": 4,
-                    "startOffset": 16279,
-                    "endLine": 221,
+                    "startOffset": 16396,
+                    "endLine": 222,
                     "endColumn": 12,
-                    "endOffset": 16469
+                    "endOffset": 16502
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -961,12 +974,12 @@
             },
             {
                 "to": {
-                    "startLine": 222,
+                    "startLine": 223,
                     "startColumn": 4,
-                    "startOffset": 16474,
-                    "endLine": 223,
+                    "startOffset": 16507,
+                    "endLine": 224,
                     "endColumn": 12,
-                    "endOffset": 16580
+                    "endOffset": 16635
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -974,12 +987,11 @@
             },
             {
                 "to": {
-                    "startLine": 224,
+                    "startLine": 225,
                     "startColumn": 4,
-                    "startOffset": 16585,
-                    "endLine": 225,
-                    "endColumn": 12,
-                    "endOffset": 16713
+                    "startOffset": 16640,
+                    "endColumn": 94,
+                    "endOffset": 16730
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -989,9 +1001,9 @@
                 "to": {
                     "startLine": 226,
                     "startColumn": 4,
-                    "startOffset": 16718,
-                    "endColumn": 94,
-                    "endOffset": 16808
+                    "startOffset": 16735,
+                    "endColumn": 90,
+                    "endOffset": 16821
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -1001,9 +1013,9 @@
                 "to": {
                     "startLine": 227,
                     "startColumn": 4,
-                    "startOffset": 16813,
+                    "startOffset": 16826,
                     "endColumn": 90,
-                    "endOffset": 16899
+                    "endOffset": 16912
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -1013,9 +1025,9 @@
                 "to": {
                     "startLine": 228,
                     "startColumn": 4,
-                    "startOffset": 16904,
-                    "endColumn": 90,
-                    "endOffset": 16990
+                    "startOffset": 16917,
+                    "endColumn": 116,
+                    "endOffset": 17029
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -1025,9 +1037,10 @@
                 "to": {
                     "startLine": 229,
                     "startColumn": 4,
-                    "startOffset": 16995,
-                    "endColumn": 116,
-                    "endOffset": 17107
+                    "startOffset": 17034,
+                    "endLine": 230,
+                    "endColumn": 12,
+                    "endOffset": 17168
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -1035,25 +1048,12 @@
             },
             {
                 "to": {
-                    "startLine": 230,
+                    "startLine": 231,
                     "startColumn": 4,
-                    "startOffset": 17112,
-                    "endLine": 231,
+                    "startOffset": 17173,
+                    "endLine": 235,
                     "endColumn": 12,
-                    "endOffset": 17246
-                },
-                "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 232,
-                    "startColumn": 4,
-                    "startOffset": 17251,
-                    "endLine": 236,
-                    "endColumn": 12,
-                    "endOffset": 17518
+                    "endOffset": 17440
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\src\\main\\res\\values-v21\\styles.xml"
@@ -1061,12 +1061,12 @@
             },
             {
                 "to": {
-                    "startLine": 237,
+                    "startLine": 236,
                     "startColumn": 4,
-                    "startOffset": 17523,
-                    "endLine": 246,
+                    "startOffset": 17445,
+                    "endLine": 245,
                     "endColumn": 12,
-                    "endOffset": 18027
+                    "endOffset": 17949
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\src\\main\\res\\values-v21\\styles.xml"
@@ -1074,12 +1074,12 @@
             },
             {
                 "to": {
-                    "startLine": 247,
+                    "startLine": 246,
                     "startColumn": 4,
-                    "startOffset": 18032,
-                    "endLine": 256,
+                    "startOffset": 17954,
+                    "endLine": 255,
                     "endColumn": 12,
-                    "endOffset": 18540
+                    "endOffset": 18462
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -1087,12 +1087,12 @@
             },
             {
                 "to": {
-                    "startLine": 257,
+                    "startLine": 256,
                     "startColumn": 4,
-                    "startOffset": 18545,
-                    "endLine": 266,
+                    "startOffset": 18467,
+                    "endLine": 265,
                     "endColumn": 12,
-                    "endOffset": 19065
+                    "endOffset": 18987
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -1100,12 +1100,24 @@
             },
             {
                 "to": {
-                    "startLine": 267,
+                    "startLine": 266,
                     "startColumn": 4,
-                    "startOffset": 19070,
-                    "endLine": 276,
+                    "startOffset": 18992,
+                    "endLine": 275,
                     "endColumn": 12,
-                    "endOffset": 19745
+                    "endOffset": 19667
+                },
+                "from": {
+                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 276,
+                    "startColumn": 4,
+                    "startOffset": 19672,
+                    "endColumn": 56,
+                    "endOffset": 19724
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -1115,9 +1127,9 @@
                 "to": {
                     "startLine": 277,
                     "startColumn": 4,
-                    "startOffset": 19750,
-                    "endColumn": 56,
-                    "endOffset": 19802
+                    "startOffset": 19729,
+                    "endColumn": 57,
+                    "endOffset": 19782
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
@@ -1127,35 +1139,10 @@
                 "to": {
                     "startLine": 278,
                     "startColumn": 4,
-                    "startOffset": 19807,
-                    "endColumn": 57,
-                    "endOffset": 19860
-                },
-                "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 279,
-                    "startColumn": 4,
-                    "startOffset": 19865,
-                    "endLine": 281,
+                    "startOffset": 19787,
+                    "endLine": 280,
                     "endColumn": 12,
-                    "endOffset": 20016
-                },
-                "from": {
-                    "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\src\\main\\res\\values-v21\\styles.xml"
-                }
-            },
-            {
-                "to": {
-                    "startLine": 282,
-                    "startColumn": 4,
-                    "startOffset": 20021,
-                    "endLine": 284,
-                    "endColumn": 12,
-                    "endOffset": 20210
+                    "endOffset": 19976
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Nanodegree\\Extra Projects\\TNIMDb\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0\\res\\values-v21\\values-v21.xml"
