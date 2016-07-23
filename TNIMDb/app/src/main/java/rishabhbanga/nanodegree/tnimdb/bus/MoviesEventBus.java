@@ -3,7 +3,7 @@ package rishabhbanga.nanodegree.tnimdb.bus;
 import rishabhbanga.nanodegree.tnimdb.retrofit.model.Movie;
 
 /**
- * Created by erishba on 7/22/2016.
+ * Created by erishba on 7/12/2016.
  */
 
 public class MoviesEventBus

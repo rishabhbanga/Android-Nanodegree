@@ -10,7 +10,7 @@ import java.util.List;
 import rishabhbanga.nanodegree.tnimdb.retrofit.RetrofitManager;
 
 /**
- * Created by erishba on 7/22/2016.
+ * Created by erishba on 7/10/2016.
  */
 
 public class Movie implements Parcelable

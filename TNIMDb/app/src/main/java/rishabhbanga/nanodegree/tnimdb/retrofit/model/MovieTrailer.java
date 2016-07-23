@@ -10,7 +10,7 @@ import rishabhbanga.nanodegree.tnimdb.BuildConfig;
 import rishabhbanga.nanodegree.tnimdb.retrofit.RetrofitManager;
 
 /**
- * Created by erishba on 7/22/2016.
+ * Created by erishba on 7/11/2016.
  */
 
 public class MovieTrailer

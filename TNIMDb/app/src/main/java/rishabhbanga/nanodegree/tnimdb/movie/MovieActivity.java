@@ -19,6 +19,10 @@ import rishabhbanga.nanodegree.tnimdb.bus.MoviesEventBus;
 import rishabhbanga.nanodegree.tnimdb.data.MovieDbHelper;
 import rishabhbanga.nanodegree.tnimdb.settings.SettingsActivity;
 
+/**
+ * Created by erishba on 5/17/2016.
+ */
+
 public class MovieActivity extends BaseActivity {
 
     private static final String TAG = MovieActivity.class.getSimpleName();

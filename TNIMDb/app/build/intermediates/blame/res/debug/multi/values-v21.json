@@ -1664,9 +1664,51 @@
                     "startLine": 231,
                     "startColumn": 4,
                     "startOffset": 17185,
-                    "endLine": 240,
+                    "endLine": 235,
                     "endColumn": 12,
-                    "endOffset": 17693
+                    "endOffset": 17452
+                },
+                "from": {
+                    "file": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 76,
+                        "endLine": 6,
+                        "endColumn": 12,
+                        "endOffset": 343
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 236,
+                    "startColumn": 4,
+                    "startOffset": 17457,
+                    "endLine": 245,
+                    "endColumn": 12,
+                    "endOffset": 17961
+                },
+                "from": {
+                    "file": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\src\\main\\res\\values-v21\\styles.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 349,
+                        "endLine": 17,
+                        "endColumn": 12,
+                        "endOffset": 853
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 246,
+                    "startColumn": 4,
+                    "startOffset": 17966,
+                    "endLine": 255,
+                    "endColumn": 12,
+                    "endOffset": 18474
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
@@ -1682,12 +1724,12 @@
             },
             {
                 "to": {
-                    "startLine": 241,
+                    "startLine": 256,
                     "startColumn": 4,
-                    "startOffset": 17698,
-                    "endLine": 250,
+                    "startOffset": 18479,
+                    "endLine": 265,
                     "endColumn": 12,
-                    "endOffset": 18218
+                    "endOffset": 18999
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
@@ -1703,12 +1745,12 @@
             },
             {
                 "to": {
-                    "startLine": 251,
+                    "startLine": 266,
                     "startColumn": 4,
-                    "startOffset": 18223,
-                    "endLine": 260,
+                    "startOffset": 19004,
+                    "endLine": 275,
                     "endColumn": 12,
-                    "endOffset": 18898
+                    "endOffset": 19679
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
@@ -1724,11 +1766,11 @@
             },
             {
                 "to": {
-                    "startLine": 261,
+                    "startLine": 276,
                     "startColumn": 4,
-                    "startOffset": 18903,
+                    "startOffset": 19684,
                     "endColumn": 56,
-                    "endOffset": 18955
+                    "endOffset": 19736
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
@@ -1743,11 +1785,11 @@
             },
             {
                 "to": {
-                    "startLine": 262,
+                    "startLine": 277,
                     "startColumn": 4,
-                    "startOffset": 18960,
+                    "startOffset": 19741,
                     "endColumn": 57,
-                    "endOffset": 19013
+                    "endOffset": 19794
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\values-v21\\values-v21.xml",
@@ -1762,12 +1804,12 @@
             },
             {
                 "to": {
-                    "startLine": 263,
+                    "startLine": 278,
                     "startColumn": 4,
-                    "startOffset": 19018,
-                    "endLine": 265,
+                    "startOffset": 19799,
+                    "endLine": 280,
                     "endColumn": 12,
-                    "endOffset": 19207
+                    "endOffset": 19988
                 },
                 "from": {
                     "file": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0\\res\\values-v21\\values-v21.xml",

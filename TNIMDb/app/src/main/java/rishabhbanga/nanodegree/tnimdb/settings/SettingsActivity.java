@@ -9,7 +9,7 @@ import rishabhbanga.nanodegree.tnimdb.R;
 import rishabhbanga.nanodegree.tnimdb.base.BaseActivity;
 
 /**
- * Created by erishba on 7/22/2016.
+ * Created by erishba on 5/19/2016.
  */
 
 public class SettingsActivity extends BaseActivity {
@@ -45,4 +45,3 @@ public class SettingsActivity extends BaseActivity {
         return super.onOptionsItemSelected(item);
     }
 }
-

@@ -14,7 +14,7 @@ import rishabhbanga.nanodegree.tnimdb.data.MovieContract.MovieEntry;
 import rishabhbanga.nanodegree.tnimdb.data.MovieContract.MovieCommentEntry;
 
 /**
- * Created by erishba on 7/22/2016.
+ * Created by erishba on 6/18/2016.
  */
 
 public class MovieDbProvider extends ContentProvider

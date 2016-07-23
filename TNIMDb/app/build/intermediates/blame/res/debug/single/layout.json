@@ -132,6 +132,10 @@
         "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\preference-v7\\24.0.0\\res\\layout\\preference_category.xml"
     },
     {
+        "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\layout\\movie_trailer.xml",
+        "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\src\\main\\res\\layout\\movie_trailer.xml"
+    },
+    {
         "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
         "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_action_bar_title_item.xml"
     },
@@ -246,6 +250,10 @@
     {
         "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\layout\\movie_comments.xml",
+        "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\src\\main\\res\\layout\\movie_comments.xml"
     },
     {
         "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",

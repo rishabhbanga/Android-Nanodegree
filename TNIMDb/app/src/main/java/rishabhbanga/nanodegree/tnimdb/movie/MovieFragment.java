@@ -28,7 +28,7 @@ import rishabhbanga.nanodegree.tnimdb.retrofit.model.Movie;
 import rishabhbanga.nanodegree.tnimdb.retrofit.model.MovieInfo;
 
 /**
- * Created by erishba on 7/22/2016.
+ * Created by erishba on 5/17/2016.
  */
 
 public class MovieFragment extends BaseFragment {

@@ -53,7 +53,7 @@ import rishabhbanga.nanodegree.tnimdb.retrofit.model.MovieTrailer;
 import rishabhbanga.nanodegree.tnimdb.retrofit.model.MovieTrailerInfo;
 
 /**
- * Created by erishba on 7/22/2016.
+ * Created by erishba on 7/11/2016.
  */
 
 public class MovieDetailActivity extends BaseActivity

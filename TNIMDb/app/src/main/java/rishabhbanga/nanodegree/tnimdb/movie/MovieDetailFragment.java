@@ -51,7 +51,7 @@ import rishabhbanga.nanodegree.tnimdb.retrofit.model.MovieTrailerInfo;
 import rishabhbanga.nanodegree.tnimdb.data.MovieContract.MovieEntry;
 
 /**
- * Created by erishba on 7/22/2016.
+ * Created by erishba on 7/11/2016.
  */
 
 public class MovieDetailFragment extends BaseFragment {

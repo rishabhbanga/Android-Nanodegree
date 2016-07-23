@@ -12,7 +12,7 @@ import rishabhbanga.nanodegree.tnimdb.bus.EventBus;
 import rishabhbanga.nanodegree.tnimdb.bus.MoviesEventBus;
 
 /**
- * Created by erishba on 7/22/2016.
+ * Created by erishba on 5/19/2016.
  */
 
 public class SettingsFragment extends PreferenceFragmentCompat implements SharedPreferences.OnSharedPreferenceChangeListener {
@@ -32,7 +32,6 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
         onSharedPreferenceChanged(sharedPreferences, getString(R.string.movies_categories_key));
 
     }
-
 
     @Override
     public void onResume() {
@@ -57,7 +56,6 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
             preference.setSummary(sharedPreferences.getString(key, ""));
 
         }
-
 
     }
 

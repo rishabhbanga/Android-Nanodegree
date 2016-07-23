@@ -13,7 +13,7 @@ import rishabhbanga.nanodegree.tnimdb.retrofit.model.MovieTrailerInfo;
 import rishabhbanga.nanodegree.tnimdb.retrofit.service.IMovieService;
 
 /**
- * Created by erishba on 7/22/2016.
+ * Created by erishba on 7/10/2016.
  */
 
 public class RetrofitManager {

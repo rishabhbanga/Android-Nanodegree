@@ -7,7 +7,7 @@ import butterknife.ButterKnife;
 import rishabhbanga.nanodegree.tnimdb.bus.EventBus;
 
 /**
- * Created by erishba on 7/22/2016.
+ * Created by erishba on 7/9/2016.
  */
 
 public abstract class BaseActivity extends AppCompatActivity

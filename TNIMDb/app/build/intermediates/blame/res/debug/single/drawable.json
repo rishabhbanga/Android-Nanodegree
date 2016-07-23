@@ -36,6 +36,10 @@
         "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
+        "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\custom_rating_bar_empty.xml",
+        "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\src\\main\\res\\drawable\\custom_rating_bar_empty.xml"
+    },
+    {
         "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
         "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_switch_thumb_material.xml"
     },
@@ -54,6 +58,10 @@
     {
         "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
         "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\custom_rating_bar_filled.xml",
+        "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\src\\main\\res\\drawable\\custom_rating_bar_filled.xml"
     },
     {
         "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
@@ -132,10 +140,6 @@
         "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\custom_ratingbar_empty.xml",
-        "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\src\\main\\res\\drawable\\custom_ratingbar_empty.xml"
-    },
-    {
         "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
         "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_btn_borderless_material.xml"
     },
@@ -146,10 +150,6 @@
     {
         "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
         "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\custom_ratingbar_filled.xml",
-        "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\src\\main\\res\\drawable\\custom_ratingbar_filled.xml"
     },
     {
         "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
