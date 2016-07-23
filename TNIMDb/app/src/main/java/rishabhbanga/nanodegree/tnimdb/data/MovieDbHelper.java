@@ -8,13 +8,14 @@ import rishabhbanga.nanodegree.tnimdb.data.MovieContract.MovieEntry;
 import rishabhbanga.nanodegree.tnimdb.data.MovieContract.MovieCommentEntry;
 
 /**
- * Created by erishba on 6/18/2016.
+ * Created by erishba on 7/22/2016.
  */
 
-public class MovieDbHelper extends SQLiteOpenHelper {
+public class MovieDbHelper extends SQLiteOpenHelper
 
+{
     public static final String DATABASE_NAME = "movie.db";
-    public static final int DATABASE_VERSION = 1;
+    public static final int DATABASE_VERSION = 2;
 
     public MovieDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -62,4 +63,3 @@ public class MovieDbHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 }
-

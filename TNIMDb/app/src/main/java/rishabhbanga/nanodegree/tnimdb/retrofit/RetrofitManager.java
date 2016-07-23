@@ -6,29 +6,31 @@ import retrofit.Call;
 import retrofit.Callback;
 import retrofit.GsonConverterFactory;
 import retrofit.Retrofit;
-import rishabhbanga.nanodegree.tnimdb.movie.MovieAdapter;
-import rishabhbanga.nanodegree.tnimdb.retrofit.model.CommentsInfo;
+import rishabhbanga.nanodegree.tnimdb.adapter.MovieAdapterUtil;
+import rishabhbanga.nanodegree.tnimdb.retrofit.model.MovieComments;
 import rishabhbanga.nanodegree.tnimdb.retrofit.model.MovieInfo;
-import rishabhbanga.nanodegree.tnimdb.retrofit.model.TrailerInfo;
+import rishabhbanga.nanodegree.tnimdb.retrofit.model.MovieTrailerInfo;
+import rishabhbanga.nanodegree.tnimdb.retrofit.service.IMovieService;
 
 /**
- * Created by erishba on 7/10/2016.
+ * Created by erishba on 7/22/2016.
  */
+
 public class RetrofitManager {
 
     public static Retrofit retrofit = null;
-    public static MovieService MovieService = null;
+    public static IMovieService iMovieService = null;
     public static RetrofitManager retrofitManager = null;
 
-    protected RetrofitManager() {
+    private RetrofitManager() {
 
         retrofit = new Retrofit.Builder()
-                .baseUrl(MovieAdapter.MOVIE_BASE_URL)
+                .baseUrl(MovieAdapterUtil.MOVIE_BASE_URL)
                 .client(new OkHttpClient())
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
-        MovieService = retrofit.create(MovieService.class);
+        iMovieService = retrofit.create(IMovieService.class);
     }
 
     public static RetrofitManager getInstance() {
@@ -46,8 +48,8 @@ public class RetrofitManager {
      * @param apiKey     api key that is provided by themoviedb.com
      * @param callback   callback for getting response
      */
-    public void getMoviesInfo(String categories, int page, String apiKey, Callback<MovieInfo> callback) {
-        Call<MovieInfo> moviesInfoCall = MovieService.getMoviesInfo(categories, page, apiKey);
+    public void getMovieInfo(String categories, int page, String apiKey, Callback<MovieInfo> callback) {
+        Call<MovieInfo> moviesInfoCall = iMovieService.getMoviesInfo(categories, page, apiKey);
         moviesInfoCall.enqueue(callback);
     }
 
@@ -59,9 +61,9 @@ public class RetrofitManager {
      * @param callback callback for getting response
      */
 
-    public void getComments(int movieId, String apiKey, Callback<CommentsInfo> callback) {
-        Call<CommentsInfo> CommentsInfoCall = MovieService.getComments(movieId, apiKey);
-        CommentsInfoCall.enqueue(callback);
+    public void getComments(int movieId, String apiKey, Callback<MovieComments> callback) {
+        Call<MovieComments> movieCommentsCall = iMovieService.getComments(movieId, apiKey);
+        movieCommentsCall.enqueue(callback);
     }
 
     /**
@@ -72,9 +74,8 @@ public class RetrofitManager {
      * @param callback callback for getting response
      */
 
-    public void getTrailer(int movieId, String apiKey, Callback<TrailerInfo> callback) {
-        Call<TrailerInfo> CommentsInfoCall = MovieService.getMovieTrailer(movieId, apiKey);
-        CommentsInfoCall.enqueue(callback);
+    public void getTrailer(int movieId, String apiKey, Callback<MovieTrailerInfo> callback) {
+        Call<MovieTrailerInfo> movieCommentsCall = iMovieService.getMovieTrailer(movieId, apiKey);
+        movieCommentsCall.enqueue(callback);
     }
 }
-

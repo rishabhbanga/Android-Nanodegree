@@ -3,15 +3,16 @@ package rishabhbanga.nanodegree.tnimdb.retrofit.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import java.util.List;
-
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
 
 /**
- * Created by erishba on 7/11/2016.
+ * Created by erishba on 7/22/2016.
  */
-public class MovieInfo implements Parcelable {
+
+public class MovieInfo implements Parcelable
+{
     @SerializedName("page")
     public int page;
 
@@ -31,7 +32,7 @@ public class MovieInfo implements Parcelable {
         totalResults = in.readInt();
     }
 
-    public static final Creator<MovieInfo> CREATOR = new Creator<MovieInfo>() {
+    public static final Parcelable.Creator<MovieInfo> CREATOR = new Parcelable.Creator<MovieInfo>() {
         @Override
         public MovieInfo createFromParcel(Parcel in) {
             return new MovieInfo(in);

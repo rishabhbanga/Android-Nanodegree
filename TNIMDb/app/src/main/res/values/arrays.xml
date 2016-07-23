@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="categories">
+    <string-array name="categories_label">
         <item>Popular Movies</item>
         <item>Top Rated Movies</item>
-        <item>Favourite Movies</item>
+        <item>Favorite Movies</item>
     </string-array>
     <string-array name="categories_value">
         <item>popular</item>
         <item>top_rated</item>
-        <item>favourite</item>
+        <item>favorite</item>
     </string-array>
 </resources>

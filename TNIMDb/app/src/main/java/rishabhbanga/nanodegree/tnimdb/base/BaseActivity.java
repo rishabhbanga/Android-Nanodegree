@@ -4,13 +4,14 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import butterknife.ButterKnife;
-import rishabhbanga.nanodegree.tnimdb.bus.Event;
+import rishabhbanga.nanodegree.tnimdb.bus.EventBus;
 
 /**
- * Created by erishba on 7/9/2016.
+ * Created by erishba on 7/22/2016.
  */
 
-public abstract class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity
+{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,14 +24,14 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     @Override
     protected void onResume() {
-        Event.register(this);
+        EventBus.register(this);
         super.onResume();
     }
 
     // un-register event(Otto) on onPause() if any subclasses have registered for listening to events
     @Override
     protected void onPause() {
-        Event.unregister(this);
+        EventBus.unregister(this);
         super.onPause();
     }
 }

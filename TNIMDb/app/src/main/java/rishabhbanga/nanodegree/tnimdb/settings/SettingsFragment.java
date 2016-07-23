@@ -2,17 +2,17 @@ package rishabhbanga.nanodegree.tnimdb.settings;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceFragmentCompat;
-import android.support.v7.preference.PreferenceManager;
 
 import rishabhbanga.nanodegree.tnimdb.R;
-import rishabhbanga.nanodegree.tnimdb.bus.Event;
-import rishabhbanga.nanodegree.tnimdb.bus.PopularMoviesEvent;
+import rishabhbanga.nanodegree.tnimdb.bus.EventBus;
+import rishabhbanga.nanodegree.tnimdb.bus.MoviesEventBus;
 
 /**
- * Created by erishba on 5/19/2016.
+ * Created by erishba on 7/22/2016.
  */
 
 public class SettingsFragment extends PreferenceFragmentCompat implements SharedPreferences.OnSharedPreferenceChangeListener {
@@ -26,12 +26,13 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
         addPreferencesFromResource(R.xml.preferences);
 
         //register event bus.
-        Event.register(this);
+        EventBus.register(this);
 
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
         onSharedPreferenceChanged(sharedPreferences, getString(R.string.movies_categories_key));
 
     }
+
 
     @Override
     public void onResume() {
@@ -50,12 +51,13 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
             if (prefIndex >= 0) {
                 preference.setSummary(listPreference.getEntries()[prefIndex]);
                 //post the event of movie categories changed
-                Event.post(new PopularMoviesEvent.PreferenceChangeEvent());
+                EventBus.post(new MoviesEventBus.PreferenceChangeEvent());
             }
         } else {
             preference.setSummary(sharedPreferences.getString(key, ""));
 
         }
+
 
     }
 
@@ -71,6 +73,6 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
     public void onDestroy() {
         super.onDestroy();
         //unregister event bus.
-        Event.unregister(this);
+        EventBus.unregister(this);
     }
 }

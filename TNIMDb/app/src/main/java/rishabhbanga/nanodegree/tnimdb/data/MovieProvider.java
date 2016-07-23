@@ -54,7 +54,6 @@ public class MovieProvider extends ContentProvider {
 
     }
 
-    //movie.movie_id=?
     private static final String movieByMoviesId = MovieEntry.COLUMN_MOVIE_ID + " =?";
 
     public static final String updateMovieById = MovieEntry.COLUMN_MOVIE_ID + " =?";
@@ -254,8 +253,6 @@ public class MovieProvider extends ContentProvider {
         uriMatcher.addURI(authority, MovieContract.MOVIE_COMMENTS_PATH + "/#", MOVIES_COMMENT_BY_MOVIE_ID);
         uriMatcher.addURI(authority, MovieContract.MOVIE_COMMENTS_PATH, COMMENTS);
 
-
         return uriMatcher;
     }
 }
-

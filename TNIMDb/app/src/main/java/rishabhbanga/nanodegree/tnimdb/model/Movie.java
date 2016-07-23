@@ -91,4 +91,3 @@ public class Movie implements Parcelable {
         return movieArrayList;
     }
 }
-

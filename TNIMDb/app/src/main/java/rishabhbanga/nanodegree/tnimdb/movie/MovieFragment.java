@@ -17,16 +17,18 @@ import retrofit.Response;
 import retrofit.Retrofit;
 import rishabhbanga.nanodegree.tnimdb.BuildConfig;
 import rishabhbanga.nanodegree.tnimdb.R;
+import rishabhbanga.nanodegree.tnimdb.adapter.MovieAdapter;
+import rishabhbanga.nanodegree.tnimdb.adapter.MovieAdapterUtil;
 import rishabhbanga.nanodegree.tnimdb.base.BaseFragment;
-import rishabhbanga.nanodegree.tnimdb.bus.Event;
-import rishabhbanga.nanodegree.tnimdb.bus.PopularMoviesEvent;
-import rishabhbanga.nanodegree.tnimdb.retrofit.RetrofitManager;
+import rishabhbanga.nanodegree.tnimdb.bus.EventBus;
+import rishabhbanga.nanodegree.tnimdb.bus.MoviesEventBus;
 import rishabhbanga.nanodegree.tnimdb.data.MovieContract;
+import rishabhbanga.nanodegree.tnimdb.retrofit.RetrofitManager;
 import rishabhbanga.nanodegree.tnimdb.retrofit.model.Movie;
 import rishabhbanga.nanodegree.tnimdb.retrofit.model.MovieInfo;
 
 /**
- * Created by erishba on 5/17/2016.
+ * Created by erishba on 7/22/2016.
  */
 
 public class MovieFragment extends BaseFragment {
@@ -49,7 +51,6 @@ public class MovieFragment extends BaseFragment {
         // Required empty public constructor
     }
 
-
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -58,21 +59,18 @@ public class MovieFragment extends BaseFragment {
         retrofitManager = RetrofitManager.getInstance();
 
         //register the event bus for listening the movie categories change event
-        Event.register(this);
+        EventBus.register(this);
 
         movieArrayList = new ArrayList<>();
-
 
         gridView.setDrawSelectorOnTop(true);
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Event.post(new PopularMoviesEvent.MoviePosterSelectionEvent(movieArrayList.get(position)));
+                EventBus.post(new MoviesEventBus.MoviePosterSelectionEvent(movieArrayList.get(position)));
             }
         });
-
     }
-
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -85,13 +83,11 @@ public class MovieFragment extends BaseFragment {
         } else {
             fetchData();
         }
-
     }
-
 
     @Override
     protected int getLayout() {
-        return R.layout.fragment_movie;
+        return R.layout.movie_fragment;
     }
 
     /**
@@ -100,6 +96,7 @@ public class MovieFragment extends BaseFragment {
      * @param pageNumber       for getting the data of page number .
      * @param moviesCategories movie categories{popular, top_rated}
      */
+
     private void fetchMoviesFromWeb(int pageNumber, String moviesCategories) {
         Callback<MovieInfo> moviesInfoCallback = new Callback<MovieInfo>() {
             @Override
@@ -120,7 +117,7 @@ public class MovieFragment extends BaseFragment {
 
             }
         };
-        retrofitManager.getMoviesInfo(moviesCategories, pageNumber, BuildConfig.MOVIE_API_KEY, moviesInfoCallback);
+        retrofitManager.getMovieInfo(moviesCategories, pageNumber, BuildConfig.MOVIE_API_KEY, moviesInfoCallback);
     }
 
     /**
@@ -128,17 +125,16 @@ public class MovieFragment extends BaseFragment {
      *
      * @param movieArrayList
      */
+
     private void setGridView(final List<Movie> movieArrayList) {
         duplicateMovieAdapter = new MovieAdapter(getActivity(), movieArrayList);
         gridView.setAdapter(duplicateMovieAdapter);
     }
 
-
     @Override
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putParcelableArrayList(MOVIE_DATA, movieArrayList);
-
     }
 
     /**
@@ -146,9 +142,10 @@ public class MovieFragment extends BaseFragment {
      * if the categories is favourite fetches data from the database.
      * else fetches from the web
      */
+
     private void fetchData() {
-        String categories = MovieAdapter.getMovieCategories(getActivity());
-        if (categories.equals(getString(R.string.favourite_categories_value))) {
+        String categories = MovieAdapterUtil.getMovieCategories(getActivity());
+        if (categories.equals(getString(R.string.favorite_categories_value))) {
             Cursor cursor = getActivity().getContentResolver().query(MovieContract.MovieEntry.CONTENT_URI, null, null, null, null);
 
             movieArrayList.clear();
@@ -169,15 +166,15 @@ public class MovieFragment extends BaseFragment {
         }
     }
 
-
     /**
      * handle the event of movie categories change and loads the UI with updated data
      * by making the network call according to categories.
      *
      * @param event
      */
+
     @Subscribe
-    public void handlePreferenceChangeEvent(PopularMoviesEvent.PreferenceChangeEvent event) {
+    public void handlePreferenceChangeEvent(MoviesEventBus.PreferenceChangeEvent event) {
         if (event != null) {
             movieArrayList.clear();
             fetchData();
@@ -190,12 +187,11 @@ public class MovieFragment extends BaseFragment {
     /**
      * for handling the event on pressing the favourite button of detail view.
      *
-     * @param movieUnFavourite
+     * @param movieUnFavorite
      */
+
     @Subscribe
-    public void handleMovieUnFavouriteEvent(PopularMoviesEvent.MovieUnFavourite movieUnFavourite) {
+    public void handleMovieUnFavoriteEvent(MoviesEventBus.MovieUnFavorite movieUnFavorite) {
         fetchData();
     }
-
 }
-

@@ -6,17 +6,14 @@ import android.net.Uri;
 import android.provider.BaseColumns;
 
 /**
- * Created by erishba on 6/16/2016.
+ * Created by erishba on 7/22/2016.
  */
 
-public class MovieContract {
+public class MovieContract
+{
+    public static final String CONTENT_AUTHORITY = "rishabhbanga.nanodegree.tnimdb";
 
-    //
-    public static final String CONTENT_AUTHORITY = "com.example.popularmovies";
-
-    //
     public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + CONTENT_AUTHORITY);
-
 
     public static final String MOVIE_PATH = "movies";
     public static final String MOVIE_COMMENTS_PATH = "comments";
@@ -24,12 +21,10 @@ public class MovieContract {
     /* Inner class that defines the table contents of the movies table */
     public static final class MovieEntry implements BaseColumns {
 
-
         //movies table name
         public static final String TABLE_NAME = "movies";
 
         public static final Uri CONTENT_URI = BASE_CONTENT_URI.buildUpon().appendPath(MOVIE_PATH).build();
-
 
         public static final String CONTENT_TYPE =
                 ContentResolver.CURSOR_DIR_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + MOVIE_PATH;
@@ -63,7 +58,6 @@ public class MovieContract {
         }
     }
 
-
     /* Inner class that defines the table contents of the movies comments table */
     public static final class MovieCommentEntry implements BaseColumns {
 
@@ -76,7 +70,6 @@ public class MovieContract {
                 ContentResolver.CURSOR_DIR_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + MOVIE_COMMENTS_PATH;
         public static final String CONTENT_ITEM_TYPE =
                 ContentResolver.CURSOR_ITEM_BASE_TYPE + "/" + CONTENT_AUTHORITY + "/" + MOVIE_COMMENTS_PATH;
-
 
         //column for storing the movie comment
         public static final String COLUMN_MOVIE_COMMENT = "comment";
@@ -95,4 +88,3 @@ public class MovieContract {
 
     }
 }
-

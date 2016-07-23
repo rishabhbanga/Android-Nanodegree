@@ -6,6 +6,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+
+        android:name=".base.BaseMovieApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,8 +17,8 @@
         <activity android:name=".movie.MovieActivity">
 
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
 
             </intent-filter>
@@ -24,18 +26,19 @@
         </activity>
 
         <activity
-            android:name=".movie.MovieDetailActivity"
-            android:launchMode="singleInstance"></activity>
 
-        <activity
-            android:name=".settings.SettingsActivity"
-            android:label="@string/settings_title" />
+            android:name=".movie.MovieDetailActivity"
+            android:launchMode="singleInstance"/>
+
+        <activity android:name=".settings.SettingsActivity" />
 
         <provider
-            android:name=".data.MovieProvider"
+
+            android:name=".data.MovieDbProvider"
             android:authorities="@string/content_authority"
             android:exported="true"
             android:syncable="true" />
+
     </application>
 
 </manifest>

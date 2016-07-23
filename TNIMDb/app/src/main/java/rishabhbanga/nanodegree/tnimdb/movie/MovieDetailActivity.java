@@ -14,8 +14,8 @@ import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ShareCompat;
 import android.support.v4.content.ContextCompat;
-import android.support.v7.widget.Toolbar;
 import android.support.v7.graphics.Palette;
+import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -26,8 +26,7 @@ import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.common.api.GoogleApiClient;
+import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -36,28 +35,29 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import retrofit.Callback;
 import retrofit.Response;
 import retrofit.Retrofit;
 import rishabhbanga.nanodegree.tnimdb.BuildConfig;
 import rishabhbanga.nanodegree.tnimdb.R;
+import rishabhbanga.nanodegree.tnimdb.adapter.MovieAdapter;
+import rishabhbanga.nanodegree.tnimdb.adapter.MovieAdapterUtil;
 import rishabhbanga.nanodegree.tnimdb.base.BaseActivity;
-import rishabhbanga.nanodegree.tnimdb.bus.Event;
-import rishabhbanga.nanodegree.tnimdb.bus.PopularMoviesEvent;
+import rishabhbanga.nanodegree.tnimdb.bus.EventBus;
+import rishabhbanga.nanodegree.tnimdb.bus.MoviesEventBus;
 import rishabhbanga.nanodegree.tnimdb.data.MovieContract;
 import rishabhbanga.nanodegree.tnimdb.retrofit.RetrofitManager;
-import rishabhbanga.nanodegree.tnimdb.retrofit.model.CommentsInfo;
 import rishabhbanga.nanodegree.tnimdb.retrofit.model.Movie;
 import rishabhbanga.nanodegree.tnimdb.retrofit.model.MovieComment;
-import rishabhbanga.nanodegree.tnimdb.retrofit.model.Trailer;
-import rishabhbanga.nanodegree.tnimdb.retrofit.model.TrailerInfo;
+import rishabhbanga.nanodegree.tnimdb.retrofit.model.MovieComments;
+import rishabhbanga.nanodegree.tnimdb.retrofit.model.MovieTrailer;
+import rishabhbanga.nanodegree.tnimdb.retrofit.model.MovieTrailerInfo;
 
 /**
- * Created by erishba on 7/11/2016.
+ * Created by erishba on 7/22/2016.
  */
 
-public class MovieDetailActivity extends BaseActivity {
-
+public class MovieDetailActivity extends BaseActivity
+{
     private Boolean favourite = false;
 
     @Bind(R.id.img_movie_poster)
@@ -102,16 +102,11 @@ public class MovieDetailActivity extends BaseActivity {
     RetrofitManager retrofitManager = null;
 
     List<MovieComment> comments;
-    List<Trailer> trailers;
+    List<MovieTrailer> trailers;
 
     ColorStateList colorList;
 
     String trailerKey;
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    private GoogleApiClient client;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -121,7 +116,7 @@ public class MovieDetailActivity extends BaseActivity {
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
 
         //get the single movie data passed form intent
-        movie = getIntent().getParcelableExtra(MovieAdapter.MOVIE_OBJECT);
+        movie = getIntent().getParcelableExtra(MovieAdapterUtil.MOVIE_OBJECT);
 
         //set the toolbar
         setSupportActionBar(toolbar);
@@ -141,14 +136,11 @@ public class MovieDetailActivity extends BaseActivity {
 
         getPalette();
 
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
     private void getPalette() {
 
-        Picasso.with(this).load(MovieAdapter.getImageUri(movie.posterPath)).into(moviePoster, new com.squareup.picasso.Callback() {
+        Picasso.with(this).load(MovieAdapter.getImageUri(movie.posterPath)).into(moviePoster, new Callback() {
             @Override
             public void onSuccess() {
                 Bitmap bitmap = ((BitmapDrawable) moviePoster.getDrawable()).getBitmap();
@@ -169,6 +161,7 @@ public class MovieDetailActivity extends BaseActivity {
     /**
      * sets the detail of movie.
      */
+
     private void setData() {
 
         Picasso.with(this).load(MovieAdapter.getImageUri(movie.posterPath))
@@ -189,8 +182,8 @@ public class MovieDetailActivity extends BaseActivity {
         String movieId = Integer.toString(movie.id);
 
 
-        String categories = MovieAdapter.getMovieCategories(this);
-        if (categories.equals(getString(R.string.favourite_categories_value))) {
+        String categories = MovieAdapterUtil.getMovieCategories(this);
+        if (categories.equals(getString(R.string.favorite_categories_value))) {
             Cursor cursor = getContentResolver().query(MovieContract.MovieCommentEntry.buildCommentUri(movie.id), null, null, new String[]{movieId}, null);
             MovieComment movieComment;
             if (cursor.getCount() > 0) {
@@ -211,13 +204,13 @@ public class MovieDetailActivity extends BaseActivity {
 
     @Override
     protected int getLayout() {
-        return R.layout.activity_movie_detail;
+        return R.layout.movie_activity_detail;
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_movie_detail, menu);
+        getMenuInflater().inflate(R.menu.menu_detail, menu);
         return true;
     }
 
@@ -239,8 +232,8 @@ public class MovieDetailActivity extends BaseActivity {
 
     private void applyPalette(Palette palette) {
         int primaryDark = ContextCompat.getColor(this, R.color.colorPrimaryDark);
-        int primary = ContextCompat.getColor(this, R.color.colorPrimary);
-        collapsingToolbarLayout.setContentScrimColor(palette.getMutedColor(primary));
+        int primaryLight = ContextCompat.getColor(this, R.color.colorPrimaryLight);
+        collapsingToolbarLayout.setContentScrimColor(palette.getMutedColor(primaryLight));
         collapsingToolbarLayout.setStatusBarScrimColor(palette.getDarkMutedColor(primaryDark));
         updateBackground(floatingActionButton, palette);
     }
@@ -256,14 +249,13 @@ public class MovieDetailActivity extends BaseActivity {
 
     @OnClick({R.id.iv_play_movie})
     public void onClick() {
-        if (MovieAdapter.isNetworkAvailable(this)) {
+        if (MovieAdapterUtil.isNetworkAvailable(this)) {
             playTrailer(trailerKey);
         }
     }
 
     @OnClick({R.id.fab})
     public void addFavourite(View view) {
-
 
         if (!favourite) {
 
@@ -292,12 +284,11 @@ public class MovieDetailActivity extends BaseActivity {
                     getContentResolver().insert(MovieContract.MovieCommentEntry.CONTENT_URI, cv);
                 }
             }
-
             favourite = true;
         } else {
             floatingActionButton.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_unfav));
             int id = getContentResolver().delete(MovieContract.MovieEntry.buildMovieUri(movie.id), null, null);
-            Event.post(new PopularMoviesEvent.MovieUnFavourite());
+            EventBus.post(new MoviesEventBus.MovieUnFavorite());
             favourite = false;
         }
 
@@ -308,9 +299,10 @@ public class MovieDetailActivity extends BaseActivity {
      *
      * @param key
      */
+
     private void playTrailer(String key) {
         if (key != null) {
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(MovieAdapter.YOUTUBE_INTENT_BASE_URI + key));
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(MovieAdapterUtil.YOUTUBE_INTENT_BASE_URI + key));
             startActivity(intent);
         }
     }
@@ -318,11 +310,12 @@ public class MovieDetailActivity extends BaseActivity {
     /**
      * get comments of movie having specific id from web
      */
+
     private void getDataFromWeb() {
 
-        Callback<CommentsInfo> callback = new Callback<CommentsInfo>() {
+        retrofit.Callback<MovieComments> callback = new retrofit.Callback<MovieComments>() {
             @Override
-            public void onResponse(Response<CommentsInfo> response, Retrofit retrofit) {
+            public void onResponse(Response<MovieComments> response, Retrofit retrofit) {
                 if (response.isSuccess()) {
                     comments = response.body().movieCommentList;
                     if (response.body().movieCommentList.size() > 0) {
@@ -336,6 +329,7 @@ public class MovieDetailActivity extends BaseActivity {
 
             }
         };
+
         retrofitManager.getComments(movie.id, BuildConfig.MOVIE_API_KEY, callback);
 
         getTrailerKeyFromWeb();
@@ -346,13 +340,14 @@ public class MovieDetailActivity extends BaseActivity {
      *
      * @param response
      */
+
     private void showMovieComments(List<MovieComment> response) {
 
         tvCommentTitle.setVisibility(View.VISIBLE);
         LayoutInflater layoutInflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
         for (MovieComment comment : response) {
 
-            View view = layoutInflater.inflate(R.layout.movie_comments, llComments, false);
+            View view = layoutInflater.inflate(R.layout.layout_movie_comments, llComments, false);
             TextView tvCommenterName = ButterKnife.findById(view, R.id.tv_commenter_name);
             TextView tvComment = ButterKnife.findById(view, R.id.tv_comment);
 
@@ -362,16 +357,15 @@ public class MovieDetailActivity extends BaseActivity {
             llComments.addView(view);
         }
 
-
     }
-
 
     /**
      * for sharing the youtube url to the social media or others.
      */
+
     private void shareMovieTrailerUrl() {
         Intent shareIntent = ShareCompat.IntentBuilder.from(this).setType("text/plain")
-                .setText(Uri.parse(MovieAdapter.YOUTUBE_INTENT_BASE_URI + trailerKey).toString())
+                .setText(Uri.parse(MovieAdapterUtil.YOUTUBE_INTENT_BASE_URI + trailerKey).toString())
                 .getIntent();
         if (shareIntent.resolveActivity(getPackageManager()) != null) {
             startActivity(shareIntent);
@@ -382,12 +376,12 @@ public class MovieDetailActivity extends BaseActivity {
      * fetch the movies trailer key from the web
      */
     private void getTrailerKeyFromWeb() {
-        Callback<TrailerInfo> movieTrailerInfoCallback = new Callback<TrailerInfo>() {
+        retrofit.Callback<MovieTrailerInfo> movieTrailerInfoCallback = new retrofit.Callback<MovieTrailerInfo>() {
             @Override
-            public void onResponse(Response<TrailerInfo> response, Retrofit retrofit) {
-                if (response.isSuccess() && response.body().movieTrailers.size() > 0) {
-                    trailerKey = response.body().movieTrailers.get(0).key;
-                    showMovieTrailer(response.body().movieTrailers);
+            public void onResponse(Response<MovieTrailerInfo> response, Retrofit retrofit) {
+                if (response.isSuccess() && response.body().movieTrailer.size() > 0) {
+                    trailerKey = response.body().movieTrailer.get(0).key;
+                    showMovieTrailer(response.body().movieTrailer);
                 }
             }
 
@@ -404,12 +398,12 @@ public class MovieDetailActivity extends BaseActivity {
      *
      * @param trailers
      */
-    private void showMovieTrailer(List<Trailer> trailers) {
+    private void showMovieTrailer(List<MovieTrailer> trailers) {
         tvTrailerTitle.setVisibility(View.VISIBLE);
         LayoutInflater layoutInflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
         for (int i = 0; i < trailers.size(); i++) {
 
-            View view = layoutInflater.inflate(R.layout.movie_trailer, llComments, false);
+            View view = layoutInflater.inflate(R.layout.layout_movie_trailers, llComments, false);
             LinearLayout llTrailerWrapper = ButterKnife.findById(view, R.id.ll_trailer_wrapper);
 
 
@@ -424,18 +418,17 @@ public class MovieDetailActivity extends BaseActivity {
             ivPlayIcon.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Trailer movieTrailer = (Trailer) v.getTag();
+                    MovieTrailer movieTrailer = (MovieTrailer) v.getTag();
                     playTrailer(movieTrailer.key);
                 }
             });
-
 
             //text view for showing the trailer name.
             LinearLayout.LayoutParams paramsTvTrailer = new LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
             TextView tvTrailer = new TextView(this);
 
-            tvTrailer.setText("trailer ");
+            tvTrailer.setText("trailer");
             tvTrailer.setGravity(Gravity.CENTER_VERTICAL);
 
 
@@ -445,5 +438,4 @@ public class MovieDetailActivity extends BaseActivity {
             llTrailers.addView(llTrailerWrapper);
         }
     }
-
 }

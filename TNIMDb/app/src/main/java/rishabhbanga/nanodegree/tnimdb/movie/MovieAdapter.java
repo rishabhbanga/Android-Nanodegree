@@ -112,6 +112,5 @@ public class MovieAdapter extends BaseAdapter {
         NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
         return activeNetworkInfo != null;
     }
-
 }
 

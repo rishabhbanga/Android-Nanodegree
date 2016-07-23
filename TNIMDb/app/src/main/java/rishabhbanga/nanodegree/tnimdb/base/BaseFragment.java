@@ -10,9 +10,11 @@ import android.view.ViewGroup;
 import butterknife.ButterKnife;
 
 /**
- * Created by erishba on 7/9/2016.
+ * Created by erishba on 7/22/2016.
  */
-public abstract class BaseFragment extends Fragment {
+
+public abstract class BaseFragment extends Fragment
+{
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -20,6 +22,7 @@ public abstract class BaseFragment extends Fragment {
         ButterKnife.bind(this, view);
         return view;
     }
+
     protected abstract int getLayout();
 
 }

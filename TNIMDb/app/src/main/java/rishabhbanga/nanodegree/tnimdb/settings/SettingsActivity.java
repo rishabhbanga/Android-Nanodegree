@@ -2,7 +2,6 @@ package rishabhbanga.nanodegree.tnimdb.settings;
 
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 
 import butterknife.Bind;
@@ -10,7 +9,7 @@ import rishabhbanga.nanodegree.tnimdb.R;
 import rishabhbanga.nanodegree.tnimdb.base.BaseActivity;
 
 /**
- * Created by erishba on 5/19/2016.
+ * Created by erishba on 7/22/2016.
  */
 
 public class SettingsActivity extends BaseActivity {
@@ -27,19 +26,11 @@ public class SettingsActivity extends BaseActivity {
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.content, new SettingsFragment())
                 .commit();
-
     }
 
     @Override
     protected int getLayout() {
-        return R.layout.activity_settings;
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
+        return R.layout.movie_activity_settings;
     }
 
     @Override
@@ -51,8 +42,7 @@ public class SettingsActivity extends BaseActivity {
         if (id == android.R.id.home) {
             onBackPressed();
         }
-
         return super.onOptionsItemSelected(item);
     }
-
 }
+

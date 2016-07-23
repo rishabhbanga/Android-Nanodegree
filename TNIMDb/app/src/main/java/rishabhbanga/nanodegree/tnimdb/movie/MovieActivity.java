@@ -3,7 +3,6 @@ package rishabhbanga.nanodegree.tnimdb.movie;
 import android.app.FragmentManager;
 import android.content.Intent;
 import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -11,19 +10,17 @@ import android.view.MenuItem;
 import android.widget.FrameLayout;
 
 import com.squareup.otto.Subscribe;
-import butterknife.Bind;
 
+import butterknife.Bind;
 import rishabhbanga.nanodegree.tnimdb.R;
+import rishabhbanga.nanodegree.tnimdb.adapter.MovieAdapterUtil;
 import rishabhbanga.nanodegree.tnimdb.base.BaseActivity;
-import rishabhbanga.nanodegree.tnimdb.bus.PopularMoviesEvent;
+import rishabhbanga.nanodegree.tnimdb.bus.MoviesEventBus;
 import rishabhbanga.nanodegree.tnimdb.data.MovieDbHelper;
 import rishabhbanga.nanodegree.tnimdb.settings.SettingsActivity;
 
-/**
- * Created by erishba on 5/17/2016.
- */
-
 public class MovieActivity extends BaseActivity {
+
     private static final String TAG = MovieActivity.class.getSimpleName();
 
     @Bind(R.id.toolbar)
@@ -66,12 +63,10 @@ public class MovieActivity extends BaseActivity {
             getFragmentManager().beginTransaction().add(R.id.movie_container, movieFragment).addToBackStack(MOVIE_FRAGMENT).commit();
 
         }
-
     }
-
     @Override
     protected int getLayout() {
-        return R.layout.activity_movie;
+        return R.layout.movie_activity;
     }
 
     @Override
@@ -93,12 +88,14 @@ public class MovieActivity extends BaseActivity {
 
 
     /**
-     * Handles the grid view click event and launches MovieDetailFragment with the movie detail if it is tablet layout.
-     * Else launches the MovieDetailActivity with movie detail.
-     **/
-
+     * handle the event posted when clicked in the movie listing grid view
+     * and launch {@link MovieDetailFragment} with the movie detail if it is tablet layout.
+     * other wise launch the {@link MovieDetailActivity} with movie detail.
+     *
+     * @param moviePosterSelectionEvent
+     */
     @Subscribe
-    public void handleMoviePosterSelectionEvent(PopularMoviesEvent.MoviePosterSelectionEvent moviePosterSelectionEvent) {
+    public void handleMoviePosterSelectionEvent(MoviesEventBus.MoviePosterSelectionEvent moviePosterSelectionEvent) {
         if (detailContainer != null) {
             if (moviePosterSelectionEvent.movie != null && detailContainer != null) {
                 getFragmentManager().beginTransaction()
@@ -108,7 +105,7 @@ public class MovieActivity extends BaseActivity {
             }
         } else {
             Intent intent = new Intent(MovieActivity.this, MovieDetailActivity.class);
-            intent.putExtra(MovieAdapter.MOVIE_OBJECT, moviePosterSelectionEvent.movie);
+            intent.putExtra(MovieAdapterUtil.MOVIE_OBJECT, moviePosterSelectionEvent.movie);
             startActivity(intent);
         }
     }
@@ -120,6 +117,11 @@ public class MovieActivity extends BaseActivity {
         getFragmentManager().putFragment(outState, MOVIE_FRAGMENT, movieFragment);
     }
 
+    /**
+     * checks {@link MovieDetailFragment} existence in back stack.
+     *
+     * @return returns true {@link MovieDetailFragment} exist in back stack.
+     */
     private boolean doesDetailFragmentExistInBackStack() {
         if (getFragmentManager().getBackStackEntryCount() > 0) {
             FragmentManager.BackStackEntry backEntry = getFragmentManager().getBackStackEntryAt(getFragmentManager().getBackStackEntryCount() - 1);
@@ -133,6 +135,4 @@ public class MovieActivity extends BaseActivity {
             return false;
         }
     }
-
 }
-

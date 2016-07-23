@@ -7,6 +7,7 @@ import java.util.List;
 /**
  * Created by erishba on 7/11/2016.
  */
+
 public class CommentsInfo {
 
     @SerializedName("page")
