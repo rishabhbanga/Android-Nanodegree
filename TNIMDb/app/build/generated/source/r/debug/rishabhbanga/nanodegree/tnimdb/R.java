@@ -3553,7 +3553,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int tv_commenter_name=0x7f0e0094;
         public static final int tv_movie_title=0x7f0e00a1;
         public static final int tv_overview=0x7f0e00a4;
-        public static final int tv_releasing_date=0x7f0e00a2;
+        public static final int tv_release_date=0x7f0e00a2;
         public static final int tv_trailer_title=0x7f0e00a7;
         public static final int up=0x7f0e0009;
         public static final int url=0x7f0e004c;

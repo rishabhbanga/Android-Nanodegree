@@ -6,8 +6,9 @@
     android:layout_marginBottom="16dp"
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
-    android:layout_marginTop="32dp"
-    android:orientation="vertical">
+    android:layout_marginTop="20dp"
+    android:orientation="vertical"
+    android:weightSum="1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,14 +31,16 @@
             <TextView
                 android:id="@+id/tv_movie_title"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:textSize="17sp"/>
         </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="72dp">
+        android:layout_height="58dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -49,14 +52,16 @@
                 style="@style/TextAppearance.AppCompat.Subhead"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Releasing Date"
+                android:text="Release Date"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/tv_releasing_date"
+                android:id="@+id/tv_release_date"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:textSize="16sp"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -109,12 +114,15 @@
                 android:layout_marginBottom="4dp"
                 android:gravity="center_vertical"
                 android:text="Overview"
+                android:textColor="@color/black"
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/tv_overview"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:textSize="16sp"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -125,6 +133,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Comments"
+        android:textColor="@color/black"
         android:textSize="16sp" />
 
     <LinearLayout
@@ -139,9 +148,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="2dp"
         android:text="Trailers"
-        android:textSize="16sp" />
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
 
     <LinearLayout
         android:id="@+id/ll_trailers"

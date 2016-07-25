@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.database.Cursor;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -26,6 +27,7 @@ import android.widget.LinearLayout;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
+import com.google.android.gms.common.SignInButton;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
 
@@ -56,8 +58,7 @@ import rishabhbanga.nanodegree.tnimdb.retrofit.model.MovieTrailerInfo;
  * Created by erishba on 7/11/2016.
  */
 
-public class MovieDetailActivity extends BaseActivity
-{
+public class MovieDetailActivity extends BaseActivity {
     private Boolean favourite = false;
 
     @Bind(R.id.img_movie_poster)
@@ -66,8 +67,8 @@ public class MovieDetailActivity extends BaseActivity
     @Bind(R.id.tv_movie_title)
     TextView movieTitle;
 
-    @Bind(R.id.tv_releasing_date)
-    TextView releasingDate;
+    @Bind(R.id.tv_release_date)
+    TextView releaseDate;
 
     @Bind(R.id.tv_overview)
     TextView overView;
@@ -169,7 +170,7 @@ public class MovieDetailActivity extends BaseActivity
         movieTitle.setText(movie.title);
         ratingBar.setRating(movie.voteAverage);
         overView.setText(movie.overview);
-        releasingDate.setText(movie.releaseDate);
+        releaseDate.setText(movie.releaseDate);
 
         ContentResolver contentResolver = getContentResolver();
         Cursor movieCursor = contentResolver.query(MovieContract.MovieEntry.buildMovieUri(movie.id), null, null, null, null, null);
@@ -401,14 +402,13 @@ public class MovieDetailActivity extends BaseActivity
     private void showMovieTrailer(List<MovieTrailer> trailers) {
         tvTrailerTitle.setVisibility(View.VISIBLE);
         LayoutInflater layoutInflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
-        for (int i = 0; i < trailers.size(); i++) {
 
+        for (int i = 1; i < trailers.size(); i++) {
             View view = layoutInflater.inflate(R.layout.layout_movie_trailers, llComments, false);
             LinearLayout llTrailerWrapper = ButterKnife.findById(view, R.id.ll_trailer_wrapper);
 
-
             //add image view containing play icon for movie trailers.
-            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(60, 60);
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(140, 140);
             layoutParams.rightMargin = 22;
             ImageView ivPlayIcon = new ImageView(this);
             ivPlayIcon.setTag(trailers.get(i));
@@ -426,11 +426,13 @@ public class MovieDetailActivity extends BaseActivity
             //text view for showing the trailer name.
             LinearLayout.LayoutParams paramsTvTrailer = new LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+
             TextView tvTrailer = new TextView(this);
 
-            tvTrailer.setText("trailer");
+            tvTrailer.setText("Trailer " + "#" + i);
+            tvTrailer.setTextSize(16);
+            tvTrailer.setTextColor(Color.parseColor("#000000"));
             tvTrailer.setGravity(Gravity.CENTER_VERTICAL);
-
 
             llTrailerWrapper.addView(ivPlayIcon, layoutParams);
             llTrailerWrapper.addView(tvTrailer, paramsTvTrailer);

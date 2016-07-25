@@ -389,7 +389,7 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="content_authority">rishabhbanga.nanodegree.tnimdb</string>
-    <string name="default_movies_categories">popular</string>
+    <string name="default_movies_categories">top_rated</string>
     <string name="favorite_categories_value">favorite</string>
     <string name="movies_categories_key">categoriesKey</string>
     <string name="movies_categories_label">Sort By</string>

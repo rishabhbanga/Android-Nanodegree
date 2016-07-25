@@ -22,10 +22,11 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
 
     @Override
     public void onCreatePreferences(Bundle bundle, String s) {
-        //add xml
+
+        //Add XML
         addPreferencesFromResource(R.xml.preferences);
 
-        //register event bus.
+        //Register Event Bus.
         EventBus.register(this);
 
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
@@ -56,13 +57,12 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
             preference.setSummary(sharedPreferences.getString(key, ""));
 
         }
-
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        //unregister the preference change listener
+        //Unregister the preference change listener
         getPreferenceScreen().getSharedPreferences()
                 .unregisterOnSharedPreferenceChangeListener(this);
     }
@@ -70,7 +70,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
     @Override
     public void onDestroy() {
         super.onDestroy();
-        //unregister event bus.
+        //Unregister event bus.
         EventBus.unregister(this);
     }
 }

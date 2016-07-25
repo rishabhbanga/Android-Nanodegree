@@ -6,6 +6,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -64,8 +65,8 @@ public class MovieDetailFragment extends BaseFragment {
     @Bind(R.id.tv_movie_title)
     TextView movieTitle;
 
-    @Bind(R.id.tv_releasing_date)
-    TextView releasingDate;
+    @Bind(R.id.tv_release_date)
+    TextView releaseDate;
 
     @Bind(R.id.tv_overview)
     TextView overView;
@@ -136,7 +137,7 @@ public class MovieDetailFragment extends BaseFragment {
         movieTitle.setText(mMovie.title);
         ratingBar.setRating(mMovie.voteAverage);
         overView.setText(mMovie.overview);
-        releasingDate.setText(mMovie.releaseDate);
+        releaseDate.setText(mMovie.releaseDate);
 
         ContentResolver contentResolver = getActivity().getContentResolver();
         Cursor movieCursor = contentResolver.query(MovieEntry.buildMovieUri(mMovie.id), null, null, null, null, null);
@@ -381,13 +382,14 @@ public class MovieDetailFragment extends BaseFragment {
     private void showMovieTrailer(List<MovieTrailer> trailers) {
         tvTrailerTitle.setVisibility(View.VISIBLE);
         LayoutInflater layoutInflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        for (int i = 0; i < trailers.size(); i++) {
 
+        for (int i = 1; i < trailers.size(); i++)
+        {
             View view = layoutInflater.inflate(R.layout.layout_movie_trailers, llComments, false);
 
             LinearLayout llTrailerWrapper = ButterKnife.findById(view, R.id.ll_trailer_wrapper);
 
-            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(60, 60);
+            LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(140, 140);
             layoutParams.rightMargin = 10;
             ImageView ivPlayIcon = new ImageView(getActivity());
             ivPlayIcon.setTag(trailers.get(i));
@@ -405,12 +407,16 @@ public class MovieDetailFragment extends BaseFragment {
 
             LinearLayout.LayoutParams paramsTvTrailer = new LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
+
             TextView tvTrailer = new TextView(getActivity());
-            tvTrailer.setText("trailer " + i);
+
+            tvTrailer.setText("Trailer " + "#" + i);
+            tvTrailer.setTextSize(16);
+            tvTrailer.setTextColor(Color.parseColor("#000000"));
             tvTrailer.setGravity(Gravity.CENTER_VERTICAL);
 
 
-            llTrailerWrapper.addView(ivPlayIcon, layoutParams);
+        llTrailerWrapper.addView(ivPlayIcon, layoutParams);
             llTrailerWrapper.addView(tvTrailer, paramsTvTrailer);
 
             llTrailers.addView(llTrailerWrapper);

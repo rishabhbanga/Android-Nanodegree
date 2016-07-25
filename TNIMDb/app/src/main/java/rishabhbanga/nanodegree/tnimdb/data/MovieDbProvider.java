@@ -8,7 +8,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteQueryBuilder;
 import android.net.Uri;
 import android.support.annotation.Nullable;
-import android.util.Log;
 
 import rishabhbanga.nanodegree.tnimdb.data.MovieContract.MovieEntry;
 import rishabhbanga.nanodegree.tnimdb.data.MovieContract.MovieCommentEntry;
@@ -81,7 +80,6 @@ public class MovieDbProvider extends ContentProvider
 
             case MOVIES_COMMENT_BY_MOVIE_ID:
                 cursor = sqLiteDatabase.query(MovieCommentEntry.TABLE_NAME, null, commentByMovieId, selectionArgs, null, null, null);
-                Log.e(TAG, "cursor size" + cursor.getCount());
                 break;
         }
         return cursor;
@@ -156,7 +154,6 @@ public class MovieDbProvider extends ContentProvider
         switch (uriMatcher.match(uri)) {
             case MOVIES:
                 rowsDeleted = sqLiteDatabase.delete(MovieEntry.TABLE_NAME, selection, selectionArgs);
-                Log.e(TAG, "delted id" + rowsDeleted);
                 break;
             case COMMENTS:
                 rowsDeleted = sqLiteDatabase.delete(MovieCommentEntry.TABLE_NAME, selection, selectionArgs);

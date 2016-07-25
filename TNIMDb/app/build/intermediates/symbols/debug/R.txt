@@ -976,7 +976,7 @@ int id tv_comment_title 0x7f0e00a5
 int id tv_commenter_name 0x7f0e0094
 int id tv_movie_title 0x7f0e00a1
 int id tv_overview 0x7f0e00a4
-int id tv_releasing_date 0x7f0e00a2
+int id tv_release_date 0x7f0e00a2
 int id tv_trailer_title 0x7f0e00a7
 int id up 0x7f0e0009
 int id url 0x7f0e004c
