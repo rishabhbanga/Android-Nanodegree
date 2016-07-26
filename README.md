@@ -9,17 +9,18 @@ This Repository contains all the Mobile applications created as part of Android 
 
 
 ## Projects P1 and P2 - TNIMDb
-[![TNIMDb][3]][4]
+[![TNIMDb][3]][4][5]
 
 [3]: https://github.com/rishabhbanga/Android-Nanodegree/blob/master/screenshots/tnimdb.png
 [4]: https://github.com/rishabhbanga/Android-Nanodegree/tree/master/TNIMDb
-
+[5]: https://github.com/rishabhbanga/Android-Nanodegree/blob/master/screenshots/movie_detail.png
+[6]: https://github.com/rishabhbanga/Android-Nanodegree/tree/master/TNIMDb
 
 ## Android Developer Nanodegree
-[![Udacity][5]][6]
+[![Udacity][7]][8]
 
-[5]: https://github.com/rishabhbanga/Android-Nanodegree/blob/master/screenshots/nanodegree-logo.png
-[6]: https://www.udacity.com/course/android-developer-nanodegree--nd801
+[7]: https://github.com/rishabhbanga/Android-Nanodegree/blob/master/screenshots/nanodegree-logo.png
+[8]: https://www.udacity.com/course/android-developer-nanodegree--nd801
 
 ## License
 
