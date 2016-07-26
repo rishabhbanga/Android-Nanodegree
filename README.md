@@ -2,25 +2,19 @@
 
 This Repository contains all the Mobile applications created as part of Android Developer Nanodegree Program by Google. 
 
-## Project P0 - Portfolio App
-[![Portfolio App][1]][2]
-[1]: https://github.com/rishabhbanga/Android-Nanodegree/blob/master/screenshots/portfolio.png
-[2]: https://github.com/rishabhbanga/Android-Nanodegree/tree/master/PortfolioApp
+## Project P0 - [Portfolio App] ( https://github.com/rishabhbanga/Android-Nanodegree/tree/master/PortfolioApp)
 
+## Projects P1 and P2 - [TNIMDb] (https://github.com/rishabhbanga/Android-Nanodegree/tree/master/TNIMDb)
 
-## Projects P1 and P2 - TNIMDb
-[![TNIMDb][3]][4][5]
-
-[3]: https://github.com/rishabhbanga/Android-Nanodegree/blob/master/screenshots/tnimdb.png
-[4]: https://github.com/rishabhbanga/Android-Nanodegree/tree/master/TNIMDb
-[5]: https://github.com/rishabhbanga/Android-Nanodegree/blob/master/screenshots/movie_detail.png
-[6]: https://github.com/rishabhbanga/Android-Nanodegree/tree/master/TNIMDb
+![alt-text-2](https://github.com/rishabhbanga/Android-Nanodegree/blob/master/screenshots/tnimdb.png "Categorized Grid view")
+![alt-text-3](https://github.com/rishabhbanga/Android-Nanodegree/blob/master/screenshots/features.png "Movie Details")
+![alt-text-4](https://github.com/rishabhbanga/Android-Nanodegree/blob/master/screenshots/movie_detail.png "Movie Detail view")
 
 ## Android Developer Nanodegree
-[![Udacity][7]][8]
+[![Udacity][99]][100]
 
-[7]: https://github.com/rishabhbanga/Android-Nanodegree/blob/master/screenshots/nanodegree-logo.png
-[8]: https://www.udacity.com/course/android-developer-nanodegree--nd801
+[99]: https://github.com/rishabhbanga/Android-Nanodegree/blob/master/screenshots/nanodegree-logo.png
+[100]: https://www.udacity.com/course/android-developer-nanodegree--nd801
 
 ## License
 
