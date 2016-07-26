@@ -8,7 +8,6 @@ This Repository contains all the Mobile applications created as part of Android 
 
 ![alt-text-2](https://github.com/rishabhbanga/Android-Nanodegree/blob/master/screenshots/tnimdb.png "Categorized Grid view")
 ![alt-text-3](https://github.com/rishabhbanga/Android-Nanodegree/blob/master/screenshots/movie_detail.png "Movie Detail view")
-![alt-text-4](https://github.com/rishabhbanga/Android-Nanodegree/blob/master/screenshots/features.png "Movie Details")
 
 ## Android Developer Nanodegree
 [![Udacity][99]][100]
