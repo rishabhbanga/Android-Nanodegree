@@ -48,7 +48,7 @@ You must provide your own API key in order to build the app. When you get it, ju
 8. Stetho (v1.2.0) for sophisticated debugging
 9. Timber (v4.1.0)
 
-### ScreenShots
+## ScreenShots
 
 #### Categorized Grid view
 ![alt img](https://github.com/rishabhbanga/Android-Nanodegree/blob/master/screenshots/tnimdb.png)
