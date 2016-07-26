@@ -12,12 +12,12 @@
         "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0\\res\\layout\\design_layout_tab_text.xml"
     },
     {
-        "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
-        "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
-    },
-    {
         "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_movie_comments.xml",
         "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\src\\main\\res\\layout\\layout_movie_comments.xml"
+    },
+    {
+        "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
     },
     {
         "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
@@ -36,24 +36,24 @@
         "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
-        "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\layout\\movie_fragment.xml",
-        "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\src\\main\\res\\layout\\movie_fragment.xml"
-    },
-    {
         "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
         "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\layout\\movie_fragment.xml",
+        "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\src\\main\\res\\layout\\movie_fragment.xml"
     },
     {
         "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
         "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.0.0\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
     {
-        "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
-        "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
-    },
-    {
         "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
         "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
         "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",

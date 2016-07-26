@@ -9,7 +9,6 @@ import rishabhbanga.nanodegree.tnimdb.retrofit.model.Movie;
 public class MoviesEventBus
 {
     //Event for listening the categories change from the settings.
-
     public static class PreferenceChangeEvent {
         public PreferenceChangeEvent() {
         }

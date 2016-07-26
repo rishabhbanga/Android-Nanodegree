@@ -15,7 +15,6 @@ import rishabhbanga.nanodegree.tnimdb.retrofit.RetrofitManager;
 
 public class Movie implements Parcelable
 {
-        private static final String TAG = Movie.class.getSimpleName();
         @SerializedName("id")
         public int id;
 

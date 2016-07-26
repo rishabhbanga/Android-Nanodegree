@@ -43,7 +43,8 @@ dependencies {
 
     compile 'com.joooonho:selectableroundedimageview:1.0.1' //To integrate ImageView that supports different radii on each corner
 
-    compile 'com.google.android.gms:play-services-appindexing:9.2.1'
+    compile ('com.google.android.gms:play-services-appindexing:9.2.1'){
+    exclude group: 'com.google.firebase', module: 'firebase-common'} //To remove FirebaseApp initialization unsuccessful message
 
     compile 'com.facebook.stetho:stetho:1.2.0' //For sophisticated debugging
     compile 'com.facebook.stetho:stetho-okhttp:1.2.0'

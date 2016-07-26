@@ -25,8 +25,6 @@ import rishabhbanga.nanodegree.tnimdb.settings.SettingsActivity;
 
 public class MovieActivity extends BaseActivity {
 
-    private static final String TAG = MovieActivity.class.getSimpleName();
-
     @Bind(R.id.toolbar)
     Toolbar toolbar;
 
@@ -44,7 +42,7 @@ public class MovieActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //set toolbar.
+        //Sets toolbar
         setSupportActionBar(toolbar);
 
         MovieDbHelper movieDbHelper = new MovieDbHelper(this);
@@ -90,14 +88,6 @@ public class MovieActivity extends BaseActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
-    /**
-     * handle the event posted when clicked in the movie listing grid view
-     * and launch {@link MovieDetailFragment} with the movie detail if it is tablet layout.
-     * other wise launch the {@link MovieDetailActivity} with movie detail.
-     *
-     * @param moviePosterSelectionEvent
-     */
     @Subscribe
     public void handleMoviePosterSelectionEvent(MoviesEventBus.MoviePosterSelectionEvent moviePosterSelectionEvent) {
         if (detailContainer != null) {
@@ -121,11 +111,6 @@ public class MovieActivity extends BaseActivity {
         getFragmentManager().putFragment(outState, MOVIE_FRAGMENT, movieFragment);
     }
 
-    /**
-     * checks {@link MovieDetailFragment} existence in back stack.
-     *
-     * @return returns true {@link MovieDetailFragment} exist in back stack.
-     */
     private boolean doesDetailFragmentExistInBackStack() {
         if (getFragmentManager().getBackStackEntryCount() > 0) {
             FragmentManager.BackStackEntry backEntry = getFragmentManager().getBackStackEntryAt(getFragmentManager().getBackStackEntryCount() - 1);

@@ -36,7 +36,6 @@ public class MovieDbHelper extends SQLiteOpenHelper
                         + MovieEntry.COLUMN_MOVIE_OVERVIEW + " TEXT NOT NULL"
                         + ");";
 
-        //on delete cascade  restriction is for deleting comments from the comments table when deleting the movie from movie table.
         final String SQL_CREATE_MOVIE_COMMENTS_TABLE =
                 "CREATE TABLE "
                         + MovieCommentEntry.TABLE_NAME
@@ -47,7 +46,6 @@ public class MovieDbHelper extends SQLiteOpenHelper
                         + MovieCommentEntry.COLUMN_MOVIE_ID + " INTEGER NOT NULL,"
                         + " FOREIGN KEY (" + MovieCommentEntry.COLUMN_MOVIE_ID + ")"
                         + " REFERENCES " + MovieEntry.TABLE_NAME + "(" + MovieEntry.COLUMN_MOVIE_ID + ")"
-                        // +" UNIQUE("+MovieCommentEntry.COLUMN_MOVIE_ID+")"
                         + " ON DELETE CASCADE"
                         + ");";
 

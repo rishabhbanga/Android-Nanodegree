@@ -59,7 +59,7 @@ import rishabhbanga.nanodegree.tnimdb.retrofit.model.MovieTrailerInfo;
  */
 
 public class MovieDetailActivity extends BaseActivity {
-    private Boolean favourite = false;
+    private Boolean favorite = false;
 
     @Bind(R.id.img_movie_poster)
     ImageView moviePoster;
@@ -177,7 +177,7 @@ public class MovieDetailActivity extends BaseActivity {
 
         if (movieCursor.getCount() > 0) {
             floatingActionButton.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_fav));
-            favourite = true;
+            favorite = true;
         }
 
         String movieId = Integer.toString(movie.id);
@@ -256,9 +256,9 @@ public class MovieDetailActivity extends BaseActivity {
     }
 
     @OnClick({R.id.fab})
-    public void addFavourite(View view) {
+    public void addFavorite(View view) {
 
-        if (!favourite) {
+        if (!favorite) {
 
             floatingActionButton.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_fav));
 
@@ -285,12 +285,12 @@ public class MovieDetailActivity extends BaseActivity {
                     getContentResolver().insert(MovieContract.MovieCommentEntry.CONTENT_URI, cv);
                 }
             }
-            favourite = true;
+            favorite = true;
         } else {
             floatingActionButton.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.ic_unfav));
             int id = getContentResolver().delete(MovieContract.MovieEntry.buildMovieUri(movie.id), null, null);
             EventBus.post(new MoviesEventBus.MovieUnFavorite());
-            favourite = false;
+            favorite = false;
         }
 
     }

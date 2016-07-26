@@ -40,40 +40,19 @@ public class RetrofitManager {
         return retrofitManager;
     }
 
-    /**
-     * get movies information
-     *
-     * @param categories categories {popular,top_rated}
-     * @param page       for getting data of specific page number
-     * @param apiKey     api key that is provided by themoviedb.com
-     * @param callback   callback for getting response
-     */
+    //Gets movies information
     public void getMovieInfo(String categories, int page, String apiKey, Callback<MovieInfo> callback) {
         Call<MovieInfo> moviesInfoCall = iMovieService.getMoviesInfo(categories, page, apiKey);
         moviesInfoCall.enqueue(callback);
     }
 
-    /**
-     * gets comment of single movie having specific movieId
-     *
-     * @param movieId  id of movie
-     * @param apiKey   api key that is provided by themoviedb.com
-     * @param callback callback for getting response
-     */
-
+    //Gets comments
     public void getComments(int movieId, String apiKey, Callback<MovieComments> callback) {
         Call<MovieComments> movieCommentsCall = iMovieService.getComments(movieId, apiKey);
         movieCommentsCall.enqueue(callback);
     }
 
-    /**
-     * gets the key for movie trailer
-     *
-     * @param movieId  id of movie
-     * @param apiKey   api key that is provided by themoviedb.com
-     * @param callback callback for getting response
-     */
-
+    //Gets key for movie trailer
     public void getTrailer(int movieId, String apiKey, Callback<MovieTrailerInfo> callback) {
         Call<MovieTrailerInfo> movieCommentsCall = iMovieService.getMovieTrailer(movieId, apiKey);
         movieCommentsCall.enqueue(callback);

@@ -23,10 +23,10 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
     @Override
     public void onCreatePreferences(Bundle bundle, String s) {
 
-        //Add XML
+        //Adds XML
         addPreferencesFromResource(R.xml.preferences);
 
-        //Register Event Bus.
+        //Registers Event Bus.
         EventBus.register(this);
 
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getActivity());
@@ -37,7 +37,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
     @Override
     public void onResume() {
         super.onResume();
-        //unregister the preferenceChange listener
+        //Unregisters preferenceChange listener
         getPreferenceScreen().getSharedPreferences()
                 .registerOnSharedPreferenceChangeListener(this);
     }
@@ -50,7 +50,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
             int prefIndex = listPreference.findIndexOfValue(sharedPreferences.getString(key, ""));
             if (prefIndex >= 0) {
                 preference.setSummary(listPreference.getEntries()[prefIndex]);
-                //post the event of movie categories changed
+                //Posts event of movie categories changed
                 EventBus.post(new MoviesEventBus.PreferenceChangeEvent());
             }
         } else {
@@ -62,7 +62,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
     @Override
     public void onPause() {
         super.onPause();
-        //Unregister the preference change listener
+        //Unregisters preference change listener
         getPreferenceScreen().getSharedPreferences()
                 .unregisterOnSharedPreferenceChangeListener(this);
     }
@@ -70,7 +70,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Shared
     @Override
     public void onDestroy() {
         super.onDestroy();
-        //Unregister event bus.
+        //Unregisters event bus.
         EventBus.unregister(this);
     }
 }

@@ -40,7 +40,6 @@ public class MovieFragment extends BaseFragment {
     private int count = 0;
 
     private RetrofitManager retrofitManager;
-    private String TAG = MovieFragment.class.getSimpleName();
 
     @Bind(R.id.gridView1)
     GridView gridView;
@@ -55,10 +54,10 @@ public class MovieFragment extends BaseFragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        //get instance of retrofit manager class for network call
+        //Gets instance of retrofit manager class for network call
         retrofitManager = RetrofitManager.getInstance();
 
-        //register the event bus for listening the movie categories change event
+        //Registers event bus for listening the movie categories change event
         EventBus.register(this);
 
         movieArrayList = new ArrayList<>();
@@ -90,13 +89,7 @@ public class MovieFragment extends BaseFragment {
         return R.layout.movie_fragment;
     }
 
-    /**
-     * fetches the movies data from web and adds data to list {@link #movieArrayList}
-     *
-     * @param pageNumber       for getting the data of page number .
-     * @param moviesCategories movie categories{popular, top_rated}
-     */
-
+    //Fetches the movies data from web and adds data to list
     private void fetchMoviesFromWeb(int pageNumber, String moviesCategories) {
         Callback<MovieInfo> moviesInfoCallback = new Callback<MovieInfo>() {
             @Override
@@ -120,12 +113,7 @@ public class MovieFragment extends BaseFragment {
         retrofitManager.getMovieInfo(moviesCategories, pageNumber, BuildConfig.MOVIE_API_KEY, moviesInfoCallback);
     }
 
-    /**
-     * set grid view with movie's thumbnail.
-     *
-     * @param movieArrayList
-     */
-
+    //Sets Grid View
     private void setGridView(final List<Movie> movieArrayList) {
         duplicateMovieAdapter = new MovieAdapter(getActivity(), movieArrayList);
         gridView.setAdapter(duplicateMovieAdapter);
@@ -137,12 +125,7 @@ public class MovieFragment extends BaseFragment {
         outState.putParcelableArrayList(MOVIE_DATA, movieArrayList);
     }
 
-    /**
-     * fetch the data according to the categories of movie.
-     * if the categories is favourite fetches data from the database.
-     * else fetches from the web
-     */
-
+    //Fetches data according to the categories of movie.
     private void fetchData() {
         String categories = MovieAdapterUtil.getMovieCategories(getActivity());
         if (categories.equals(getString(R.string.favorite_categories_value))) {
@@ -166,13 +149,7 @@ public class MovieFragment extends BaseFragment {
         }
     }
 
-    /**
-     * handle the event of movie categories change and loads the UI with updated data
-     * by making the network call according to categories.
-     *
-     * @param event
-     */
-
+    //Handles event of movie categories change and loading UI with updated data
     @Subscribe
     public void handlePreferenceChangeEvent(MoviesEventBus.PreferenceChangeEvent event) {
         if (event != null) {
@@ -184,12 +161,7 @@ public class MovieFragment extends BaseFragment {
         }
     }
 
-    /**
-     * for handling the event on pressing the favourite button of detail view.
-     *
-     * @param movieUnFavorite
-     */
-
+    //Handling event launched on pressing Favorite Button
     @Subscribe
     public void handleMovieUnFavoriteEvent(MoviesEventBus.MovieUnFavorite movieUnFavorite) {
         fetchData();

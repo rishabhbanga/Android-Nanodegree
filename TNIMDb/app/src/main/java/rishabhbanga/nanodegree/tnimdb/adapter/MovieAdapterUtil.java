@@ -14,7 +14,7 @@ public class MovieAdapterUtil
     public static final String YOUTUBE_INTENT_BASE_URI = "vnd.youtube://";
     public static final String MOVIE_OBJECT = "movie_object";
 
-    // Retrieve movie categories stored in the default sharedPreferences
+    // Retrieves movie categories stored in the default sharedPreferences
     public static String getMovieCategories(Context context) {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
         String movieCategories = sharedPreferences.getString(context.getString(R.string.movies_categories_key), context.getString(R.string.default_movies_categories));

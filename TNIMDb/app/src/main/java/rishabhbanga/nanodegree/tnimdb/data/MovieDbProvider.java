@@ -61,7 +61,8 @@ public class MovieDbProvider extends ContentProvider
 
     @Nullable
     @Override
-    public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder) {
+    public Cursor query(Uri uri, String[] projection, String selection, String[] selectionArgs, String sortOrder)
+    {
 
         sqLiteDatabase = movieDbHelper.getReadableDatabase();
         Cursor cursor = null;

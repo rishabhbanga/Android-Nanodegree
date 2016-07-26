@@ -10,7 +10,6 @@ import java.util.List;
 
 public class MovieTrailerInfo
 {
-    private static final String TAG = MovieTrailerInfo.class.getSimpleName();
     @SerializedName("results")
     public List<MovieTrailer> movieTrailer;
 }

@@ -19,7 +19,7 @@ public abstract class BaseActivity extends AppCompatActivity
         ButterKnife.bind(this);
     }
 
-    // abstract method returns id of layout in the form of R.layout.layout_name.
+    // Abstract method returns id of layout in the form of R.layout.layout_name.
     protected abstract int getLayout();
 
     @Override
@@ -28,7 +28,7 @@ public abstract class BaseActivity extends AppCompatActivity
         super.onResume();
     }
 
-    // un-register event(Otto) on onPause() if any subclasses have registered for listening to events
+    // Unregisters event(Otto) on onPause() if any subclasses have registered for listening to events
     @Override
     protected void onPause() {
         EventBus.unregister(this);

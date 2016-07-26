@@ -124,12 +124,12 @@
         "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\src\\main\\res\\drawable-mdpi\\ic_play_button.png"
     },
     {
-        "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_fav.png",
-        "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\src\\main\\res\\drawable-mdpi\\ic_fav.png"
-    },
-    {
         "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png",
         "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-mdpi-v4\\common_google_signin_btn_icon_dark_normal.9.png"
+    },
+    {
+        "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_fav.png",
+        "source": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\src\\main\\res\\drawable-mdpi\\ic_fav.png"
     },
     {
         "merged": "C:\\Moi\\My_Precious\\Interesting\\TNIMDB\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_star_off.png",

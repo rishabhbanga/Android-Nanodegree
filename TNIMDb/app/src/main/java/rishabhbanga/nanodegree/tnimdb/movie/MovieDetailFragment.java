@@ -57,7 +57,7 @@ import rishabhbanga.nanodegree.tnimdb.data.MovieContract.MovieEntry;
 
 public class MovieDetailFragment extends BaseFragment {
 
-    private Boolean favourite = false;
+    private Boolean favorite = false;
 
     @Bind(R.id.img_movie_poster)
     ImageView moviePoster;
@@ -126,10 +126,7 @@ public class MovieDetailFragment extends BaseFragment {
         }
     }
 
-    /**
-     * sets the detail of movie.
-     */
-
+    //Sets movie details
     private void setData() {
 
         Picasso.with(activity).load(MovieAdapter.getImageUri(mMovie.posterPath))
@@ -144,11 +141,10 @@ public class MovieDetailFragment extends BaseFragment {
 
         if (movieCursor.getCount() > 0) {
             floatingActionButton.setImageDrawable(ContextCompat.getDrawable(getActivity(), R.drawable.ic_fav));
-            favourite = true;
+            favorite = true;
         }
 
         String movieId = Integer.toString(mMovie.id);
-
 
         String categories = MovieAdapterUtil.getMovieCategories(getActivity());
         if (categories.equals(getString(R.string.favorite_categories_value))) {
@@ -171,10 +167,7 @@ public class MovieDetailFragment extends BaseFragment {
         }
     }
 
-    /**
-     * play movie trailer on clicking play icon
-     */
-
+    //Plays Trailer
     @OnClick({R.id.iv_play_movie})
 
     public void onClick() {
@@ -183,20 +176,15 @@ public class MovieDetailFragment extends BaseFragment {
         }
     }
 
-    /**
-     * mark the movie as favourite on clicking on favourite icon and add to database
-     *
-     * @param view
-     */
-
+    //Marks movie as Favorite
     @OnClick({R.id.fab})
-    public void addFavourite(View view) {
+    public void addFavorite(View view) {
 
-        if (!favourite) {
+        if (!favorite) {
 
             floatingActionButton.setImageDrawable(ContextCompat.getDrawable(getActivity(), R.drawable.ic_fav));
 
-            //for inserting the movie description to the movie table
+            //Inserting movie description to the table movie
             ContentValues contentValues = new ContentValues();
             contentValues.put(MovieContract.MovieEntry.COLUMN_MOVIE_ID, mMovie.id);
             contentValues.put(MovieContract.MovieEntry.COLUMN_MOVIE_TITLE, mMovie.title);
@@ -208,7 +196,7 @@ public class MovieDetailFragment extends BaseFragment {
             activity.getContentResolver().insert(MovieContract.MovieEntry.CONTENT_URI, contentValues);
 
             ContentValues cv = null;
-            //for inserting the comment of respective movie in comments table.
+            //Inserting comments of respective movie in table comments
             if (comments != null) {
                 for (MovieComment movieComment : comments) {
                     cv = new ContentValues();
@@ -219,35 +207,27 @@ public class MovieDetailFragment extends BaseFragment {
                 }
 
             }
-            favourite = true;
+            favorite = true;
         } else {
             floatingActionButton.setImageDrawable(ContextCompat.getDrawable(getActivity(), R.drawable.ic_unfav));
             int id = getActivity().getContentResolver().delete(MovieContract.MovieEntry.buildMovieUri(mMovie.id), null, null);
             EventBus.post(new MoviesEventBus.MovieUnFavorite());
-            favourite = false;
+            favorite = false;
         }
     }
 
-    /**
-     * opens the youtube application via intent
-     *
-     * @param key
-     */
-
+    //Intent to open YouTube App
     private void playTrailer(String key) {
         if (key != null) {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(MovieAdapterUtil.YOUTUBE_INTENT_BASE_URI + key));
-            // Verify the original intent will resolve to at least one activity
+            // Verifies original intent will resolve to at least one activity
             if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
                 startActivity(intent);
             }
         }
     }
 
-    /**
-     * get comments of movie having specific id from web
-     */
-
+    //Get Comments
     private void getCommentsFromWeb() {
         Callback<MovieComments> callback = new Callback<MovieComments>() {
             @Override
@@ -270,11 +250,7 @@ public class MovieDetailFragment extends BaseFragment {
 
     }
 
-    /**
-     * shows the comments on the view
-     *
-     * @param response
-     */
+    //Display comments on View
     private void showMovieComments(List<MovieComment> response) {
 
         tvCommentTitle.setVisibility(View.VISIBLE);
@@ -297,11 +273,11 @@ public class MovieDetailFragment extends BaseFragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        //if movie doesn't contain the comment make comment textView invisible
+        //Makes comment and Trailer Text View invisible
         tvCommentTitle.setVisibility(View.GONE);
         tvTrailerTitle.setVisibility(View.GONE);
 
-        //register the retrofit for network call
+        //Registers retrofit for network call
         retrofitManager = RetrofitManager.getInstance();
 
         setData();
@@ -316,9 +292,9 @@ public class MovieDetailFragment extends BaseFragment {
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        // Inflate the menu; this adds items to the action bar if it is present.
+        // Inflates the menu; this adds items to the action bar if it is present.
         inflater.inflate(R.menu.menu_detail, menu);
-        // Retrieve the share menu item
+        // Retrieves the share menu item
         MenuItem menuItem = menu.findItem(R.id.action_share);
     }
 
@@ -336,9 +312,7 @@ public class MovieDetailFragment extends BaseFragment {
         return super.onOptionsItemSelected(item);
     }
 
-    /**
-     * method shares the  youtube url to social media
-     */
+    //Sharing YouTube link
     private void shareMovieTrailerUrl() {
         Intent shareIntent = ShareCompat.IntentBuilder.from(getActivity()).setType("text/plain")
                 .setText(Uri.parse(MovieAdapterUtil.YOUTUBE_INTENT_BASE_URI + trailerKey).toString())
@@ -348,9 +322,7 @@ public class MovieDetailFragment extends BaseFragment {
         }
     }
 
-    /**
-     * gets the trailerKey from the web having movie id {@link #mMovie}
-     */
+    //Getting Trailerkey from Web
     private void getTrailerKeyFromWeb() {
         if (trailers == null) {
             retrofit.Callback<MovieTrailerInfo> movieTrailerInfoCallback = new retrofit.Callback<MovieTrailerInfo>() {
@@ -374,11 +346,7 @@ public class MovieDetailFragment extends BaseFragment {
         }
     }
 
-    /**
-     * view shows the movie trailer on clicking the play icon launches the youtube application.
-     *
-     * @param trailers
-     */
+    //View launches trailer on click Play Button
     private void showMovieTrailer(List<MovieTrailer> trailers) {
         tvTrailerTitle.setVisibility(View.VISIBLE);
         LayoutInflater layoutInflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -396,7 +364,7 @@ public class MovieDetailFragment extends BaseFragment {
             ivPlayIcon.setImageDrawable(ContextCompat.getDrawable(getActivity(), R.drawable.ic_play_button));
             ivPlayIcon.setLayoutParams(layoutParams);
 
-            //launches the youtube application with trailer
+            //Launches the youtube application with trailer
             ivPlayIcon.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
