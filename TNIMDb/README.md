@@ -1,11 +1,26 @@
 # TNIMDb
 
 TNIMDb is a fully functional and colorful android app which I made from scratch for the Android Developer Nanodegree program.
-This app reveals the power of adaptive UI both for phone and tablet devices. Movies and their subsequent Ratings, Comments and Trailers can be viewed by the following three categories:
+
+This app reveals the power of adaptive UI both for phone and tablet devices. 
+
+Movies along with their subsequent Ratings, Comments and Trailers can be viewed by the following three categories:
 
 1. Popular
 2. Top Rated
 3. Favorites (Selected by User)
+
+*TNIMDb* was highly evaluated by a certified Udacity code reviewer with the following message:
+
+```
+Great!
+
+You have done a superb job so far! 
+
+I was really impressed by what you had built! As a user myself, I really enjoyed using your app! 
+
+Keep up the good work  
+```
 
 ## Features
 
