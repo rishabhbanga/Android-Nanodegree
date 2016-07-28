@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -18,7 +19,7 @@
     android:text="@string/title"
     android:textSize="22sp"
     android:textStyle="bold"
-    android:textColor="#3F51B5"
+    android:textColor="#0d47a1"
     android:layout_alignParentTop="true"
     android:layout_centerHorizontal="true"
     android:id="@+id/textView" />
@@ -29,35 +30,61 @@
         android:text="By Rishabh Banga"
         android:textStyle="italic"
         android:textSize="16sp"
-        android:textColor="#3F51B5"
+        android:textColor="#0d47a1"
         android:id="@+id/textView1"
         android:layout_below="@+id/textView"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="155dp"
         android:layout_height="wrap_content"
-        android:text="Spotify Streamer"
-        android:id="@+id/button"
+        android:text="Popular Movies"
+        android:id="@+id/buttonlaunchTNIMDb"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/textView1"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2"
-        android:theme="@style/MyButton"
-        android:elevation="5dp"
+        android:layout_alignLeft="@+id/buttonlaunchlib"
+        android:layout_alignStart="@+id/buttonlaunchlib"
+        android:background="@drawable/buttonstyle"
+        android:elevation="2dp"
+        android:onClick="launchTNIMDb"/>
+
+    <Button
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="Weather App"
+        android:id="@+id/buttonfetchweather"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/buttonlaunchTNIMDb"
+        android:layout_alignLeft="@+id/buttonlaunchlib"
+        android:layout_alignStart="@+id/buttonlaunchlib"
+        android:background="@drawable/buttonstyle"
+        android:elevation="2dp"
+        android:onClick="launchfetchweather"/>
+
+    <Button
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:text="Spotify Streamer"
+        android:id="@+id/buttonlaunchss"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/buttonfetchweather"
+        android:layout_alignLeft="@+id/buttonlaunchlib"
+        android:layout_alignStart="@+id/buttonlaunchlib"
+        android:background="@drawable/buttonstyle"
+        android:elevation="2dp"
         android:onClick="launchss"/>
 
     <Button
         android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:text="Scores App"
-        android:id="@+id/button1"
+        android:id="@+id/buttonlaunchscore"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/button"
-        android:layout_alignLeft="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:theme="@style/MyButton"
+        android:layout_below="@+id/buttonlaunchss"
+        android:layout_alignLeft="@+id/buttonlaunchss"
+        android:layout_alignStart="@+id/buttonlaunchss"
+        android:background="@drawable/buttonstyle"
         android:elevation="2dp"
         android:onClick="launchscore"/>
 
@@ -65,43 +92,43 @@
         android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:text="Library App"
-        android:id="@+id/button2"
+        android:id="@+id/buttonlaunchlib"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/button1"
+        android:layout_below="@+id/buttonlaunchscore"
         android:layout_centerHorizontal="true"
-        android:theme="@style/MyButton"
+        android:background="@drawable/buttonstyle"
         android:onClick="launchlib"/>
 
     <Button
         android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:text="Build It Bigger"
-        android:id="@+id/button3"
-        android:layout_below="@+id/button2"
+        android:id="@+id/buttonlaunchbuildbig"
+        android:layout_below="@+id/buttonlaunchlib"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:theme="@style/MyButton"
+        android:background="@drawable/buttonstyle"
         android:onClick="launchbuildbig"/>
 
     <Button
         android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:text="Xyz Reader"
-        android:id="@+id/button4"
-        android:layout_below="@+id/button3"
+        android:id="@+id/buttonlaunchxyz"
+        android:layout_below="@+id/buttonlaunchbuildbig"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:theme="@style/MyButton"
+        android:background="@drawable/buttonstyle"
         android:onClick="launchxyz"/>
     <Button
         android:layout_width="155dp"
         android:layout_height="wrap_content"
-        android:text="Capstone:           My Own App"
-        android:id="@+id/button5"
-        android:layout_below="@+id/button4"
+        android:text="Capstone App"
+        android:id="@+id/buttonlaunchcapstone"
+        android:layout_below="@+id/buttonlaunchxyz"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:theme="@style/MyButtonCap"
+        android:background="@drawable/capbuttonstyle"
         android:onClick="launchcapstone"/>
 
 </RelativeLayout>

@@ -1,5 +1,8 @@
 package com.rishabhbanga.portfolioapp_rishabhbanga;
 
+import android.content.ActivityNotFoundException;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -49,6 +52,40 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void launchTNIMDb(View view)
+    {
+        try
+        {
+            Toast.makeText(getApplicationContext(),"Diverting to TNIMDb's repo" , Toast.LENGTH_SHORT).show();
+            Intent iTNIMDb = new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://github.com/rishabhbanga/Android-Nanodegree/tree/master/TNIMDb"));
+            startActivity(iTNIMDb);
+        }
+        catch (ActivityNotFoundException e)
+        {
+            Toast.makeText(this, "No application can handle this request."
+                    + " Please install a Web Browser",  Toast.LENGTH_LONG).show();
+            e.printStackTrace();
+        }
+    }
+
+    public void launchfetchweather(View view)
+    {
+        try
+        {
+            Toast.makeText(getApplicationContext(),"Diverting to Fetch Weather App's repo" , Toast.LENGTH_SHORT).show();
+            Intent iWeather = new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://github.com/rishabhbanga/FetchWeatherApp"));
+            startActivity(iWeather);
+        }
+        catch (ActivityNotFoundException e)
+        {
+            Toast.makeText(this, "No application can handle this request."
+                    + " Please install a Web Browser",  Toast.LENGTH_LONG).show();
+            e.printStackTrace();
+        }
     }
 
     public void launchss(View view)
