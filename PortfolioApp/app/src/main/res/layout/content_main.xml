@@ -37,7 +37,7 @@
         android:layout_alignParentEnd="true" />
 
     <Button
-        android:layout_width="155dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:text="Popular Movies"
         android:id="@+id/buttonlaunchTNIMDb"
@@ -50,7 +50,7 @@
         android:onClick="launchTNIMDb"/>
 
     <Button
-        android:layout_width="155dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:text="Weather App"
         android:id="@+id/buttonfetchweather"
@@ -63,7 +63,7 @@
         android:onClick="launchfetchweather"/>
 
     <Button
-        android:layout_width="155dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:text="Spotify Streamer"
         android:id="@+id/buttonlaunchss"
@@ -76,7 +76,7 @@
         android:onClick="launchss"/>
 
     <Button
-        android:layout_width="155dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:text="Scores App"
         android:id="@+id/buttonlaunchscore"
@@ -89,7 +89,7 @@
         android:onClick="launchscore"/>
 
     <Button
-        android:layout_width="155dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:text="Library App"
         android:id="@+id/buttonlaunchlib"
@@ -100,7 +100,7 @@
         android:onClick="launchlib"/>
 
     <Button
-        android:layout_width="155dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:text="Build It Bigger"
         android:id="@+id/buttonlaunchbuildbig"
@@ -111,7 +111,7 @@
         android:onClick="launchbuildbig"/>
 
     <Button
-        android:layout_width="155dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:text="Xyz Reader"
         android:id="@+id/buttonlaunchxyz"
@@ -121,7 +121,7 @@
         android:background="@drawable/buttonstyle"
         android:onClick="launchxyz"/>
     <Button
-        android:layout_width="155dp"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:text="Capstone App"
         android:id="@+id/buttonlaunchcapstone"
