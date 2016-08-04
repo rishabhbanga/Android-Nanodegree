@@ -55,6 +55,3 @@ You must provide your own API key in order to build the app. When you get it, ju
 
 #### Detail view
 ![alt img](https://github.com/rishabhbanga/Android-Nanodegree/blob/master/screenshots/movie_detail.png)
-
-#### Movie Details
-![alt img](https://github.com/rishabhbanga/Android-Nanodegree/blob/master/TNIMDb/app/screenshots/details.png)
