@@ -1,0 +1,53 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.1'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url "https://maven.google.com"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    sdkVersion = 27
+    buildToolsVersion = "27.0.2"
+
+    firebaseJobDispVersion = "0.8.5"
+    timberVersion = "4.6.0"
+    butterKnifeVersion = "8.8.1"
+
+    retrofitVersion = "2.3.0"
+    apacheCommonsVersion = "2.6"
+
+    glideVersion = "4.4.0"
+    glideOkHttpIntegretionVersion = glideVersion + "@aar"
+
+    exoPlayerVersion = "2.6.0"
+
+    espressoVersion = "3.0.1"
+    testRulesVersion = "1.0.1"
+
+    mikepenzIconicsVersion = "3.0.0@aar"
+    mikepenzMaterialDesignIconicsVersion = "2.2.0.4@aar"
+}
+

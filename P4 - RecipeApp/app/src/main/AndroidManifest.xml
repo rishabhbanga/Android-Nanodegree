@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.innorb.recipeapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <supports-screens android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <meta-data
+            android:name="asset_statements"
+            android:resource="@string/asset_statements" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="com.innorb.recipeapp.activity.BaseActivity"
+            android:label="@string/title_activity_base"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.innorb.recipeapp.activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.innorb.recipeapp.activity.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.innorb.recipeapp.activity.StepActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_step"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.innorb.recipeapp.activity.NavigationActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_navigation"
+            android:launchMode="singleTop"
+            android:noHistory="true" />
+        <activity
+            android:name="com.innorb.recipeapp.activity.SettingsActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/title_activity_settings"
+            android:launchMode="singleTop"
+            android:noHistory="true"
+            android:parentActivityName="com.innorb.recipeapp.activity.MainActivity"
+            android:theme="@style/AppTheme"
+            tools:targetApi="jelly_bean">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.innorb.recipeapp.activity.MainActivity" />
+        </activity>
+
+        <provider
+            android:name="com.innorb.recipeapp.data.ContentProvider"
+            android:authorities="@string/content_authority"
+            android:exported="false"
+            tools:ignore="ManifestResource" />
+
+        <service
+            android:name="com.innorb.recipeapp.service.FirebaseJobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.innorb.recipeapp.service.RecipeWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <service android:name="com.innorb.recipeapp.service.UpdateWidgetService" />
+
+        <receiver android:name="com.innorb.recipeapp.activity.StepActivity$MediaReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.innorb.recipeapp.widget.RecipeAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/recipe_app_widget_info" />
+        </receiver>
+    </application>
+</manifest>
