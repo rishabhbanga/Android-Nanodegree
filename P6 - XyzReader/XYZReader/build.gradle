@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.sdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion rootProject.sdkVersion
+        versionName '1.0'
+        versionCode 1
+    }
+}
+
+dependencies {
+    implementation "com.android.support:support-v4:${rootProject.ext.buildToolsVersion}"
+    implementation "com.android.support:support-v13:${rootProject.ext.buildToolsVersion}"
+    implementation "com.android.support:appcompat-v7:${rootProject.ext.buildToolsVersion}"
+    implementation "com.android.support:palette-v7:${rootProject.ext.buildToolsVersion}"
+    implementation "com.android.support:recyclerview-v7:${rootProject.ext.buildToolsVersion}"
+    implementation "com.android.support:cardview-v7:${rootProject.ext.buildToolsVersion}"
+    implementation "com.android.support:design:${rootProject.ext.buildToolsVersion}"
+    implementation "com.squareup.okhttp3:okhttp:${rootProject.ext.okHttpVersion}"
+    implementation "com.jakewharton.timber:timber:${rootProject.ext.timberVersion}"
+    compile files('libs/volley.jar')
+}
