@@ -3,12 +3,9 @@
 buildscript {
     repositories {
         jcenter()
-        maven {
-            url "https://maven.google.com"
-        }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:2.2.0'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -22,32 +19,4 @@ allprojects {
             url "https://maven.google.com"
         }
     }
-}
-
-task testProject {
-    dependsOn(['startDevServer','runMyTests','shutdownDevServer'])
-}
-
-task startDevServer {
-    dependsOn ':JokeBackend:appengineRun'
-    evaluationDependsOn(":JokeBackend")
-    project(':JokeBackend').appengine.daemon = true
-}
-
-task runMyTests {
-    dependsOn ':app:connectedAndroidTest'
-    mustRunAfter "startDevServer"
-}
-
-task shutdownDevServer {
-    dependsOn ':backend:appengineStop'
-    mustRunAfter "runMyTests"
-
-}
-
-ext {
-    sdkVersion = 27
-    buildToolsVersion = "27.0.2"
-    testVersion = "0.4.1"
-    playServicesAds = "11.6.2"
 }

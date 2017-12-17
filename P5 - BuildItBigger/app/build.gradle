@@ -1,17 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion rootProject.sdkVersion
-    buildToolsVersion rootProject.buildToolsVersion
+    compileSdkVersion 27
+    buildToolsVersion "27.0.2"
+
     defaultConfig {
-        multiDexEnabled true
         applicationId "com.udacity.gradle.builditbigger"
-        minSdkVersion 16
-        targetSdkVersion rootProject.sdkVersion
-        flavorDimensions "versionCode"
+        minSdkVersion 15
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -35,21 +34,27 @@ android {
     }
 }
 
+configurations.all() {
+    exclude group: "org.apache.httpcomponents", module: "httpclient"
+}
+
 dependencies {
-    implementation  fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestImplementation ('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    implementation project(":javajoker")
-    implementation project(":jokefactory")
-    implementation "com.android.support:appcompat-v7:${rootProject.ext.buildToolsVersion}"
-    implementation "com.google.android.gms:play-services-ads:${rootProject.ext.playServicesAds}"
-    implementation "com.google.code.findbugs:jsr305:2.0.1"
-    implementation project(path: ':JokeBackend', configuration: 'android-endpoints')
-    androidTestImplementation "junit:junit:4.12"
-    androidTestImplementation "com.android.support.test:runner:${rootProject.ext.testVersion}"
-    androidTestImplementation "com.android.support.test:rules:${rootProject.ext.testVersion}"
-    androidTestImplementation "com.android.support:support-annotations:${rootProject.ext.buildToolsVersion}"
-    androidTestImplementation "org.hamcrest:hamcrest-core:1.3"
-    freeCompile "com.google.android.gms:play-services-ads:${rootProject.ext.playServicesAds}"
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile project(":javajoker")
+    compile project(":jokelibrary")
+    compile project(path: ':jokebackend', configuration: 'android-endpoints')
+
+    compile 'com.android.support:support-media-compat:27.0.2'
+    compile 'com.android.support:appcompat-v7:27.0.2'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.google.android.gms:play-services-ads-lite:11.4.0'
+    compile 'com.google.code.findbugs:jsr305:2.0.1'
+    compile 'com.google.api-client:google-api-client:1.22.0'
+
+    androidTestCompile 'junit:junit:4.12'
+    androidTestCompile 'com.android.support.test:runner:0.5'
+    androidTestCompile 'com.android.support.test:rules:0.5'
+    androidTestCompile 'com.android.support:support-annotations:27.0.2'
+    androidTestCompile 'org.hamcrest:hamcrest-core:1.3'
 }

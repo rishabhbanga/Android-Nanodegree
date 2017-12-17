@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JokeBackend/JokeBackend.iml" filepath="$PROJECT_DIR$/JokeBackend/JokeBackend.iml" />
       <module fileurl="file://$PROJECT_DIR$/P5 - BuildItBigger.iml" filepath="$PROJECT_DIR$/P5 - BuildItBigger.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/javajoker/javajoker.iml" filepath="$PROJECT_DIR$/javajoker/javajoker.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jokefactory/jokefactory.iml" filepath="$PROJECT_DIR$/jokefactory/jokefactory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jokebackend/jokebackend.iml" filepath="$PROJECT_DIR$/jokebackend/jokebackend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jokelibrary/jokelibrary.iml" filepath="$PROJECT_DIR$/jokelibrary/jokelibrary.iml" />
     </modules>
   </component>
 </project>

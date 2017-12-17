@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">jokeLibrary</string>
+    <string name="jokeEnvelope">jokeEnvelope</string>
+    <string name="dig">Dig Deeper, the joke will be here somewhere</string>
+</resources>
