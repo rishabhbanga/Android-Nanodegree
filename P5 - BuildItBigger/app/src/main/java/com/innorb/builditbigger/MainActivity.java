@@ -12,7 +12,5 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
     }
 
-    public void crackJoke(View view){
-        new EndPointsAsync().execute(this);
-    }
+    public void crackJoke(View view){/*Impl moved to MainActivityFragment*/}
 }

@@ -7,14 +7,15 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.innorb.erishba.jokelibrary.DisplayJoke">
+    tools:context="com.innorb.jokefactory.CrackJoke">
 
     <TextView
         android:id="@+id/joke_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="64dp"
+        android:textSize="64sp"
+        android:textColor="#33adff"
         android:text=""
         android:layout_gravity="center_horizontal" />
 
