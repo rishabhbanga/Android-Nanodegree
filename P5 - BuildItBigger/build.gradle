@@ -5,7 +5,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:3.0.1'
         }
 }
 
@@ -20,4 +20,11 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+ext {
+    sdkVersion = 27
+    buildToolsVersion = "27.0.2"
+    multiDexVersion = "1.0.2"
+    supportTestVersion = "1.0.1"
 }

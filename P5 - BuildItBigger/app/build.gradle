@@ -1,13 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "27.0.2"
+    compileSdkVersion rootProject.sdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+    flavorDimensions "versionCode"
 
     defaultConfig {
         applicationId "com.innorb.builditbigger"
         minSdkVersion 15
-        targetSdkVersion 27
+        targetSdkVersion rootProject.sdkVersion
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -28,12 +29,10 @@ android {
     productFlavors {
         free {
             applicationId "com.innorb.builditbigger.free"
-            versionName "1.0-free"
         }
 
         paid {
             applicationId "com.innorb.builditbigger.paid"
-            versionName "1.0-paid"
         }
     }
 }
@@ -43,23 +42,22 @@ configurations.all() {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    compile project(':jokelib')
-    compile project(':jokefactory')
-    compile project(path: ':jokebackend', configuration: 'android-endpoints')
+    implementation project(':jokelib')
+    implementation project(':jokefactory')
+    implementation project(path: ':jokebackend', configuration: 'android-endpoints')
 
+    implementation "com.android.support:support-media-compat:${rootProject.ext.buildToolsVersion}"
+    implementation "com.android.support:appcompat-v7:${rootProject.ext.buildToolsVersion}"
+    implementation "com.android.support:support-v4:${rootProject.ext.buildToolsVersion}"
+    implementation "com.android.support:multidex:${rootProject.ext.multiDexVersion}"
+    implementation "com.google.android.gms:play-services-ads-lite:11.8.0"
+    implementation "com.google.code.findbugs:jsr305:2.0.1"
+    implementation "com.google.api-client:google-api-client:1.23.0"
 
-    compile 'com.android.support:support-media-compat:27.0.2'
-    compile 'com.android.support:appcompat-v7:27.0.2'
-    compile 'com.android.support:support-v4:27.0.2'
-    compile 'com.android.support:multidex:1.0.1'
-    compile 'com.google.android.gms:play-services-ads-lite:11.4.0'
-    compile 'com.google.code.findbugs:jsr305:2.0.1'
-    compile 'com.google.api-client:google-api-client:1.22.0'
-
-    androidTestCompile 'junit:junit:4.12'
-    androidTestCompile 'com.android.support.test:runner:0.5'
-    androidTestCompile 'com.android.support.test:rules:0.5'
-    androidTestCompile 'com.android.support:support-annotations:27.0.2'
+    androidTestImplementation "junit:junit:4.12"
+    androidTestImplementation "com.android.support.test:runner:${rootProject.ext.supportTestVersion}"
+    androidTestImplementation "com.android.support.test:rules:${rootProject.ext.supportTestVersion}"
+    androidTestImplementation "com.android.support:support-annotations:${rootProject.ext.buildToolsVersion}"
 }
