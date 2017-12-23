@@ -5,11 +5,12 @@ android {
     buildToolsVersion "27.0.2"
 
     defaultConfig {
-        applicationId "com.udacity.gradle.builditbigger"
+        applicationId "com.innorb.builditbigger"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
     buildTypes {
@@ -21,32 +22,23 @@ android {
     dexOptions {
         javaMaxHeapSize "4g"
     }
-    productFlavors {
-        free {
-            applicationId "com.udacity.gradle.builditbigger.free"
-            versionName "1.0­free"
-        }
-
-        paid {
-            applicationId "com.udacity.gradle.builditbigger.paid"
-            versionName "1.0­paid"
-        }
-    }
 }
 
 configurations.all() {
     exclude group: "org.apache.httpcomponents", module: "httpclient"
 }
 
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
-    compile project(":javajoker")
-    compile project(":jokelibrary")
+    compile project(':jokelib')
+    compile project(':jokefactory')
     compile project(path: ':jokebackend', configuration: 'android-endpoints')
 
     compile 'com.android.support:support-media-compat:27.0.2'
     compile 'com.android.support:appcompat-v7:27.0.2'
+    compile 'com.android.support:support-v4:27.0.2'
     compile 'com.android.support:multidex:1.0.1'
     compile 'com.google.android.gms:play-services-ads-lite:11.4.0'
     compile 'com.google.code.findbugs:jsr305:2.0.1'
@@ -56,5 +48,5 @@ dependencies {
     androidTestCompile 'com.android.support.test:runner:0.5'
     androidTestCompile 'com.android.support.test:rules:0.5'
     androidTestCompile 'com.android.support:support-annotations:27.0.2'
-    androidTestCompile 'org.hamcrest:hamcrest-core:1.3'
+
 }

@@ -23,13 +23,14 @@ targetCompatibility = JavaVersion.VERSION_1_7
 
 dependencies {
     appengineSdk 'com.google.appengine:appengine-java-sdk:1.9.59'
-    compile 'com.google.appengine:appengine-endpoints:1.9.42'
+
+    compile project(':jokelib')
+
+    compile 'com.google.appengine:appengine-endpoints:1.9.59'
     compile 'com.google.appengine:appengine-endpoints-deps:1.9.59'
     compile 'javax.servlet:servlet-api:2.5'
     compile 'com.google.api-client:google-api-client:1.23.0'
     compile 'com.google.http-client:google-http-client-android:1.23.0'
-
-    compile project(":javajoker")
 }
 
 appengine {

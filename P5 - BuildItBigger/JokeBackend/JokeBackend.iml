@@ -16,8 +16,8 @@
       <configuration>
         <option name="HTTP_ADDRESS" value="0.0.0.0" />
         <option name="HTTP_PORT" value="8080" />
-        <option name="WAR_DIR" value="C:\Users\erishba\Documents\GitHub\Android-Nanodegree\P5 - BuildItBigger\jokebackend\build\exploded-app" />
-        <option name="WEB_APP_DIR" value="C:\Users\erishba\Documents\GitHub\Android-Nanodegree\P5 - BuildItBigger\jokebackend\src\main\webapp" />
+        <option name="WAR_DIR" value="C:\Users\erishba\Documents\GitHub-New\Android-Nanodegree\P5-BuildItBigger\jokebackend\build\exploded-app" />
+        <option name="WEB_APP_DIR" value="C:\Users\erishba\Documents\GitHub-New\Android-Nanodegree\P5-BuildItBigger\jokebackend\src\main\webapp" />
         <option name="APPENGINE_SDKROOT" value="C:\Users\erishba\.gradle\appengine-sdk\appengine-java-sdk-1.9.59" />
       </configuration>
     </facet>
@@ -27,12 +27,12 @@
     <output-test url="file://$MODULE_DIR$/build/classes/test" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/build/generated-source/endpoints/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/endpointsSrc/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/functionalTest/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/functionalTest/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/functionalTest/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/.gradle" />
@@ -40,13 +40,13 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="javajoker" exported="" />
-    <orderEntry type="library" exported="" name="appengine-endpoints-1.9.42" level="project" />
+    <orderEntry type="module" module-name="jokelib" exported="" />
+    <orderEntry type="library" exported="" name="appengine-endpoints-1.9.59" level="project" />
     <orderEntry type="library" exported="" name="appengine-endpoints-deps-1.9.59" level="project" />
     <orderEntry type="library" exported="" name="servlet-api-2.5" level="project" />
     <orderEntry type="library" exported="" name="google-api-client-1.23.0" level="project" />
     <orderEntry type="library" exported="" name="google-http-client-android-1.23.0" level="project" />
-    <orderEntry type="library" exported="" name="appengine-api-1.0-sdk-1.9.42" level="project" />
+    <orderEntry type="library" exported="" name="appengine-api-1.0-sdk-1.9.59" level="project" />
     <orderEntry type="library" exported="" name="google-oauth-client-1.23.0" level="project" />
     <orderEntry type="library" exported="" name="google-http-client-jackson2-1.23.0" level="project" />
     <orderEntry type="library" exported="" name="guava-jdk5-17.0" level="project" />
