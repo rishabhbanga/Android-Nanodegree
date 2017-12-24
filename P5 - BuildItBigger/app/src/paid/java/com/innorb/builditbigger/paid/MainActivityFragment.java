@@ -16,8 +16,8 @@ import com.innorb.builditbigger.R;
 
 public class MainActivityFragment extends Fragment {
     ProgressBar progressBar = null;
-    public String loadedJoke = null;
-    public boolean testFlag = false;
+    private String loadedJoke = null;
+    private boolean testFlag = false;
 
     public MainActivityFragment() {}
 
