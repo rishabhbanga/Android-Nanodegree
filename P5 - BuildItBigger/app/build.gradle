@@ -52,12 +52,11 @@ dependencies {
     implementation "com.android.support:appcompat-v7:${rootProject.ext.buildToolsVersion}"
     implementation "com.android.support:support-v4:${rootProject.ext.buildToolsVersion}"
     implementation "com.android.support:multidex:${rootProject.ext.multiDexVersion}"
-    implementation "com.google.android.gms:play-services-ads-lite:11.8.0"
+    freeImplementation "com.google.android.gms:play-services-ads-lite:11.8.0"
     implementation "com.google.code.findbugs:jsr305:2.0.1"
     implementation "com.google.api-client:google-api-client:1.23.0"
 
-    androidTestImplementation "junit:junit:4.12"
-    androidTestImplementation "com.android.support.test:runner:${rootProject.ext.supportTestVersion}"
-    androidTestImplementation "com.android.support.test:rules:${rootProject.ext.supportTestVersion}"
-    androidTestImplementation "com.android.support:support-annotations:${rootProject.ext.buildToolsVersion}"
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
 }
