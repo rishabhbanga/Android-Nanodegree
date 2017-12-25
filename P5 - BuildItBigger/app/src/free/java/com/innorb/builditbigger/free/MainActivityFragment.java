@@ -18,7 +18,7 @@ import com.innorb.jokefactory.CrackJoke;
 public class MainActivityFragment extends Fragment
 {
     ProgressBar progressBar = null;
-    private String loadedJoke = null;
+    protected String loadedJoke = null;
     private boolean testFlag = false;
 
     public MainActivityFragment() {}
