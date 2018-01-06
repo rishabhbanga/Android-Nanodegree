@@ -13,6 +13,10 @@ This Repository contains all the Mobile applications created as part of Android 
 
 ## Projects P4 - [RecipeApp](https://github.com/rishabhbanga/Android-Nanodegree/tree/master/P4%20-%20RecipeApp)
 
+## Projects P5 - [BuildItBigger](https://github.com/rishabhbanga/Android-Nanodegree/tree/master/P5%20-%20BuildItBigger)
+
+## Projects P6 - [XyzReader](https://github.com/rishabhbanga/Android-Nanodegree/tree/master/P6%20-%20XyzReader)
+
 ## Android Developer Nanodegree
 [![Udacity][99]][100]
 
